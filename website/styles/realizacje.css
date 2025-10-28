@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: rgb(4, 175, 95);
+    --secondary-color: rgb(255, 204, 0);
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+html {
+    font-family: "DM Sans", "Roboto", sans-serif;
+    color: white;
+}
+
+
+/* B A C K G R O U N D */
+body::before {
+    content: "";
+    background-image: url('/images/background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    filter: brightness(0.3);
+    z-index: -10;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+
+
+/* C O N T E N T */
+.content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.cta {
+    width: 100%;
+    text-align: center;
+}
+
+.cta-button {
+    background-color: var(--primary-color);
+    padding: 15px;
+    border-radius: 10px;
+    margin: 5px 10px 150px 0;
+    display: inline-flex;
+    flex-wrap: nowrap;
+    text-decoration: none;
+    color: white;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+#main-body {
+    background-color: white;
+    width: 100%;
+    color: black;
+}
+
+
+/* Section 1 */
+.cover {
+    width: 100%;
+    height: 100vh;
+}
+
+#Section1 .hero-header {
+    font-size: 3rem;
+}
+
+#Section1 .lead {
+    font-size: 1.2rem;
+}
+
+#Section1 .cta {
+    text-align: left;
+}
+
+#Section1 {
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#Section1 {
+    margin-left: 50px;
+}

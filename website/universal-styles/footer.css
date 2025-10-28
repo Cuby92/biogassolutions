@@ -1,0 +1,127 @@
+html body {
+    height: 100%;
+}
+
+footer {
+    color: white;
+    margin-top: 30px;
+    background-color: rgba(0, 0, 0, 0.6);
+    font-size: 0.8rem;
+
+    display: flex;
+    justify-content: space-between;
+    z-index: 20;
+    align-items: center;  
+    text-align: left;
+    flex-wrap: wrap;   
+    flex-grow: 1; 
+
+    position: relative;
+    bottom: 0;
+    isolation: isolate;
+}
+
+footer::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    backdrop-filter: blur(8px);
+    z-index: -1;;
+}
+
+footer li, footer p, footer h3 {
+    margin: 5px 0;
+}
+
+#footer-about > *:not(#brief-description) {
+    text-align: left;
+}
+
+#footer-about {
+    max-width: 25%;
+    min-width: 250px;
+    flex-basis: 20%;
+    margin: 15px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.1rem;
+}
+
+#brief-description {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+#footer-nav {
+    max-width: 20%;
+    min-width: 200px;
+    flex-basis: 20%;
+    margin: 15px;
+}
+
+#footer-offer {
+    max-width: 20%;
+    min-width: 200px;
+    flex-basis: 20%;
+    text-align: left;
+    margin: 15px;
+}
+
+#footer-contact {
+    max-width: 20%;
+    min-width: 200px;
+    flex-basis: 20%;
+    margin: 15px;
+}
+
+footer .logo {
+    height: 3rem;
+    width: auto;
+    margin-bottom: 5px;
+    float: left;
+    display: block;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer li {
+    list-style: none;
+}
+
+#footer-offer li {
+    list-style-type: circle !important;
+}
+
+#footer-copyright {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#footer-copyright a {
+    display: block;
+}
+
+footer details {
+    font-size: 0.7rem;
+}
+
+/* Responsive design */
+@media screen and (max-width: 480px) {
+    footer {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+    
+    #footer-about, #footer-nav, #footer-offer, #footer-contact {
+        max-width: 100%;
+        margin: 10px 0;
+    }
+}

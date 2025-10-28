@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: rgb(4, 175, 95);
+    --secondary-color: rgb(255, 204, 0);
+}
+
+html {
+    scroll-behavior: smooth;    
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+html {
+    font-family: "DM Sans", "Roboto", sans-serif;
+}
+
+/* B A C K G R O U N D */
+body::before {
+    content: "";
+    background-image: url('../../images/background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    filter: brightness(0.3);
+    z-index: -10;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+/* C O N T E N T */
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    color: white;
+    margin: 30px auto 0 auto;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+/* Section 1 */
+.content #Section1 {
+    width: 75%;
+    margin: 20vh auto 35vh auto;
+    text-align: left;
+    text-align: center;
+}
+
+.content .hero-header {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.lead {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.cta-button {
+    margin: 30px auto;
+    padding: 15px;
+    background-color: var(--primary-color);
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+#main-body {
+    width: 100%;
+    background-color: #f4f4f4;
+}
+
+/* Section 2 */
+#Section2 {
+    width: 85%;
+    text-align: left;
+    margin: 50px auto 50px auto;
+    color: black;
+}
+
+#Section2 h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#Section2 ul {
+    list-style-type: disc;
+    padding-left: 10px;
+    line-height: 1.5rem;
+}
+
+#Section2 li::marker {
+    content: "✓ ";
+    color: var(--primary-color);
+    size: 1.2rem;
+}
+
+/* Section 3 */
+#Section3 {
+    width: 100%;
+    text-align: left;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    line-height: 1.5rem;
+    color: black;
+    scroll-margin-top: 130px;
+    gap: 30px;
+}
+
+#Section3 #contact-info, #company-info, #office {
+    min-width: 25%;
+}
+
+#Section3 h2 {
+    margin: 10px auto;
+}
+
+@media (max-width: 1023px) {
+    #contact-info, #company-info {
+        width: 45%;
+        text-align: center;
+        align-items: center;
+    }
+    
+    #office {
+        width: 70%;
+        margin-inline: auto;
+        text-align: center;
+        align-items: center;
+    }
+}
+
+@media (max-width: 650px) {
+    #contact-info, #company-info, #office {
+        width: 70%;
+        margin-inline: auto;
+        text-align: center;
+        align-items: center;
+    }
+}
+
+@media (max-width: 420px) {
+    #contact-info, #company-info, #office {
+        width: 95%;
+        margin-inline: auto;
+        text-align: center;
+        align-items: center;
+    }
+}
+
+.card {
+    background-color: #f4f4f4;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.15);
+    padding: 40px;
+    border-radius: 20px;
+}
+
+.inactive-link {
+    opacity: 0.2;
+    cursor: not-allowed;
+}
