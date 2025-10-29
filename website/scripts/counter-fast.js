@@ -1,4 +1,4 @@
-const counters = document.querySelectorAll('.counter');
+const counters = document.querySelectorAll('.counter-fast');
 
 const options = {
     root: null,
@@ -13,7 +13,7 @@ const observer = new IntersectionObserver((entries, observer) => {
             const target = +counter.getAttribute('data-target');
             counter.innerText = '0';
 
-            const speed = 1000; // Lower number for faster animation
+            const speed = 300; // Lower number for faster animation
             
             const updateCount = () => {
                 const count = +counter.innerText;
