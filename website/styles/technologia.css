@@ -28,7 +28,7 @@ html {
 /* B A C K G R O U N D */
 body::before {
     content: "";
-    background-image: url('/images/background.jpg');
+    background-image: url('./../images/background.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -180,12 +180,12 @@ h2 {
 }
 
 #Section5 .item1 {
-    background-image: url('/images/thunder.png');
+    background-image: url('./../images/thunder.png');
     background-size: 1.5rem 1.5rem;
 }
 
 #Section5 .item2 {
-    background-image: url('/images/smoke.png');
+    background-image: url('./../images/smoke.png');
     background-size: 1.5rem 1.5rem;
 }
 

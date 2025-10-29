@@ -2,7 +2,7 @@ body = document.querySelector('body');
 header = body.querySelector('#footer');
 header.innerHTML = `
 <div id="footer-about">
-    <img src="/images/logo.svg" class="logo" alt="logo" />
+    <img src="./images/logo.svg" class="logo" alt="logo" />
     <p>Biogas Solutions Sp. z o.o.</p>
     <p>ul. Topolowa 27B, 62-028 Koziegłowy</p>
     <p>NIP: 777 345 10 10</p>
