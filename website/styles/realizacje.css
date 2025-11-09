@@ -163,9 +163,6 @@ h2 {
 /* Section 4 */
 #Section4 .stats {
     list-style: none;
-    display: flex;
-    justify-content: space-around;
-    text-align: center;
 }
 
 #Section4 .counter-unit {
@@ -173,8 +170,9 @@ h2 {
 }
 
 
-#Section4 li {
+#Section4 .card {
     margin-inline: 20px;
+    min-width: 400px;
 }
 
 .counter-unit {
@@ -209,3 +207,47 @@ h2 {
     height: auto;
     margin-inline: auto;
 }
+
+#Section5 .portrait-only img {
+    width: 60%;
+    height: auto;
+    margin-inline: auto;
+}
+
+/* R E S P O N S I V E   D E S I G N */
+@media (max-width: 1325px) {
+    #Section4 .stats {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        max-width: 750px;
+        justify-content: center;
+        margin-inline: auto;
+    }
+}
+
+@media (min-width: 1326px) {
+    #Section4 .stats {
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+    }
+}
+
+@media (max-width: 1000px) {
+    .portrait-only {
+        display: flex;
+        flex-direction: column;
+        gap: 75px;
+    }
+
+    .landscape-only {
+        display: none;
+    }
+}
+
+@media (min-width: 1001px) {
+    .portrait-only {
+        display: none;
+    }
+}   
