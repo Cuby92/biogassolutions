@@ -163,6 +163,7 @@ h2 {
 /* Section 4 */
 #Section4 .stats {
     list-style: none;
+    align-items: center;
 }
 
 #Section4 .counter-unit {
@@ -215,6 +216,21 @@ h2 {
 }
 
 /* R E S P O N S I V E   D E S I G N */
+/* Section 1 */
+@media (min-width: 1000px) {
+    .lead {
+        width: 900px;
+    }
+}
+
+@media (max-width: 999px) {
+    .lead {
+        margin-right: 50px;
+        width: auto;
+        text-align: justify;
+    }
+}
+/* Section 4 */
 @media (max-width: 1325px) {
     #Section4 .stats {
         display: flex;
@@ -234,6 +250,7 @@ h2 {
     }
 }
 
+/* Section 5 */
 @media (max-width: 1000px) {
     .portrait-only {
         display: flex;
