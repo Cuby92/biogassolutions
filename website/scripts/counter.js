@@ -11,14 +11,14 @@
       const decimals = (targetStr.includes('.')) ? (targetStr.split('.')[1].length) : 0;
 
       const speed = Number(el.dataset.speed) || 300;  // lower = faster
-      const increment = target / speed;               // per tick
+      const increment = target / speed;              
       let current = 0;
 
       const tick = () => {
         current = Math.min(current + increment, target);
         el.textContent = decimals ? current.toFixed(decimals) : String(Math.round(current));
         if (current < target) {
-          setTimeout(tick, 16); // ~60fps
+          setTimeout(tick, 16);
         } else {
           el.textContent = decimals ? target.toFixed(decimals) : String(Math.round(target));
         }
