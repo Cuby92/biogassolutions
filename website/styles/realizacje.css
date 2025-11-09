@@ -261,6 +261,12 @@ h2 {
     }
 }
 
+@media (max-width: 800px) {
+    #Section4 .stats {
+        width: 90%;
+    }
+}
+
 /* Section 5 */
 @media (max-width: 1000px) {
     .portrait-only {
