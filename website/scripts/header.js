@@ -3,7 +3,7 @@ header = body.querySelector('#header');
 header.innerHTML = `
 <div class="glass-background"></div>
 
-<a href="./../index.html"><img class="logo" src="./images/logo.svg" alt="Biogas Solutions" /></a>
+<a href="./index.html"><img class="logo" src="./images/logo.svg" alt="Biogas Solutions" /></a>
 
 <nav class="nav-menu">
     <ul>

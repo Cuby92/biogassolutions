@@ -18,7 +18,6 @@ header.innerHTML = `
             <li><a href="/technologia.html">Technologia</a></li>
             <li><a href="/faq.html">FAQ</a></li>
             <li><a href="/realizacje.html">Realizacje</a></li>
-            <li><a class="inactive-link">Kalkulator</a></li>
             <li><a href="/polityka-prywatnosci.html">Polityka prywatności</a></li>
     </ul>
 </nav>
