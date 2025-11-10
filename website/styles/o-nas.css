@@ -94,10 +94,14 @@ h2 {
 }
 
 /* Section 1 */ 
+#Section1 {
+    height: 100vh;
+}
+
 @media (min-width: 769px) {
     #Section1 {
         width: 75%;
-        margin: 140px auto 140px 30px;
+        margin: 20vh 50px 0 50px;
     }
 }
 

@@ -100,7 +100,8 @@ h2 {
 /* Section 1 */
 #Section1 {
     color: white;
-    margin: 200px 50px;
+    margin: 30vh 50px 0 50px;
+    height: 100vh;
 }
 
 #Section1 .cta {

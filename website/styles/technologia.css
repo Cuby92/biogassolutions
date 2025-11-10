@@ -104,16 +104,19 @@ h2 {
 
 /* Section 1 */
 #Section1 {
-    margin: 150px 50px 250px 50px;
+    margin-inline: 50px;
+    height: 100vh;
 }
 
 #Section1 .hero-header {
     font-size: 3rem;
     margin-bottom: 20px;
+    margin-top: 20vh;
 }
 
 #Section1 .lead {
     max-width: 700px;
+    font-size: 1.2rem;
 }
 
 #Section1 .cta {
