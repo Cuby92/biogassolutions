@@ -1,6 +1,38 @@
 body = document.querySelector('body');
-header = body.querySelector('#footer');
+header = body.querySelector('#header');
 header.innerHTML = `
+<div class="glass-background"></div>
+
+<a href="./index.html"><img class="logo" src="./images/logo.svg" alt="Biogas Solutions" /></a>
+
+<nav class="nav-menu">
+    <ul>
+        <li><a href="./o-nas.html">O Nas</a></li>    
+        <li><a href="./oferta.html">Oferta</a></li>
+        <li><a href="./realizacje.html">Realizacje</a></li>
+        <li><a href="./technologia.html">Technologia</a></li>
+        <li><a href="./faq.html">FAQ</a></li>
+        <li><a href="./kontakt.html">Kontakt</a></li>
+    </ul>
+</nav>
+
+<label class="hamburger-menu">
+    <input type="checkbox">
+
+    <ul class="sidebar-menu">
+        <div class="glass-background"></div>
+        
+        <li><a href="./o-nas.html">O Nas</a></li>    
+        <li><a href="./oferta.html">Oferta</a></li>
+        <li><a href="./realizacje.html">Realizacje</a></li>
+        <li><a href="./technologia.html">Technologia</a></li>
+        <li><a href="./faq.html">FAQ</a></li>
+        <li><a href="./kontakt.html">Kontakt</a></li>
+    </ul>
+</label>`
+
+footer = body.querySelector('#footer');
+footer.innerHTML = `
 <div id="footer-about">
     <img src="./images/logo.svg" class="logo" alt="logo" />
     <p>Biogas Solutions Sp. z o.o.</p>

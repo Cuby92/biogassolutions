@@ -159,10 +159,6 @@ h2 {
     color: var(--primary-color);
 }
 
-#Section3 ul {
-    text-align: justify;
-}
-
 /* Section 4 */
 #Section4 .stats {
     list-style: none;
@@ -230,7 +226,6 @@ h2 {
     .lead {
         margin-right: 50px;
         width: auto;
-        text-align: justify;
     }
 }
 /* Section 4 */
