@@ -259,6 +259,16 @@ h2 {
     }
 }
 
+@media (max-width: 550px) {
+    #Section4 .counter-unit {
+        font-size: 10vw;
+    }
+
+    #Section4 h3, #Section4 p {
+        font-size: 1rem;
+    }
+}
+
 /* Section 5 */
 @media (max-width: 1000px) {
     .portrait-only {
