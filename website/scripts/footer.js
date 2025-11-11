@@ -14,10 +14,10 @@ header.innerHTML = `
         <li><a href="/index.html">Strona główna</a></li>
             <li><a href="/o-nas.html">O nas</a></li>
             <li><a href="/oferta.html">Oferta</a></li>
-            <li><a href="/kontakt.html">Kontakt</a></li>
+            <li><a href="/realizacje.html">Realizacje</a></li>            
             <li><a href="/technologia.html">Technologia</a></li>
             <li><a href="/faq.html">FAQ</a></li>
-            <li><a href="/realizacje.html">Realizacje</a></li>
+            <li><a href="/kontakt.html">Kontakt</a></li>
             <li><a href="/polityka-prywatnosci.html">Polityka prywatności</a></li>
     </ul>
 </nav>
