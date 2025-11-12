@@ -85,16 +85,21 @@ header nav {
 header nav a {
     font-size: 1.4rem;
     color: var(--secondary-color);
-    text-decoration: none;
-    text-decoration: none;
+    text-decoration: underline;
     font-weight: 500;
+    text-underline-offset: 1rem;
+    transition: text-underline-offset 500ms, color 300ms, text-decoration-color 500ms ease;
+    text-decoration-color: #ffcc0000;
 }
 
 header nav a:hover {
-    text-decoration: underline;
+    text-underline-offset: 0.3rem;
+    color: rgb(255, 236, 161);
+    text-decoration-color: #ffeca1ee;
 }
 
 header .logo {
     margin-left: 25px;
 }
+
 

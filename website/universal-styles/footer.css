@@ -86,12 +86,19 @@ footer .logo {
 }
 
 footer a {
-    color: white;
+    color: #aaa;
     text-decoration: none;
+    text-decoration: underline;
+    font-weight: 500;
+    text-underline-offset: 0.4rem;
+    transition: text-underline-offset 400ms, color 250ms, text-decoration-color 400ms ease;
+    text-decoration-color: #fff0;
 }
 
 footer a:hover {
-    text-decoration: underline;
+    text-underline-offset: 0.2rem;
+    color: white;
+    text-decoration-color: #fff;
 }
 
 footer li {
