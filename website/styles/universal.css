@@ -404,3 +404,11 @@ footer details {
     color: white;
     box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.15);
 }
+
+/* F L O A T I N G   C A R D S */
+.card {
+    background-color: #f4f4f4;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.15);
+    padding: 40px;
+    border-radius: 20px;
+}

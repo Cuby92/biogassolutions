@@ -61,13 +61,8 @@ body::before {
 }
 
 .card {
-    background-color: #f4f4f4;
-    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.15);
-    padding: 40px;
-    border-radius: 20px;
     width: 80%;
-    margin-left: auto;
-    margin-right: auto;
+    margin-inline: auto;
     color: black;
 }
 
@@ -77,7 +72,6 @@ body::before {
 }
 
 .cta {
-    width: 100%;
     text-align: center;
     padding-bottom: 200px;
     margin-top: -40px;
@@ -86,11 +80,6 @@ body::before {
 h2 {
     margin-bottom: 10px;
     font-size: 2rem;
-}
-
-.inactive-link {
-    opacity: 0.2;
-    cursor: not-allowed;
 }
 
 /* Section 1 */
