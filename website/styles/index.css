@@ -92,12 +92,8 @@ h2 {
 }
 
 #Section2 .column {
-    background-color: #f4f4f4;
-    padding: 30px;
-    border-radius: 20px;
     flex-basis: 25%;
     min-width: 300px;
-    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.15);
     margin-bottom: 30px;
 }
 
