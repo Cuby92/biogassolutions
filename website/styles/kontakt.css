@@ -80,11 +80,6 @@ h2 {
 
 .cta-button {
     margin: 30px auto;
-    padding: 15px;
-    background-color: var(--primary-color);
-    border-radius: 10px;
-    text-decoration: none;
-    color: white;
     margin-inline: 50px;
 }
 

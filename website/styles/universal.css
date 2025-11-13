@@ -389,3 +389,18 @@ footer details {
 .hamburger-menu input:checked ~ .sidebar-menu {
     right: 10px;
 }
+
+/* C T A */
+.cta {
+    width: 100%;
+}
+
+.cta-button {
+    background-color: var(--primary-color);
+    padding: 15px;
+    border-radius: 10px;
+    flex-wrap: nowrap;
+    text-decoration: none;
+    color: white;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.15);
+}
