@@ -139,3 +139,7 @@ h2 {
     text-align: left;
     display: none;
 }
+
+.card {
+    cursor: pointer;
+}
