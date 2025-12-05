@@ -85,6 +85,10 @@ h2 {
     height: 100vh;
 }
 
+#Section1 .lead {
+    font-size: 1.3rem;
+}
+
 @media (min-width: 769px) {
     #Section1 {
         width: 75%;
