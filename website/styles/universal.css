@@ -13,6 +13,12 @@
     --hamburger-height: calc(var(--bar-height) * 3 + var(--hamburger-spacing) * 2);
 }
 
+h1, h2, h3 {
+    animation: reveal-from-left ease-out;
+    animation-timeline: view();
+    animation-range: cover 0% cover 40%;
+}
+
 header {
     /* Layout */
     position: sticky;
@@ -413,6 +419,9 @@ footer details {
     padding: 40px;
     border-radius: 20px;
     transition: transform 500ms, box-shadow 500ms;
+    animation: fade-up ease-out;
+    animation-timeline: view();
+    animation-range: cover 0% cover 50%;
 }
 
 .card:hover {
@@ -423,4 +432,79 @@ footer details {
 .card-big:hover {
     transform: scale(1.01);
     box-shadow: 8px 15px 30px rgba(0, 0, 0, 0.17);
+}
+
+/* S C R O L L   A N I M A T I O N S */
+.fade-up {
+    animation: fade-up ease-out;
+    animation-timeline: view();
+    animation-range: cover 0% cover 50%;
+}
+
+@keyframes fade-up {
+	from {
+		opacity: 0;
+		transform: translateY(10px) scale(0.7);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0) scale(1);
+	}
+}
+
+.reveal-from-left {
+    animation: reveal-from-left ease-out;
+    animation-timeline: view();
+    animation-range: cover 0% cover 40%;
+}
+
+@keyframes reveal-from-left {
+    from {
+        transform: translateX(-200px);
+        opacity: 0;
+        filter: blur(50px);
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+        filter: blur(0);
+    }
+}
+
+.auto-show {
+    animation: auto-show;
+    animation-timeline: view();
+    animation-range: cover 0% cover 20%;
+}
+
+@keyframes auto-show {
+    from {
+        opacity: 0;
+        transform: translateY(100px);
+        filter: blur(100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+        filter: blur(100px);
+    }
+}
+
+.fade-out {
+    animation: fade-out ease-out;
+    animation-timeline: view();
+    animation-range: cover 0% cover 30%;
+}
+
+@keyframes fade-out {
+    from {
+        opacity: 0.5;
+        transform: translateY(300px);
+        filter: blur(100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+        filter: blur(0);
+    }
 }
