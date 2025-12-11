@@ -508,3 +508,22 @@ footer details {
         filter: blur(0);
     }
 }
+
+.image-animation {
+    animation: image;
+    animation-timeline: view();
+    animation-range: cover 0% cover 40%;
+}
+
+@keyframes image {
+    from {
+        filter: blur(100px);
+        opacity: 0;
+        transform: scale(200%);
+    }
+    to {
+        filter: blur(0);
+        opacity: 1;
+        transform: scale(100%);
+    }
+}
