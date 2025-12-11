@@ -13,12 +13,6 @@
     --hamburger-height: calc(var(--bar-height) * 3 + var(--hamburger-spacing) * 2);
 }
 
-h1, h2, h3 {
-    animation: reveal-from-left ease-out;
-    animation-timeline: view();
-    animation-range: cover 0% cover 40%;
-}
-
 header {
     /* Layout */
     position: sticky;
@@ -435,10 +429,10 @@ footer details {
 }
 
 /* S C R O L L   A N I M A T I O N S */
-.fade-up {
+.fade-up, .card {
     animation: fade-up ease-out;
     animation-timeline: view();
-    animation-range: cover 0% cover 50%;
+    animation-range: cover 0% cover 40%;
 }
 
 @keyframes fade-up {
@@ -462,31 +456,27 @@ footer details {
     from {
         transform: translateX(-200px);
         opacity: 0;
-        filter: blur(50px);
     }
     to {
         transform: translateX(0);
         opacity: 1;
-        filter: blur(0);
     }
 }
 
-.auto-show {
+.auto-show, .cta {
     animation: auto-show;
     animation-timeline: view();
-    animation-range: cover 0% cover 20%;
+    animation-range: cover 0% cover 30%;
 }
 
 @keyframes auto-show {
     from {
         opacity: 0;
-        transform: translateY(100px);
-        filter: blur(100px);
+        transform: translateY(30px);
     }
     to {
         opacity: 1;
         transform: translateY(0);
-        filter: blur(100px);
     }
 }
 
@@ -500,11 +490,9 @@ footer details {
     from {
         opacity: 0.5;
         transform: translateY(300px);
-        filter: blur(100px);
     }
     to {
         opacity: 1;
         transform: translateY(0);
-        filter: blur(0);
     }
 }
