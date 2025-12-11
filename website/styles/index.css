@@ -198,6 +198,10 @@ h2 {
     margin: 20px auto 70px auto;
 }
 
+#Section5 .image-animation {
+    animation-range: cover 0% cover 30%;
+}
+
 .inactive-link {
     opacity: 0.3;
     cursor: not-allowed;
