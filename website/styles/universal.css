@@ -463,7 +463,7 @@ footer details {
     }
 }
 
-.auto-show, .cta {
+.auto-show, .cta-button {
     animation: auto-show;
     animation-timeline: view();
     animation-range: cover 0% cover 30%;
