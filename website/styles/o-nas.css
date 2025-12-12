@@ -157,6 +157,16 @@ h2 {
     margin-right: 30px;
 }
 
+@media (min-width: 700px) {
+    #Section2 :nth-child(1 of .card) {
+        animation-range: cover -10% cover 20%;
+    }
+
+    #Section2 :nth-child(2 of .card) {
+        animation-range: cover -10% cover 50%;
+    }
+}
+
 /* Section 3 */
 #Section3 {
     width: 100%;
@@ -211,6 +221,21 @@ h2 {
         margin: auto;
     }
 }
+
+@media (min-width: 770px) {
+    #Section3 :nth-child(1 of .card) {
+        animation-range: cover -10% cover 20%;
+    }
+
+    #Section3 :nth-child(2 of .card) {
+        animation-range: cover -10% cover 30%;
+    }
+
+    #Section3 :nth-child(3 of .card) {
+        animation-range: cover -10% cover 40%;
+    }
+}
+
 
 /* Section 4 */
 #Section4 {
@@ -271,4 +296,14 @@ h2 {
 #Section4 #graduate-hat-icon {
     height: 4.5rem;
     width: auto;
+}
+
+@media (min-width: 769px) {
+    #Section4 :nth-child(1 of .card) {
+        animation-range: cover -10% cover 20%;
+    }
+
+    #Section4 :nth-child(2 of .card) {
+        animation-range: cover -10% cover 40%;
+    }
 }
