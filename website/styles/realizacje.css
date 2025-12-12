@@ -259,6 +259,17 @@ h2 {
 }
 
 /* Section 5 */
+@media (min-width: 1052px) {
+    #Section5 :nth-child(1 of .card) {
+        animation-range: cover -10% cover 20%;
+    }
+
+    #Section5 :nth-child(2 of .card) {
+        animation-range: cover -10% cover 40%;
+    }
+}
+
+/* G E N E R A L   M E D I A   Q U E R I E S */
 @media (max-width: 1000px) {
     .portrait-only {
         display: flex;
