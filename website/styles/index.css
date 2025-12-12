@@ -104,6 +104,28 @@ h2 {
     display: block;
 }
 
+@media (min-width: 900px) {
+    #Section2 :nth-child(1 of .column) {
+        animation-range: cover -60% cover 20%;
+    }
+
+    #Section2 :nth-child(2 of .column) {
+        animation-range: cover -30% cover 30%;
+    }
+
+    #Section2 :nth-child(3 of .column) {
+        animation-range: cover 0% cover 40%;
+    }
+}
+
+@media (max-width: 590px) {
+    #Section2 :nth-child(1 of .column), 
+    #Section2 :nth-child(2 of .column), 
+    #Section2 :nth-child(2 of .column) {
+        animation-range: cover 0% cover 40%;
+    }
+}
+
 .cta {
     text-align: center;
 }

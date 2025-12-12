@@ -438,7 +438,7 @@ footer details {
 @keyframes fade-up {
 	from {
 		opacity: 0;
-		transform: translateY(10px) scale(0.7);
+		transform: translateY(100px) scale(0.7);
 	}
 	to {
 		opacity: 1;
@@ -488,8 +488,9 @@ footer details {
 
 @keyframes fade-out {
     from {
-        opacity: 0.5;
-        transform: translateY(300px);
+        opacity: 0;
+        transform: translateY(100px);
+        filter: blur(2px);
     }
     to {
         opacity: 1;
