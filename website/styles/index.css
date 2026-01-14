@@ -28,7 +28,7 @@ body::before {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    filter: brightness(0.3);
+    filter: brightness(0.4);
     z-index: -10;
     position: fixed;
     top: 0;
