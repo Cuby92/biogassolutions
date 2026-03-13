@@ -6,7 +6,7 @@
 /* B A C K G R O U N D */
 body::before {
     content: "";
-    background-image: url('./../images/background3.jpg');
+    background-image: url('/img/bg/bg3.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;

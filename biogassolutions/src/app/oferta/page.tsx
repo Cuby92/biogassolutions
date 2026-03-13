@@ -16,7 +16,7 @@ function Offer() {
                             <li className="card" id="micro-plants">
                                 <div className="row">
                                     <div className="card-header">
-                                        <div className="icon-container"><img src="./images/biogas.png" alt="Ikona mikrobiogazowni" className="icon" /></div>
+                                        <div className="icon-container"><img src="/img/icons/biogas.png" alt="Ikona mikrobiogazowni" className="icon" /></div>
                                         <h3>Mikrobiogazownie do 50kW</h3>
                                     </div>
 
@@ -49,7 +49,7 @@ function Offer() {
                             <li className="card" id="plants">
                                 <div className="row">
                                     <div className="card-header">
-                                        <div className="icon-container"><img src="./images/power-plant.png" alt="Ikona dużej biogazowni" className="icon" /></div>
+                                        <div className="icon-container"><img src="/img/icons/power-plant.png" alt="Ikona dużej biogazowni" className="icon" /></div>
                                         <h3>Biogazownie średniej i dużej mocy (50-499 kW i {'>'}500 kW)</h3>
                                     </div>
 
@@ -87,7 +87,7 @@ function Offer() {
                             <li className="card" id="methane">
                                 <div className="row">
                                     <div className="card-header">
-                                        <div className="icon-container"><img src="./images/methane.png" alt="Ikona metanu" className="icon" /></div>
+                                        <div className="icon-container"><img src="/img/icons/methane.png" alt="Ikona metanu" className="icon" /></div>
                                         <h3>Biometanownie (upgrading do biometanu)</h3>
                                     </div>
 
@@ -124,7 +124,7 @@ function Offer() {
                             <li className="card" id="consulting-analyzes">
                                 <div className="row">
                                     <div className="card-header">
-                                        <div className="icon-container"><img src="images/bars.png" alt="Ikona wykresu" className="icon" /></div>
+                                        <div className="icon-container"><img src="/img/icons/bars.png" alt="Ikona wykresu" className="icon" /></div>
                                         <h3>Doradztwo i analizy</h3>
                                     </div>
 
@@ -157,7 +157,7 @@ function Offer() {
                             <li className="card" id="exploitation">
                                 <div className="row">
                                     <div className="card-header">
-                                        <div className="icon-container"><img src="./images/testing.png" alt="Ikona analizy" className="icon" /></div>
+                                        <div className="icon-container"><img src="/img/icons/testing.png" alt="Ikona analizy" className="icon" /></div>
                                         <h3>Serwis, eksploatacja i monitoring instalacji</h3>
                                     </div>
 
@@ -187,7 +187,7 @@ function Offer() {
                             <li className="card" id="analyzes-audites">
                                 <div className="row">
                                     <div className="card-header">
-                                        <div className="icon-container"><img src="./images/graduate-hat.png" alt="Ikona czapki studenta" className="icon" /></div>
+                                        <div className="icon-container"><img src="/img/icons/graduate-hat.png" alt="Ikona czapki studenta" className="icon" /></div>
                                         <h3>Analizy i audyty techniczno-technologiczne</h3>
                                     </div>
 
