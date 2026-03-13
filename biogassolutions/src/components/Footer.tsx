@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 function Footer() {
     return (
         <footer>
@@ -11,30 +13,30 @@ function Footer() {
 
         <nav id="footer-nav">
             <ul>
-                <li><a href="/index.html">Strona główna</a></li>
-                    <li><a href="/o-nas.html">O nas</a></li>
-                    <li><a href="/oferta.html">Oferta</a></li>
-                    <li><a href="/realizacje.html">Realizacje</a></li>            
-                    <li><a href="/technologia.html">Technologia</a></li>
-                    <li><a href="/faq.html">FAQ</a></li>
-                    <li><a href="/kontakt.html">Kontakt</a></li>
-                    <li><a href="/polityka-prywatnosci.html">Polityka prywatności</a></li>
+                <li><Link href="/index">Strona główna</Link></li>
+                <li><Link href="/o-nas">O nas</Link></li>
+                <li><Link href="/oferta">Oferta</Link></li>
+                <li><Link href="/realizacje">Realizacje</Link></li>            
+                <li><Link href="/technologia">Technologia</Link></li>
+                <li><Link href="/faq">FAQ</Link></li>
+                <li><Link href="/kontakt">Kontakt</Link></li>
+                <li><Link href="/polityka-prywatnosci">Polityka prywatności</Link></li>
             </ul>
         </nav>
 
         <div id="footer-offer">
             <h3><a href="oferta.html">Oferta</a></h3>
             <ul>
-                <li><a href="/oferta.html#micro-plants">Mikrobiogazownie do 50kW</a></li>
-                <li><a href="/oferta.html#plants">Biogazownie rolnicze i przemysłowe</a></li>
-                <li><a href="/oferta.html#methane">Biometanownie (upgrading biogazu)</a></li>
-                <li><a href="/oferta.html#service">Serwis i monitoring 24/7</a></li>
+                <li><Link href="/oferta.html#micro-plants">Mikrobiogazownie do 50kW</Link></li>
+                <li><Link href="/oferta.html#plants">Biogazownie rolnicze i przemysłowe</Link></li>
+                <li><Link href="/oferta.html#methane">Biometanownie (upgrading biogazu)</Link></li>
+                <li><Link href="/oferta.html#service">Serwis i monitoring 24/7</Link></li>
             </ul>
         </div>
 
         <div id="footer-contact">
             <ul>
-                <li><h3><a href="/kontakt.html">Kontakt</a></h3></li>
+                <li><h3><Link href="/kontakt">Kontakt</Link></h3></li>
                 <li>tel. +48 607 152 386</li>
                 <li>email: biuro@biogassolutions.pl</li>
             </ul>

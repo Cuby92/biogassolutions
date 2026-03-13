@@ -1,18 +1,20 @@
+import Link from "next/link";
+
 function Header() {
     return (
         <header>
             <div className="glass-background"></div>
 
-            <a href="./index.html"><img className="logo" src="./images/logo.svg" alt="Biogas Solutions" /></a>
+            <Link href="/index"><img className="logo" src="./images/logo.svg" alt="Biogas Solutions" /></Link>
 
             <nav className="nav-menu">
                 <ul>
-                    <li><a href="./o-nas.html">O Nas</a></li>    
-                    <li><a href="./oferta.html">Oferta</a></li>
-                    <li><a href="./realizacje.html">Realizacje</a></li>
-                    <li><a href="./technologia.html">Technologia</a></li>
-                    <li><a href="./faq.html">FAQ</a></li>
-                    <li><a href="./kontakt.html">Kontakt</a></li>
+                    <li><Link href="/o-nas">O Nas</Link></li>
+                    <li><Link href="/oferta">Oferta</Link></li>
+                    <li><Link href="/realizacje">Realizacje</Link></li>
+                    <li><Link href="/technologia">Technologia</Link></li>
+                    <li><Link href="/faq">FAQ</Link></li>
+                    <li><Link href="/kontakt">Kontakt</Link></li>
                 </ul>
             </nav>
 
@@ -22,12 +24,12 @@ function Header() {
                 <ul className="sidebar-menu">
                     <div className="glass-background"></div>
                     
-                    <li><a href="./o-nas.html">O Nas</a></li>    
-                    <li><a href="./oferta.html">Oferta</a></li>
-                    <li><a href="./realizacje.html">Realizacje</a></li>
-                    <li><a href="./technologia.html">Technologia</a></li>
-                    <li><a href="./faq.html">FAQ</a></li>
-                    <li><a href="./kontakt.html">Kontakt</a></li>
+                    <li><Link href="/o-nas">O Nas</Link></li>    
+                    <li><Link href="/oferta">Oferta</Link></li>
+                    <li><Link href="/realizacje">Realizacje</Link></li>
+                    <li><Link href="/technologia">Technologia</Link></li>
+                    <li><Link href="/faq">FAQ</Link></li>
+                    <li><Link href="/kontakt">Kontakt</Link></li>
                 </ul>
             </label>
         </header>
