@@ -1,14 +1,10 @@
 import Image from "next/image";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
 import "./page.css";
 import Link from "next/link";
 
 export default function Home() {
   return (
     <>
-      <Header />
-
       <div className="content">
           <div id="Section1">
               <h1 className="hero-header">Tańsza energia i ciepło z własnych odpadów — instalacje biogazu</h1>
@@ -80,8 +76,6 @@ export default function Home() {
               </div>
           </div>
       </div>
-
-      <Footer />
     </>
   );
 }
