@@ -11,7 +11,7 @@ function Technology() {
             
             <div className="main-body">
                 <div id="Section2">
-                    <img src="./images/scheme.png" alt="Schemat biogazowni" />
+                    <img src="/img/scheme.png" alt="Schemat biogazowni" />
                 </div>
 
                 <div id="Section7" className="card card-big">
