@@ -43,7 +43,7 @@ function Footer() {
         </div>
 
         <div id="footer-copyright">
-            <p id="brief-description">Projektujemy i budujemy instalacje biogazu i biometanu w modelu „od A do Z”, wspierając transformację energetyczną w Polsce i Europie.</p>
+            <p id="brief-description">Projektujemy i budujemy instalacje biogazu i biometanu w modelu "od A do Z", wspierając transformację energetyczną w Polsce i Europie.</p>
             <p>© 2025 Biogas Solutions Sp. z o.o. Wszelkie prawa zastrzeżone</p>
             <details>
                 <summary>Użyte ikony (licencje)</summary>

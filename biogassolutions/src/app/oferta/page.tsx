@@ -6,7 +6,7 @@ function Offer() {
             <div className="content">
                 <div id="Section1">
                     <h1 className="hero-header">Oferta Biogas Solutions</h1>
-                    <p className="lead">Realizujemy inwestycje w modelu „od A do Z”: od koncepcji i doboru technologii po rozruch i serwis, z dopasowaniem do dostępnych substratów. Zapewniamy wsparcie dofinansowania i przygotowania dokumentacji.</p>
+                    <p className="lead">Realizujemy inwestycje w modelu "od A do Z": od koncepcji i doboru technologii po rozruch i serwis, z dopasowaniem do dostępnych substratów. Zapewniamy wsparcie dofinansowania i przygotowania dokumentacji.</p>
                     <div className="cta"><Link className="cta-button" href="/kontakt">Umów się na bezpłatną konsultację</Link></div>
                 </div>
 
@@ -34,13 +34,13 @@ function Offer() {
                                 <div className="benefits">
                                     <h4>Zalety</h4>
                                     <ul>
-                                        <li>Kompleksowa realizacja „pod klucz” - <strong>szybka realizacja instalacji i niska ingerencja w istniejącą infrastrukturę.</strong></li>
+                                        <li>Kompleksowa realizacja "pod klucz" - <strong>szybka realizacja instalacji i niska ingerencja w istniejącą infrastrukturę.</strong></li>
                                         <li><strong>Mniej formalności</strong> i szybka ścieżka (definicja ustawowa, uproszczone zgłoszenia/ przyłączenie, brak opłaty za przyłączenie; licznik dwukierunkowy po stronie OSD).</li>
                                         <li><strong>Skalowalność</strong> - możliwość późniejszej rozbudowy (już jako mała instalacja {'>'}50 kW) po weryfikacji wsadu i odbiorów.</li>
                                         <li><strong>Niezależność</strong> energetyczna gospodarstwa.</li>
                                         <li><strong>Zagospodarowanie gnojowicy / obornika</strong> i innych odpadów z produkcji rolniczej + wartościowy nawóz (poferment) zamiast uciążliwego zapachowo odpadu.</li>
                                         <li><strong>Redukcja odorów i emisji GHG</strong> (odgazowanie gnojowicy / odpadów rolniczych).</li>
-                                        <li>Programy dotacyjne/pożyczkowe dla rolników - m.in. „Energia dla Wsi” (<strong>do 65% bezzwrotnych dotacji</strong>).</li>
+                                        <li>Programy dotacyjne/pożyczkowe dla rolników - m.in. "Energia dla Wsi" (<strong>do 65% bezzwrotnych dotacji</strong>).</li>
                                         <li><strong>Ciepło z kogeneracji</strong> - ogrzewanie obiektów kubaturowych fermy, wody użytkowej (dla gospodarstw domowych), procesy suszenia (pasz/produktów) - lokalna wartość dodana.</li>
                                     </ul>
                                 </div>  
@@ -77,7 +77,7 @@ function Offer() {
                                         <li><strong>Utylizacja odpadów</strong> - możliwość wykorzystania resztek rolniczych i produktów ubocznych przemysłu rolno-spożywczego.</li>
                                         <li><strong>Wartość nawozowa pofermentu</strong>- pozostałość pofermentacyjna może być stosowana jako nawóz naturalny.</li>
                                         <li><strong>Uproszczone wpisy rejestrowe</strong> zamiast koncesji.</li>
-                                        <li>Programy dotacyjne/pożyczkowe dla rolników - m.in. „Energia dla Wsi” (<strong>do 65% bezzwrotnych dotacji</strong>)</li>
+                                        <li>Programy dotacyjne/pożyczkowe dla rolników - m.in. "Energia dla Wsi" (<strong>do 65% bezzwrotnych dotacji</strong>)</li>
                                         <li><strong>Wspieranie lokalnej gospodarki</strong> - tworzenie miejsc pracy i rozwój rolnictwa ekologicznego.</li>
                                         <li><strong>Redukcja odorów i GHG</strong> (ujemny ślad węglowy!)</li>
                                     </ul>

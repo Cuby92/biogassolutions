@@ -36,7 +36,7 @@ function Home() {
               <h2>Dlaczego my?</h2>
               <div className="card">
                   <img src="/img/icons/workflow.png" alt="Ikona przepływu pracy" />
-                  <p>Kompleksowa obsługa „od A do Z” (studium, projekt, decyzje, budowa, rozruch, serwis) i wsparcie pozyskania dotacji.</p>
+                  <p>Kompleksowa obsługa "od A do Z" (studium, projekt, decyzje, budowa, rozruch, serwis) i wsparcie pozyskania dotacji.</p>
               </div>
               <div className="card">
                   <img src="/img/icons/technology.png" alt="Ikona technologii" />
