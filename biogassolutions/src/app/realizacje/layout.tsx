@@ -2,8 +2,8 @@ import { Metadata } from 'next';
 import './page.css';
 
 export const metadata: Metadata = {
-    title: '',
-    description: ''
+    title: 'Biogazownie i mikrobiogazownie pod klucz | Biogas Solutions',
+    description: 'Projekt i budowa instalacji biogazu w Polsce — od koncepcji i pozwoleń po rozruch, serwis 24/7 i wsparcie dofinansowania (NFOŚiGW, FENG).'
 }
 
 function Layout({ children }: Readonly<{ children: React.ReactNode }>) {
