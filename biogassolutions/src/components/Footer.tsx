@@ -4,7 +4,7 @@ function Footer() {
     return (
         <footer>
             <div id="footer-about">
-            <img src="./images/logo.svg" className="logo" alt="logo" />
+            <img src="/img/brand/logo.svg" className="logo" alt="logo" />
             <p>Biogas Solutions Sp. z o.o.</p>
             <p>ul. Topolowa 27B, 62-028 Koziegłowy</p>
             <p>NIP: 777 345 10 10</p>

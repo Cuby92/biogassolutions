@@ -5,7 +5,7 @@ function Header() {
         <header>
             <div className="glass-background"></div>
 
-            <Link href="/index"><img className="logo" src="./images/logo.svg" alt="Biogas Solutions" /></Link>
+            <Link href="/index"><img className="logo" src="/img/brand/logo.svg" alt="Biogas Solutions" /></Link>
 
             <nav className="nav-menu">
                 <ul>
