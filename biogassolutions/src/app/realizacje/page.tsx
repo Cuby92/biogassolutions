@@ -58,11 +58,11 @@ function Realizations() {
 
                     <div id="Section5" style={{display: 'none'}}>
                         <h2>Etapy budowy biogazowni</h2>
-                        <div className="image landscape-only"><img src="./images/stages.png" alt="Trzy etapy realizacji biogazowni: Etap I Planowanie (weryfikacja prawna, warunki zabudowy, analizy, projekt i pozwolenia); Etap II Budowanie (budowa, dostawy i montaż, instalacje pomocnicze); Etap III Uruchomienie (rozruch, odbiory i legalizacja, szkolenia, monitoring i serwis 24/7)." /></div>
+                        <div className="image landscape-only"><img src="/img/build-stages/stages.png" alt="Trzy etapy realizacji biogazowni: Etap I Planowanie (weryfikacja prawna, warunki zabudowy, analizy, projekt i pozwolenia); Etap II Budowanie (budowa, dostawy i montaż, instalacje pomocnicze); Etap III Uruchomienie (rozruch, odbiory i legalizacja, szkolenia, monitoring i serwis 24/7)." /></div>
                         <div className="portrait-only">
-                            <div className="image"><img src="./images/stage1.png" alt="Etap I Planowanie (weryfikacja prawna, warunki zabudowy, analizy, projekt i pozwolenia)"/></div>
-                            <div className="image"><img src="./images/stage2.png" alt="Etap II Budowanie (budowa, dostawy i montaż, instalacje pomocnicze)"/></div>
-                            <div className="image"><img src="./images/stage3.png" alt="Etap III Uruchomienie (rozruch, odbiory i legalizacja, szkolenia, monitoring i serwis 24/7)"/></div>
+                            <div className="image"><img src="/img/build-stages/stage1.png" alt="Etap I Planowanie (weryfikacja prawna, warunki zabudowy, analizy, projekt i pozwolenia)"/></div>
+                            <div className="image"><img src="/img/build-stages/stage2.png" alt="Etap II Budowanie (budowa, dostawy i montaż, instalacje pomocnicze)"/></div>
+                            <div className="image"><img src="/img/build-stages/stage3.png" alt="Etap III Uruchomienie (rozruch, odbiory i legalizacja, szkolenia, monitoring i serwis 24/7)"/></div>
                         </div>
                     </div>
                 </div>
