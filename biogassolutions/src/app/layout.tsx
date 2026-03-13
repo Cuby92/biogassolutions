@@ -17,7 +17,7 @@ function RootLayout({
     <html lang="pl">
       <body>
         <Header />
-        {children}
+          {children}
         <Footer />
       </body>
     </html>
