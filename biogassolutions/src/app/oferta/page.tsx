@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import './page.css';
 
 function Offer() {
     return (
