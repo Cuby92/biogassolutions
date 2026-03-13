@@ -24,7 +24,7 @@ html {
 /* B A C K G R O U N D */
 body::before {
     content: "";
-    background-image: url('./../images/background1.jpg');
+    background-image: url('/img/bg/bg1.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
