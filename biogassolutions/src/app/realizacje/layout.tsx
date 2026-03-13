@@ -13,3 +13,5 @@ function Layout({ children }: Readonly<{ children: React.ReactNode }>) {
         </main>
     );
 }
+
+export default Layout;
