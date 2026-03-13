@@ -2,7 +2,7 @@ import Image from "next/image";
 import "./page.css";
 import Link from "next/link";
 
-export default function Home() {
+function Home() {
   return (
     <>
       <div className="content">
@@ -79,3 +79,5 @@ export default function Home() {
     </>
   );
 }
+
+export default Home;

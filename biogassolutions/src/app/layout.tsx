@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   description: "Poznaj nasze doświadczenie w projektowaniu, budowie i modernizacji biogazowni w całej Polsce — od koncepcji i dokumentacji, po rozruch, serwis i zarządzanie eksploatacją.",
 };
 
-export default function RootLayout({
+function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
@@ -23,3 +23,5 @@ export default function RootLayout({
     </html>
   );
 }
+
+export default RootLayout;
