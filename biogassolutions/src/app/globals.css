@@ -424,6 +424,8 @@ footer details {
     animation-range: cover 0% cover 50%;
 }
 
+
+/* H O V E R   E F F E C T S */
 @media (hover: hover) and (pointer: fine) {
     header nav a:hover {
         text-underline-offset: 0.3rem;
