@@ -26,7 +26,7 @@ body, html {
 }
 
 html {
-    font-family: var(--dm-sans), sans-serif;
+    font-family: var(--dm-sans), Arial;
     color: white;
 }
 
