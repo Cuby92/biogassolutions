@@ -2,10 +2,10 @@ import Link from "next/link";
 
 function Header() {
     return (
-        <header>
+        <header id="#header">
             <div className="glass-background"></div>
 
-            <Link href="/index"><img className="logo" src="/img/brand/logo.svg" alt="Biogas Solutions" /></Link>
+            <Link href="/"><img className="logo" src="/img/brand/logo.svg" alt="Biogas Solutions" /></Link>
 
             <nav className="nav-menu">
                 <ul>
