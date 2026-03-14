@@ -52,7 +52,7 @@ h2 {
 
 /* Section 2 */
 #Section2 {
-    background-color: #f4f4f4;
+    background-color: var(--bg-white);
     width: 100%;
     color: black;
     display: flex;
@@ -113,7 +113,7 @@ h2 {
 
 /* Section 3 */
 #Section3 {
-    background-color: #f4f4f4;
+    background-color: var(--bg-white);
     color: black;
     display: flex;
     flex-wrap: wrap;
@@ -142,7 +142,7 @@ h2 {
 
 /* Section 4 */
 #Section4 {
-    background-color: #f4f4f4;
+    background-color: var(--bg-white);
     text-align: center;
     color: black;
     padding-top: 30px;
@@ -162,7 +162,7 @@ h2 {
 
 /* Section 5 */
 #Section5 {
-    background-color: #f4f4f4;
+    background-color: var(--bg-white);
     display: flex;
     flex-wrap: wrap;
     text-align: center;

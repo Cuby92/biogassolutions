@@ -39,7 +39,7 @@ h2 {
 }
 
 #main-body {
-    background-color: #f4f4f4;
+    background-color: var(--bg-white);
     width: 100%;
     color: black;
     display: flex;

@@ -8,6 +8,7 @@
 :root {
     --primary-color: rgb(4, 175, 95);
     --secondary-color: rgb(255, 204, 0);
+    --bg-white: #f4f4f4;
 
     /* Hamburger Menu */
     --bar-height: 6px;
@@ -427,7 +428,7 @@ footer details {
 
 /* F L O A T I N G   C A R D S */
 .card {
-    background-color: #f4f4f4;
+    background-color: var(--bg-white);
     box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.15);
     padding: 40px;
     border-radius: 20px;
