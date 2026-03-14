@@ -1,6 +1,4 @@
 /* H E A D E R */
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Monda:wght@400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-
 * {
     margin: 0;
     padding: 0;
@@ -10,11 +8,12 @@
 :root {
     --primary-color: rgb(4, 175, 95);
     --secondary-color: rgb(255, 204, 0);
+
+    /* Hamburger Menu */
     --bar-height: 6px;
     --bar-width: 40px;
     --hamburger-spacing: 8px;
-    --color: white;
-    --background-color: grey;
+    --background-color: var(--secondary-color);
     --animation-timing: 200ms ease-in-out;
     --hamburger-height: calc(var(--bar-height) * 3 + var(--hamburger-spacing) * 2);
 }
@@ -26,7 +25,7 @@ body, html {
 }
 
 html {
-    font-family: "DM Sans", "Roboto", sans-serif;
+    font-family: var(--dm-sans), sans-serif;
     color: white;
 }
 
