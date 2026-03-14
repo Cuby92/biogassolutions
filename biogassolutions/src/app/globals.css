@@ -107,12 +107,6 @@ header nav a {
     text-decoration-color: #ffcc0000;
 }
 
-header nav a:hover {
-    text-underline-offset: 0.3rem;
-    color: rgb(255, 236, 161);
-    text-decoration-color: #ffeca1ee;
-}
-
 header .logo {
     margin-left: 25px;
 }
@@ -203,12 +197,6 @@ footer a {
     text-underline-offset: 0.4rem;
     transition: text-underline-offset 400ms, color 250ms, text-decoration-color 400ms ease;
     text-decoration-color: #fff0;
-}
-
-footer a:hover {
-    text-underline-offset: 0.2rem;
-    color: white;
-    text-decoration-color: #fff;
 }
 
 footer li {
@@ -424,12 +412,6 @@ footer details {
         font-weight 500ms ease-out;
 }
 
-.cta-button:hover {
-    box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.25), inset 0 0 0 5px var(--secondary-color);
-    color: var(--primary-color);
-    font-weight: 700;
-}
-
 /* F L O A T I N G   C A R D S */
 .card {
     background-color: var(--bg-white);
@@ -442,15 +424,32 @@ footer details {
     animation-range: cover 0% cover 50%;
 }
 
-@media (min-width: 481px) {
+@media (hover: hover) and (pointer: fine) {
+    header nav a:hover {
+        text-underline-offset: 0.3rem;
+        color: rgb(255, 236, 161);
+        text-decoration-color: #ffeca1ee;
+    }
+
+    footer a:hover {
+        text-underline-offset: 0.2rem;
+        color: white;
+        text-decoration-color: #fff;
+    }
+
+    .cta-button:hover {
+        box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.25), inset 0 0 0 5px var(--secondary-color);
+        color: var(--primary-color);
+        font-weight: 700;
+    } 
+
     .card:hover {
         transform: scale(1.05);
         box-shadow: 10px 20px 30px rgba(0, 0, 0, 0.2);
     }
-}
 
-.card-big:hover {
-    transform: scale(1.01);
-    box-shadow: 8px 15px 30px rgba(0, 0, 0, 0.17);
+    .card-big:hover {
+        transform: scale(1.01);
+        box-shadow: 8px 15px 30px rgba(0, 0, 0, 0.17);
+    }
 }
-
