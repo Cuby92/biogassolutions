@@ -10,7 +10,6 @@ function Home() {
               <h1 className="hero-header">Tańsza energia i ciepło z własnych odpadów — instalacje biogazu</h1>
               <p className="lead">Wykorzystujemy lokalne odpady organiczne, aby bezpiecznie wytwarzać prąd i ciepło w kogeneracji — od koncepcji i pozwoleń po rozruch i serwis. Zapewniamy wsparcie w dofinansowaniu oraz zdalny monitoring 24/7 i szybką reakcję serwisu zgodnie z umową.</p>
               <Link className="cta-button" href="/kontakt">Uzyskaj bezpłatną wstępną wycenę</Link>
-              {/*<a className="cta-button">Oblicz opłacalność</a>*/}
           </div>
 
           <div id="Section2">
@@ -66,9 +65,9 @@ function Home() {
               <p>Przygotowujemy dokumentację i wnioski oraz wspieramy rozliczenia w programach krajowych i unijnych.</p>
 
               <div className="logos">
-                  <img src="/img/dotations/feng-logo.png" alt="Fundusze Europejskie dla Nowoczesnej Gospodarki"/>
-                  <img src="/img/dotations/nfosigw-logo.png" alt="Narodowy Fundusz Ochrony Środowiska i Gospodarki Wodnej" />
-                  <img src="/img/dotations/energia-dla-wsi-logo.png" alt="Energia Dla Wsi" />
+                  <img src="/img/grants/feng-logo.png" alt="Fundusze Europejskie dla Nowoczesnej Gospodarki"/>
+                  <img src="/img/grants/nfosigw-logo.png" alt="Narodowy Fundusz Ochrony Środowiska i Gospodarki Wodnej" />
+                  <img src="/img/grants/energia-dla-wsi-logo.png" alt="Energia Dla Wsi" />
               </div>
 
               <div className="cta">
