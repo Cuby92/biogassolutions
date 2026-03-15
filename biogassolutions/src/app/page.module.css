@@ -1,5 +1,5 @@
 /* B A C K G R O U N D */
-body::before {
+.section1::before {
     content: "";
     background-image: url('/img/bg/bg1.jpg');
     background-size: cover;
@@ -16,129 +16,85 @@ body::before {
     box-sizing: border-box;
 }
 
-#Section2 {
+.section2 {
     flex-wrap: wrap;
     justify-content: space-around;
     text-align: center;
 }
 
-#Section2 .column {
+.section2 .column {
     flex-basis: 25%;
     min-width: 300px;
 }
 
-#Section2 img {
+.section2 .icon {
     width: 3rem;
     height: auto;
     margin: 10px auto;
     display: block;
 }
 
-#Section2 .card {
-    margin-inline: 15px;
-    height: 200px;
+.section2 .card {
+    display: grid;
+    grid-template-rows: subgrid;
+    grid-row: span 2;
+    margin-inline: 20px;
 }
 
-@media (min-width: 1000px) {
-    #Section2 :nth-child(1 of .column) {
-        animation-range: cover -60% cover 20%;
-    }
-
-    #Section2 :nth-child(2 of .column) {
-        animation-range: cover -30% cover 30%;
-    }
-
-    #Section2 :nth-child(3 of .column) {
-        animation-range: cover 0% cover 40%;
-    }
-}
-
-@media (min-width: 750px) and (max-width: 999px) {
-    #Section2 :nth-child(1 of .column),
-    #Section2 :nth-child(2 of .column) {
-        margin-bottom: 50px;
-    }
-}
-
-@media (max-width: 749px) {
-    #Section2 :nth-child(1 of .column),
-    #Section2 :nth-child(2 of .column) {
-        margin-bottom: 30px;
-    }
-}
-
-@media (max-width: 500px) {
-    #Section2 .card {
-        height: auto;
-    }
-}
-
-@media (max-width: 590px) {
-    #Section2 :nth-child(1 of .column), 
-    #Section2 :nth-child(2 of .column), 
-    #Section2 :nth-child(2 of .column) {
-        animation-range: cover 0% cover 40%;
-    }
-}
-
-#Section3 {
+.section3 {
     display: flex;
     flex-direction: column;
 }
 
-#Section3 img {
+.section3 .icon {
     height: 3rem;
     width: auto;
 }
 
-#Section3 .grid-wrapper {
+.section3 .grid-wrapper {
     grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
     gap: 30px;
     margin-inline: 30px;
 }
 
 @media (max-width: 989px) {
-    #Section3 .grid-wrapper {
+    .section3 .grid-wrapper {
         grid-template-columns: repeat(auto-fit, minmax(50%, 70%));
         justify-content: center;
     }
 }
 
 @media (max-width: 680px) {
-    #Section3 .grid-wrapper {
+    .section3 .grid-wrapper {
         grid-template-columns: repeat(auto-fit, 90%) !important;
     }
 }
 
-#Section3 .card {
+.section3 .card {
     display: grid;
     grid-template-rows: subgrid;
     grid-row: span 2;
 }
 
-#Section4 {
+.section4 {
     text-align: center;
     display: flex;
     flex-direction: column;
 }
 
-#Section4 img {
+.section4 .timeline {
     width: 94%;
     height: auto;
     justify-content: center;
     margin-inline: 3%;
 }
 
-#Section4 .cta, #Section4 .cta-button {
-    display: none;
-}
-
-#Section5 {
+.section5 {
     flex-wrap: wrap;
     text-align: center;
 }
 
-#Section5 .logos {
+.section5 .grants {
     display: flex;
     gap: 30px;
     justify-content: space-around;
@@ -148,37 +104,28 @@ body::before {
     margin-top: 30px;
 }
 
-#Section5 .logos img {
+.section5 .grantLogo {
     height: 5rem;
     width: auto;    
 }
 
-#Section5 p {
-    width: 100%;
-}
-
-#Section5 .cta {
+.section5 .cta {
     width: 100%;
 }
 
 @media screen and (max-width: 480px) {      
-    #Section2 .column {
+    .section2 .column {
         flex-basis: 100%;
         min-width: auto;
     }
     
-    #Section3 .card {
+    .section3 .card {
         max-width: none;
     }
 }
 
 @media screen and (min-width: 481px) and (max-width: 768px) {    
-    #Section2 .column {
+    .section2 .column {
         flex-basis: 45%;
     }
-}
-
-img {
-    max-width: 100%;
-    height: auto;
 }
