@@ -5,13 +5,15 @@ function About() {
     return (
         <>
             <div className="content">
-                <div id="Section1">
-                    <h1 className="hero-header">Kim jesteśmy?</h1>
-                    <p className="lead">Specjalizujemy się w projektowaniu, budowie i uruchamianiu instalacji biogazu i biometanu dla sektora rolnictwa i przemysłu - od małych biogazowni rolniczych o mocy kilkudziesięciu kW po duże instalacje przemysłowe o mocy kilku MW. Celem jest efektywne wykorzystanie odpadów organicznych do produkcji energii i paliw odnawialnych w bezpiecznych i automatycznych instalacjach przetwarzania odpadów.</p>
-                    <a className="cta-button" href="#Section3">Skontaktuj się z nami</a>
+                <div id="Section1" className="cover">
+                    <div className="content">
+                        <h1 className="hero-header">Kim jesteśmy?</h1>
+                        <p className="lead">Specjalizujemy się w projektowaniu, budowie i uruchamianiu instalacji biogazu i biometanu dla sektora rolnictwa i przemysłu - od małych biogazowni rolniczych o mocy kilkudziesięciu kW po duże instalacje przemysłowe o mocy kilku MW. Celem jest efektywne wykorzystanie odpadów organicznych do produkcji energii i paliw odnawialnych w bezpiecznych i automatycznych instalacjach przetwarzania odpadów.</p>
+                        <div className="cta"><a className="cta-button" href="#Section3">Skontaktuj się z nami</a></div>
+                    </div>
                 </div>
 
-                <div className="main-body">
+                <div className="main-content">
                     <div id="Section2">
                         <h2>Jak pracujemy?</h2>
                         <div className="card">
