@@ -140,6 +140,7 @@ body::before {
 
 #Section5 .logos {
     display: flex;
+    gap: 30px;
     justify-content: space-around;
     align-items: center;
     width: 100%;

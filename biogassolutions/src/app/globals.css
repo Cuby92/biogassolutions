@@ -71,13 +71,14 @@ h1, h2, h3 {
 }
 
 h1 {
+    font-size: calc(3vw + 1.5rem) !important;
     font-weight: 300;
-    line-height: 3rem;
+    line-height: calc(3vw + 2rem);
 }
 
 h2 {
     font-weight: 200;
-    font-size: 4rem;
+    font-size: calc(6vw + 1.5rem);
 }
 
 h3 {
@@ -196,6 +197,10 @@ header .logo {
     .cover .content {
         max-width: none;
     }
+}
+
+.cover .cta {
+    text-align: left;
 }
 
 /* F O O T E R */
