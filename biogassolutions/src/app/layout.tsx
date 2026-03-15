@@ -6,7 +6,7 @@ import { DM_Sans, Poppins, Monda } from 'next/font/google';
 
 export const metadata: Metadata = {
   title: "Realizacje biogazowni i CHP - projekty 499 kW-2 MW | Biogas Solutions",
-  description: "Poznaj nasze doświadczenie w projektowaniu, budowie i modernizacji biogazowni w całej Polsce — od koncepcji i dokumentacji, po rozruch, serwis i zarządzanie eksploatacją.",
+  description: "Poznaj nasze doświadczenie w projektowaniu, budowie i modernizacji biogazowni w całej Polsce - od koncepcji i dokumentacji, po rozruch, serwis i zarządzanie eksploatacją.",
 };
 
 const dmSans = DM_Sans({

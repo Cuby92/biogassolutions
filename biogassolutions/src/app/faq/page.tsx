@@ -35,7 +35,7 @@ function FAQ() {
                     <div className="card">
                         <details>
                             <summary>Co oznacza realizacja "pod klucz"?</summary>
-                            <p>- Kompletny zakres — przyłącza, fundamenty, instalacje technologiczne, automatyka, rozruch technologiczny, odbiory i przekazanie do eksploatacji.</p>
+                            <p>- Kompletny zakres - przyłącza, fundamenty, instalacje technologiczne, automatyka, rozruch technologiczny, odbiory i przekazanie do eksploatacji.</p>
                         </details>
                     </div>
 
@@ -56,7 +56,7 @@ function FAQ() {
                     <div className="card">
                         <details>
                             <summary>Czy pomagacie w finansowaniu i dokumentach?</summary>
-                            <p>- Tak — dobór programu (np. NFOŚiGW, FENG, Energia dla Wsi), przygotowanie wniosków i rozliczeń, wraz z załącznikami technicznymi.</p>
+                            <p>- Tak - dobór programu (np. NFOŚiGW, FENG, Energia dla Wsi), przygotowanie wniosków i rozliczeń, wraz z załącznikami technicznymi.</p>
                         </details>
                     </div>
 

@@ -7,7 +7,7 @@ function Realizations() {
                 <div className="cover">
                     <div id="Section1">
                         <h1 className="hero-header">Nasze realizacje</h1>
-                        <p className="lead">Od kilkunastu lat projektujemy, budujemy i modernizujemy instalacje biogazowe w całej Polsce — od koncepcji i technologii, przez projekt i dokumentację, aż po budowę, rozruch oraz późniejsze zarządzanie eksploatacją.</p>
+                        <p className="lead">Od kilkunastu lat projektujemy, budujemy i modernizujemy instalacje biogazowe w całej Polsce - od koncepcji i technologii, przez projekt i dokumentację, aż po budowę, rozruch oraz późniejsze zarządzanie eksploatacją.</p>
                         <div className="cta"><a href="#Section2" className="cta-button">Dowiedz się więcej</a></div>
                     </div>
                 </div>

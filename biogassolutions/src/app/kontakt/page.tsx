@@ -3,7 +3,7 @@ function Contact() {
         <div className="content">
             <div id="Section1">
                 <h1 className="hero-header">Skontaktujmy się</h1>
-                <p className="lead">Zaczynamy od krótkiej rozmowy i podstawowych danych o dostępnych materiałach organicznych oraz zapotrzebowaniu na energię — na tej podstawie przygotujemy wstępną koncepcję. Po akceptacji przechodzimy do szczegółowych założeń projektu i harmonogramu.</p>
+                <p className="lead">Zaczynamy od krótkiej rozmowy i podstawowych danych o dostępnych materiałach organicznych oraz zapotrzebowaniu na energię - na tej podstawie przygotujemy wstępną koncepcję. Po akceptacji przechodzimy do szczegółowych założeń projektu i harmonogramu.</p>
                 <a className="cta-button" href="#Section3">Skontaktuj się z nami</a>
             </div>
             <div id="main-body">
