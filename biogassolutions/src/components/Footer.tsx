@@ -27,10 +27,10 @@ function Footer() {
             <div id="footer-offer">
                 <h3><a href="oferta.html">Oferta</a></h3>
                 <ul>
-                    <li><Link href="/oferta.html#micro-plants">Mikrobiogazownie do 50kW</Link></li>
-                    <li><Link href="/oferta.html#plants">Biogazownie rolnicze i przemysłowe</Link></li>
-                    <li><Link href="/oferta.html#methane">Biometanownie (upgrading biogazu)</Link></li>
-                    <li><Link href="/oferta.html#service">Serwis i monitoring 24/7</Link></li>
+                    <li><Link href="/oferta.html#mikrobiogazownie">Mikrobiogazownie do 50kW</Link></li>
+                    <li><Link href="/oferta.html#biogazownie">Biogazownie rolnicze i przemysłowe</Link></li>
+                    <li><Link href="/oferta.html#biometanownie">Biometanownie (upgrading biogazu)</Link></li>
+                    <li><Link href="/oferta.html#serwis">Serwis i monitoring 24/7</Link></li>
                 </ul>
             </div>
 

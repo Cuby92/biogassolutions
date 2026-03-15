@@ -4,16 +4,18 @@ function Offer() {
     return (
         <>
             <div className="content">
-                <div id="Section1">
-                    <h1 className="hero-header">Oferta Biogas Solutions</h1>
-                    <p className="lead">Realizujemy inwestycje w modelu "od A do Z": od koncepcji i doboru technologii po rozruch i serwis, z dopasowaniem do dostępnych substratów. Zapewniamy wsparcie dofinansowania i przygotowania dokumentacji.</p>
-                    <div className="cta"><Link className="cta-button" href="/kontakt">Umów się na bezpłatną konsultację</Link></div>
+                <div id="Section1" className="cover">
+                    <div className="content">
+                        <h1 className="hero-header">Oferta Biogas Solutions</h1>
+                        <p className="lead">Realizujemy inwestycje w modelu "od A do Z": od koncepcji i doboru technologii po rozruch i serwis, z dopasowaniem do dostępnych substratów. Zapewniamy wsparcie dofinansowania i przygotowania dokumentacji.</p>
+                        <div className="cta"><Link className="cta-button" href="/kontakt">Umów się na bezpłatną konsultację</Link></div>
+                    </div>
                 </div>
 
-                <div className="main-body">
+                <div className="main-content">
                     <div id="Section2">
                         <ul id="offer">
-                            <li className="card" id="micro-plants">
+                            <li className="card" id="mikrobiogazownie">
                                 <div className="row">
                                     <div className="card-header">
                                         <div className="icon-container"><img src="/img/icons/biogas.png" alt="Ikona mikrobiogazowni" className="icon" /></div>
@@ -46,7 +48,7 @@ function Offer() {
                                 </div>  
                             </li>
 
-                            <li className="card" id="plants">
+                            <li className="card" id="biogazownie">
                                 <div className="row">
                                     <div className="card-header">
                                         <div className="icon-container"><img src="/img/icons/power-plant.png" alt="Ikona dużej biogazowni" className="icon" /></div>
@@ -84,7 +86,7 @@ function Offer() {
                                 </div>
                             </li>
 
-                            <li className="card" id="methane">
+                            <li className="card" id="biometanownie">
                                 <div className="row">
                                     <div className="card-header">
                                         <div className="icon-container"><img src="/img/icons/methane.png" alt="Ikona metanu" className="icon" /></div>
@@ -121,7 +123,7 @@ function Offer() {
                                 </div>
                             </li>
 
-                            <li className="card" id="consulting-analyzes">
+                            <li className="card" id="doradztwo-i-analizy">
                                 <div className="row">
                                     <div className="card-header">
                                         <div className="icon-container"><img src="/img/icons/bars.png" alt="Ikona wykresu" className="icon" /></div>
@@ -154,7 +156,7 @@ function Offer() {
                                 </div>
                             </li>
 
-                            <li className="card" id="exploitation">
+                            <li className="card" id="serwis-i-eksploatacja">
                                 <div className="row">
                                     <div className="card-header">
                                         <div className="icon-container"><img src="/img/icons/testing.png" alt="Ikona analizy" className="icon" /></div>

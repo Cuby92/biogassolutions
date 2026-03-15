@@ -1,9 +1,7 @@
-/* Scroll behaviour */
-#micro-plants, #plants, #methane, #service {
+#mikrobiogazownie, #biogazownie, #biometanownie, #serwis {
     scroll-margin-top: 150px;
 }
 
-/* B A C K G R O U N D */
 body::before {
     content: "";
     background-image: url('/img/bg/bg3.jpg');
@@ -21,44 +19,11 @@ body::before {
     box-sizing: border-box;
 }
 
-/* C O N T E N T */
-.content {
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    color: white;
-    margin: 30px auto 0 auto;
-}
-
-.cta-button {   
-    margin: auto;
-}
-
-.main-body {
-    width: 100%;
-    background-color: var(--bg-white);
-}
-
 .card {
     width: 80%;
     margin-left: auto;
     margin-right: auto;
     line-height: 1.65rem;
-}
-
-.cta {
-    text-align: center;
-    padding-bottom: 50px;
-    margin-top: 50px;
-}
-
-.inactive-link {
-    opacity: 0.2;
-    cursor: not-allowed;
-}
-
-h2 {
-    font-size: 2rem;
 }
 
 .card li::marker {
@@ -91,14 +56,6 @@ h2 {
     height: 5rem;
 }
 
-h3 {
-    font-size: 1.4rem;
-}
-
-h4 {
-    font-size: 1.2rem;
-}
-
 .for-whom {
     margin-left: 30px;
 }
@@ -107,34 +64,13 @@ h4 {
     margin-top: 30px;
 }
 
-
-/* Section 1 */
-#Section1 {
-    margin: 0 50px 0 50px;
-    height: 100vh;
-}
-
 #Section1 .hero-header {
     font-size: 3rem;
     margin-bottom: 20px;
     margin-top: 20vh;
 }
 
-#Section1 .lead {
-    max-width: 700px;
-    font-size: 1.3rem;
-}
-
-#Section1 .cta {
-    margin-top: 40px;
-    text-align: left;
-}
-
-
-/* Section 2 */
 #Section2 {
-    color: black;
-    margin-top: 100px;
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -160,15 +96,15 @@ h4 {
     border-left: 1.5px solid var(--secondary-color);
 }
 
-#micro-plants .vertical-divider{
+#mikrobiogazownie .vertical-divider{
     height: 6rem;
 }
 
-#plants .vertical-divider{
+#biogazownie .vertical-divider{
     height: 11rem;
 }
 
-#methane .vertical-divider{
+#biometanownie .vertical-divider{
     height: 6.5rem;
 }
 
