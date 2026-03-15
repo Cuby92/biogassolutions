@@ -35,21 +35,23 @@ function Home() {
 
                 <section id="Section3">
                     <h2>Dlaczego my?</h2>
-                    <div className="card">
-                        <img src="/img/icons/workflow.png" alt="Ikona przepływu pracy" />
-                        <p>Kompleksowa obsługa "od A do Z" (studium, projekt, decyzje, budowa, rozruch, serwis) i wsparcie pozyskania dotacji.</p>
-                    </div>
-                    <div className="card">
-                        <img src="/img/icons/technology.png" alt="Ikona technologii" />
-                        <p>Zaawansowane systemy procesowe - w zakresie urządzeń i elementów procesowych (w tym procesów higienizacji oraz sterylizacji), zdalnego sterowania oraz instalacji dla funkcjonalności obiektów.</p>
-                    </div>
-                    <div className="card">
-                        <img src="/img/icons/24-hours-service.png" alt="Ikona obsługa 24/7" />
-                        <p>Zdalny monitoring 24/7, szkolenia operatorów i standard reakcji serwisu do 48 h z opcją skrócenia wg umowy.</p>
-                    </div>
-                    <div className="card">
-                        <img src="/img/icons/shield.png" alt="Ikona tarczy" />
-                        <p>Bezpieczeństwo i niezawodność instalacji w zakresie całości obiektów oraz poszczególnych urządzeń i elementów.</p>
+                    <div className="grid-wrapper">
+                        <div className="card">
+                            <img src="/img/icons/workflow.png" alt="Ikona przepływu pracy" />
+                            <p>Kompleksowa obsługa "od A do Z" (studium, projekt, decyzje, budowa, rozruch, serwis) i wsparcie pozyskania dotacji.</p>
+                        </div>
+                        <div className="card">
+                            <img src="/img/icons/technology.png" alt="Ikona technologii" />
+                            <p>Zaawansowane systemy procesowe - w zakresie urządzeń i elementów procesowych (w tym procesów higienizacji oraz sterylizacji), zdalnego sterowania oraz instalacji dla funkcjonalności obiektów.</p>
+                        </div>
+                        <div className="card">
+                            <img src="/img/icons/24-hours-service.png" alt="Ikona obsługa 24/7" />
+                            <p>Zdalny monitoring 24/7, szkolenia operatorów i standard reakcji serwisu do 48 h z opcją skrócenia wg umowy.</p>
+                        </div>
+                        <div className="card">
+                            <img src="/img/icons/shield.png" alt="Ikona tarczy" />
+                            <p>Bezpieczeństwo i niezawodność instalacji w zakresie całości obiektów oraz poszczególnych urządzeń i elementów.</p>
+                        </div>
                     </div>
                     <div className="cta">
                         <Link className="cta-button" href="/o-nas">Dowiedz się więcej</Link>

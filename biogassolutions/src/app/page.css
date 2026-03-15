@@ -82,13 +82,8 @@ body::before {
 }
 
 #Section3 {
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-#Section3 .card {
-    max-width: 500px;
-    margin-inline: 20px;
+    display: flex;
+    flex-direction: column;
 }
 
 #Section3 img {
@@ -96,15 +91,29 @@ body::before {
     width: auto;
 }
 
-#Section3 :nth-child(1 of .card),
-#Section3 :nth-child(2 of .card) {
-    margin-bottom: 30px;
+#Section3 .grid-wrapper {
+    grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
+    gap: 30px;
+    margin-inline: 30px;
 }
 
-@media (max-width: 1079px) {
-    #Section3 :nth-child(3 of .card) {
-        margin-bottom: 30px;
+@media (max-width: 989px) {
+    #Section3 .grid-wrapper {
+        grid-template-columns: repeat(auto-fit, minmax(50%, 70%));
+        justify-content: center;
     }
+}
+
+@media (max-width: 680px) {
+    #Section3 .grid-wrapper {
+        grid-template-columns: repeat(auto-fit, 90%) !important;
+    }
+}
+
+#Section3 .card {
+    display: grid;
+    grid-template-rows: subgrid;
+    grid-row: span 2;
 }
 
 #Section4 {
