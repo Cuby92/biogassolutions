@@ -1,11 +1,11 @@
 import Link from 'next/link';
-import './page.css';
+import styles from './page.module.css';
 
 function About() {
     return (
         <>
             <div className="content">
-                <div id="Section1" className="cover">
+                <div id="AboutSection1" className={`cover ${styles.section1}`}>
                     <div className="content">
                         <h1 className="hero-header">Kim jesteśmy?</h1>
                         <p className="lead">Specjalizujemy się w projektowaniu, budowie i uruchamianiu instalacji biogazu i biometanu dla sektora rolnictwa i przemysłu - od małych biogazowni rolniczych o mocy kilkudziesięciu kW po duże instalacje przemysłowe o mocy kilku MW. Celem jest efektywne wykorzystanie odpadów organicznych do produkcji energii i paliw odnawialnych w bezpiecznych i automatycznych instalacjach przetwarzania odpadów.</p>
@@ -14,53 +14,53 @@ function About() {
                 </div>
 
                 <div className="main-content">
-                    <div id="Section2">
+                    <div id="AboutSection2" className={styles.section2}>
                         <h2>Jak pracujemy?</h2>
-                        <div className="card">
-                            <img src="/img/icons/hand.png" alt="Ikona finansowania" />
+                        <div className={`card ${styles.card}`}>
+                            <img className={styles.icon} src="/img/icons/hand.png" alt="Ikona finansowania" />
                             <p>Wspieramy pozyskanie dofinansowania, przygotowując dokumentację i rozliczenia.</p>
                         </div>
-                        <div className="card">
-                            <img src="/img/icons/workflow.png" alt="Ikona przepływu pracy" />
+                        <div className={`card ${styles.card}`}>
+                            <img className={styles.icon} src="/img/icons/workflow.png" alt="Ikona przepływu pracy" />
                             <p>Kompleksowo prowadzimy inwestycję: studium wykonalności, projekt, decyzje, budowa, rozruch i wsparcie eksploatacyjne.</p>
                         </div>
-                        <div className="cta"><Link className="cta-button" href="/kontakt">Uzyskaj bezpłatną wstępną wycenę</Link></div>
+                        <div className={`cta ${styles.cta}`}><Link className={`cta-button ${styles['cta-button']}`} href="/kontakt">Uzyskaj bezpłatną wstępną wycenę</Link></div>
                     </div>
 
-                    <div id="Section3">
+                    <div id="AboutSection3" className={styles.section3}>
                         <h2>Technologia i dobór</h2>
 
-                        <div className="card">
-                            <img src="/img/icons/settings.png" alt="Ikona kół zębatych" />
+                        <div className={`card ${styles.card}`}>
+                            <img className={styles.icon} src="/img/icons/settings.png" alt="Ikona kół zębatych" />
                             <p>Konfiguracje dobieramy do dostępnych substratów, sezonowości i profilu zapotrzebowania na energię.</p>
                         </div>
 
-                        <div className="card">
-                            <img src="/img/icons/elasticity.png" alt="Ikona elastyczności" />
+                        <div className={`card ${styles.card}`}>
+                            <img className={styles.icon} src="/img/icons/elasticity.png" alt="Ikona elastyczności" />
                             <p>Zapewniamy elastyczność instalacji dzięki zastosowaniu buforów technologicznych, co pozwala dostosować się do zmienności rynku substratów i utrzymać wysoką niezawodność na lata.</p>
                         </div>
 
-                        <div className="card">
-                            <img src="/img/icons/industry-tank.png" alt="Ikona zbiornika" />
+                        <div className={`card ${styles.card}`}>
+                            <img className={styles.icon} src="/img/icons/industry-tank.png" alt="Ikona zbiornika" />
                             <p>Stawiamy na materiały najwyższej jakości.</p>
                         </div>
-                        <div className="cta"><Link className="cta-button" href="/technologia">Poznaj technologię</Link></div>
+                        <div className={`cta ${styles.cta}`}><Link className="cta-button" href="/technologia">Poznaj technologię</Link></div>
                     </div>
 
-                    <div id="Section4">
+                    <div id="AboutSection4" className={styles.section4}>
                         <h2>Gdzie działamy?</h2>
 
-                        <div className="card">
-                            <img src="/img/icons/planet-earth.png" alt="Ikona Ziemi" />
+                        <div className={`card ${styles.card}`}>
+                            <img className={styles.icon} src="/img/icons/planet-earth.png" alt="Ikona Ziemi" />
                             <p>Działamy w całej Polsce oraz w krajach europejskich; oferujemy konsultacje na miejscu.</p>
                         </div>
 
-                        <div className="card">
-                            <img src="/img/icons/graduate-hat.png" alt="Ikona czapki absolwenta" id="graduate-hat-icon" />
+                        <div className={`card ${styles.card}`}>
+                            <img className={styles.icon} src="/img/icons/graduate-hat.png" alt="Ikona czapki absolwenta" />
                             <p>Zapewniamy szkolenia, zdalny monitoring 24/7 i serwis zgodnie z zapisami umowy serwisowej (SLA).</p>
                         </div>
 
-                        <div className="cta"><Link className="cta-button" href="/kontakt">Umów się na bezpłatną konsultację</Link></div>
+                        <div className={`cta ${styles.cta}`}><Link className={`cta-button ${styles['cta-button']}`} href="/kontakt">Umów się na bezpłatną konsultację</Link></div>
                     </div>
                 </div>
             </div>

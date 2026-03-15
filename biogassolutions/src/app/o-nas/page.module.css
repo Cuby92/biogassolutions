@@ -1,5 +1,5 @@
 /* B A C K G R O U N D */
-body::before {
+.section1::before {
     content: '';
     background-image: url('/img/bg/bg1.jpg');
     background-size: cover;
@@ -16,67 +16,67 @@ body::before {
     box-sizing: border-box;
 }
 
-#Section2 {
+.section2 {
     display: flex;
     flex-wrap: wrap;    
 }
 
-#Section2 .card {
+.section2 .card {
     display: flex;
     align-items: center;
     margin: 20px auto;
 }
 
 @media (min-width: 769px) {
-    #Section2 .card {
+    .section2 .card {
         width: 40%;
     }
 }
 
 @media (max-width: 768px) {
-    #Section2 .card {
+    .section2 .card {
         width: 80%;
     }
 }
 
-#Section2 img {
+.section2 .icon {
     height: 4rem;
     width: auto;
     margin-right: 30px;
 }
 
-#Section3 {
+.section3 {
     text-align: center;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
 
-#Section3 img {
+.section3 .icon {
     height: 4rem;
     width: auto;
     margin: 30px;
 }
 
 @media (min-width: 769px) {
-    #Section3 .card {
+    .section3 .card {
         width: 25%;
     }
 }
 
 @media (max-width: 768px) {
-    #Section3 .card {
+    .section3 .card {
         width: 70%;
     }
 
-    #Section3 {
+    .section3 {
         flex-direction: column;
         gap: 30px;
         align-items: center;
     }
 }
 
-#Section4 {
+.section4 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -84,35 +84,35 @@ body::before {
 }
 
 @media (min-width: 769px) {
-    #Section4 .card {
+    .section4 .card {
         width: 40%;
     }
 }
 
 @media (max-width: 768px) {
-    #Section4 .card {
+    .section4 .card {
         width: 70%; 
     }
 
-    #Section4 {
+    .section4 {
         flex-direction: column;
         gap: 30px;
         align-items: center;
     }
 }
 
-#Section4 .card {
+.section4 .card {
     display: flex;
     align-content: center;
 }
 
-#Section4 img {
+.section4 .icon {
     height: 3rem;
     width: auto;
     margin-right: 30px;
 }
 
-#Section4 #graduate-hat-icon {
+.section4 :nth-child(2 of .icon) {
     height: 4.5rem;
     width: auto;
 }
