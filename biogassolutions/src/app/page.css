@@ -120,8 +120,8 @@ body::before {
     margin-inline: 3%;
 }
 
-#Section4 .cta-button {
-    visibility: hidden;
+#Section4 .cta, #Section4 .cta-button {
+    display: none;
 }
 
 #Section5 {
@@ -149,10 +149,6 @@ body::before {
 
 #Section5 .cta {
     width: 100%;
-}
-
-#Section5 .image-animation {
-    animation-range: cover 0% cover 30%;
 }
 
 @media screen and (max-width: 480px) {      
