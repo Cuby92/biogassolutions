@@ -19,115 +19,117 @@ body::before {
     box-sizing: border-box;
 }
 
-.card {
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    line-height: 1.65rem;
-}
-
 .card li::marker {
     content: "✓ ";
     color: var(--primary-color);
     size: 1.2rem;
 }
 
-.row {
+.miniature {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    width: 100%;
-    margin-inline: auto;
-}
-
-.card-header {
-    text-align: left;
-    justify-content: start;
-    margin: 0 30px 20px 0;
 }
 
 .icon-container {
-    width: 100px;
     text-align: center;
-    margin-inline: auto;
+    margin: auto;
 }   
 
 .icon {
-    height: 5rem;
-}
-
-.for-whom {
-    margin-left: 30px;
-}
-
-.benefits {
-    margin-top: 30px;
-}
-
-#Section1 .hero-header {
-    font-size: 3rem;
-    margin-bottom: 20px;
-    margin-top: 20vh;
-}
-
-#Section2 {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    list-style: none;
-    text-align: justify;
+    height: calc(3rem + 7vw);
 }
 
 #Section2 #offer {
     list-style: none;
     display: flex;
     flex-direction: column;
+    gap: 200px;
+    justify-content: center;
+    width: 100%;
+}
+
+.offer-item {
+    width: 100%;
+    justify-content: center;
+}
+
+h3 {
+    font-weight: 200;
+    font-size: 2rem;
+    letter-spacing: 1.2rem;
+}
+
+.grid-wrapper {
+    margin: 0 30px;
+    width: calc(100% - 60px);
+    grid-template-columns: repeat(3, minmax(150px, 1fr));
+    grid-template-rows: auto;
     gap: 30px;
+    grid-template-areas:
+        'for-whom for-whom miniature'
+        'benefits  benefits benefits';
 }
 
-#Section2 h3 {
-    text-align: center;
+@media (hover: hover) and (pointer: fine) and (min-width: 701px) {
+    .card:hover {
+        transform: scale(1.025);
+        box-shadow: 5px 15px 30px rgba(0, 0, 0, 0.175)
+    }
 }
 
-
-/* Vertical dividers */
-.vertical-divider {
-    width: 0;
-    border-left: 1.5px solid var(--secondary-color);
+#offer :nth-child(1 of .offer-item) .grid-wrapper,
+#offer :nth-child(2 of .offer-item) .grid-wrapper {
+    grid-template-areas:
+        'miniature  for-whom for-whom'
+        'benefits   benefits    power';
 }
 
-#mikrobiogazownie .vertical-divider{
-    height: 6rem;
+#offer :nth-child(4 of .offer-item) .grid-wrapper,
+#offer :nth-child(5 of .offer-item) .grid-wrapper {
+    grid-template-areas:
+        'miniature for-whom for-whom'
+        'benefits  benefits benefits';
 }
 
-#biogazownie .vertical-divider{
-    height: 11rem;
+#offer :nth-child(5 of .offer-item) h2 {
+    font-size: calc(1.5rem + 3vw);
+    line-height: calc(2rem + 3vw);
 }
 
-#biometanownie .vertical-divider{
-    height: 6.5rem;
-}
+@media (max-width: 700px) {
+    .grid-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
 
-#consulting-analyzes .vertical-divider{
-    height: 7rem;   
-}
-
-#exploitation .vertical-divider{
-    height: 5.5rem;   
-}
-
-#analyzes-audites .vertical-divider{
-    height: 7rem;   
-}
-
-@media (max-width: 800px) {
-    .vertical-divider {
+    .miniature {
         display: none;
     }
 
-    .row {
-        flex-direction: column;
-        gap: 30px;
-        text-align: justify;
+    .card:hover {
+        transform: none !important;
+        box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.15) !important;
     }
+}
+
+.power {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.power .counter {
+    font-size: calc(3rem + 1.5vw);
+    font-family: var(--poppins);
+    font-weight: 100;
+    text-align: center;
+}
+
+.power .counter .num {
+    font-weight: 400;
+}
+
+.main-content .cta {
+    margin-top: -80px;
 }

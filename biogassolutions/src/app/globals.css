@@ -56,8 +56,6 @@ strong {
 }
 
 .main-content *[id*='Section'] h2 {
-    width: 100%;
-    text-align: center;
     margin-bottom: 20px;
 }
 
@@ -65,8 +63,14 @@ strong {
     margin-top: 40px;
 }
 
+.main-content h2,
+.main-content h3 {
+    width: 100%;
+    text-align: center;
+}
+
 /* H E A D I N G S */
-h1, h2, h3 {
+h1, h2, h3, h4 {
     font-family: var(--poppins);
 }
 
@@ -78,11 +82,20 @@ h1 {
 
 h2 {
     font-weight: 200;
-    font-size: calc(6vw + 1.5rem);
+    font-size: calc(5vw + 1.5rem);
+    line-height: calc(5vw + 2rem);
 }
 
 h3 {
-    font-weight: 500;
+    font-weight: 200;
+    font-size: 2rem;
+    margin-top: -20px;
+    margin-bottom: 30px;
+}
+
+h4 {
+    font-size: 2rem;
+    font-weight: 300;
 }
 
 /* H E A D E R */
@@ -228,6 +241,11 @@ footer {
 
 footer li, footer p, footer h3 {
     margin: 5px 0;
+}
+
+footer h3 {
+    font-size: 1.2rem;
+    letter-spacing: normal !important;
 }
 
 #footer-about > *:not(#brief-description) {
@@ -507,7 +525,9 @@ footer details {
     box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.15);
     padding: 40px;
     border-radius: 20px;
-    transition: transform 500ms, box-shadow 500ms;
+    transition: 
+        transform 500ms, 
+        box-shadow 500ms;
     animation: fade-up ease-out;
     animation-timeline: view();
     animation-range: cover 0% cover 50%;
@@ -537,10 +557,5 @@ footer details {
     .card:hover {
         transform: scale(1.05);
         box-shadow: 10px 20px 30px rgba(0, 0, 0, 0.2);
-    }
-
-    .card-big:hover {
-        transform: scale(1.01);
-        box-shadow: 8px 15px 30px rgba(0, 0, 0, 0.17);
     }
 }

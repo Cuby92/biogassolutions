@@ -18,15 +18,15 @@ function Home() {
                     <h2>Co robimy?</h2>
                     <div className={`card ${styles.column} ${styles.card}`}>
                         <img className={styles.icon} src="/img/icons/biogas.png" alt="Ikona biogazowni" />
-                        <h3>Mikrobiogazownie do 50 kW</h3>
+                        <p className={styles.p}>Mikrobiogazownie do 50 kW</p>
                     </div>
                     <div className={`card ${styles.column} ${styles.card}`}>
                         <img className={styles.icon} src="/img/icons/power-plant.png" alt="Ikona dużej biogazowni" />
-                        <h3>Biogazownie 50-499 kW i {'>'}500 kW</h3> 
+                        <p className={styles.p}>Biogazownie 50-499 kW i {'>'}500 kW</p> 
                     </div>
                     <div className={`card ${styles.column} ${styles.card}`}    >
                         <img className={styles.icon} src="/img/icons/methane.png" alt="Ikona metanu" />
-                        <h3>Biometanownie</h3>  
+                        <p className={styles.p}>Biometanownie</p>  
                     </div>
                     <div className={`cta ${styles.cta}`}>
                         <Link href="/oferta" className={`cta-button ${styles['cta-button']}`}>Poznaj naszą ofertę</Link>
