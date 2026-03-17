@@ -15,7 +15,7 @@ function Home() {
                 </div>
             </section>
 
-            <section className="main-content">
+            <section className="mainContent">
                 <section className={s.section2} id="HomeSection2">
                     <h2>Co robimy?</h2>
                     <div className={`card ${s.column} ${s.card}`}>
@@ -37,7 +37,7 @@ function Home() {
 
                 <section className={s.section3} id="HomeSection3">
                     <h2>Dlaczego my?</h2>
-                    <div className={`grid-wrapper ${styles['grid-wrapper']}`}>
+                    <div className={`gridWrapper ${styles['gridWrapper']}`}>
                         <div className={`card ${s.card}`}>
                             <img className={s.icon} src="/img/icons/workflow.png" alt="Ikona przepływu pracy" />
                             <p>Kompleksowa obsługa "od A do Z" (studium, projekt, decyzje, budowa, rozruch, serwis) i wsparcie pozyskania dotacji.</p>

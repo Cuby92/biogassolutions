@@ -15,7 +15,7 @@ function About() {
                     </div>
                 </div>
 
-                <div className="main-content">
+                <div className="mainContent">
                     <div id="AboutSection2" className={s.section2}>
                         <h2>Jak pracujemy?</h2>
                         <div className={`card ${s.card}`}>
