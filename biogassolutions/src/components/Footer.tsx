@@ -55,6 +55,7 @@ function Footer() {
                     <a href="https://www.flaticon.com/free-icons/guarantee" title="guarantee icons">Guarantee icons created by Freepik - Flaticon</a>
                     <a href="https://www.flaticon.com/free-icons/processor" title="processor icons">Processor icons created by Freepik - Flaticon</a>
                     <a href="https://www.flaticon.com/free-icons/monitor" title="monitor icons">Monitor icons created by Freepik - Flaticon</a>
+                    <a href="https://www.flaticon.com/free-icons/correct" title="correct icons">Correct icons created by Kiranshastry - Flaticon</a>
                 </details>
             </div>
         </footer>
