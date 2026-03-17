@@ -19,7 +19,7 @@ body::before {
     box-sizing: border-box;
 }
 
-.card li::marker {
+.card .li::marker {
     content: "✓ ";
     color: var(--primary-color);
     size: 1.2rem;
@@ -31,7 +31,7 @@ body::before {
     align-items: center;
 }
 
-.icon-container {
+.iconContainer {
     text-align: center;
     margin: auto;
 }   
@@ -40,7 +40,7 @@ body::before {
     height: calc(3rem + 7vw);
 }
 
-#Section2 #offer {
+.section2 .Offer {
     list-style: none;
     display: flex;
     flex-direction: column;
@@ -49,18 +49,18 @@ body::before {
     width: 100%;
 }
 
-.offer-item {
+.offerItem {
     width: 100%;
     justify-content: center;
 }
 
-h3 {
+.h3 {
     font-weight: 200;
     font-size: 2rem;
     letter-spacing: 1.2rem;
 }
 
-.grid-wrapper {
+.gridWrapper {
     margin: 0 30px;
     width: calc(100% - 60px);
     grid-template-columns: repeat(3, minmax(150px, 1fr));
@@ -78,27 +78,27 @@ h3 {
     }
 }
 
-#offer :nth-child(1 of .offer-item) .grid-wrapper,
-#offer :nth-child(2 of .offer-item) .grid-wrapper {
+.Offer :nth-child(1 of .offerItem) .gridWrapper,
+.Offer :nth-child(2 of .offerItem) .gridWrapper {
     grid-template-areas:
         'miniature  for-whom for-whom'
         'benefits   benefits    power';
 }
 
-#offer :nth-child(4 of .offer-item) .grid-wrapper,
-#offer :nth-child(5 of .offer-item) .grid-wrapper {
+.Offer :nth-child(4 of .offerItem) .gridWrapper,
+.Offer :nth-child(5 of .offerItem) .gridWrapper {
     grid-template-areas:
         'miniature for-whom for-whom'
         'benefits  benefits benefits';
 }
 
-#offer :nth-child(5 of .offer-item) h2 {
+.Offer :nth-child(5 of .offerItem) .h2 {
     font-size: calc(1.5rem + 3vw);
     line-height: calc(2rem + 3vw);
 }
 
 @media (max-width: 700px) {
-    .grid-wrapper {
+    .gridWrapper {
         display: flex;
         flex-direction: column;
     }
@@ -119,17 +119,17 @@ h3 {
     align-items: center;
 }
 
-.power .counter {
+.power .value {
     font-size: calc(3rem + 1.5vw);
     font-family: var(--poppins);
     font-weight: 100;
     text-align: center;
 }
 
-.power .counter .num {
+.power .value .num {
     font-weight: 400;
 }
 
-.main-content .cta {
+.mainContent .cta {
     margin-top: -80px;
 }
