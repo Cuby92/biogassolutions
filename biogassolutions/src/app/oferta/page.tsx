@@ -16,7 +16,7 @@ function Offer() {
                 </section>
 
                 <section className={`mainContent ${s.mainContent}`}>
-                    <section id="OfferSection2" className={s.section2}>
+                    <section id="OfferSection2" className={s.Section2}>
                         <ul id="offer" className={s.Offer}>
                             <li id="mikrobiogazownie" className={s.offerItem}>
                                 <h2 className={s.h2}>Mikrobiogazownie</h2>

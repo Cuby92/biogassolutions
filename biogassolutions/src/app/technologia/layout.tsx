@@ -1,5 +1,4 @@
 import { Metadata } from 'next';
-import './page.css';
 
 export const metadata: Metadata = {
     title: 'Technologia - fermentacja, CHP i upgrading do biometanu',

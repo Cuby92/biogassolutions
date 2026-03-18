@@ -1,5 +1,5 @@
 /* B A C K G R O U N D */
-.section1::before {
+.Section1::before {
     content: '';
     background-image: url('/img/bg/bg1.jpg');
     background-size: cover;
@@ -16,67 +16,67 @@
     box-sizing: border-box;
 }
 
-.section2 {
+.Section2 {
     display: flex;
     flex-wrap: wrap;    
 }
 
-.section2 .card {
+.Section2 .card {
     display: flex;
     align-items: center;
     margin: 20px auto;
 }
 
 @media (min-width: 769px) {
-    .section2 .card {
+    .Section2 .card {
         width: 40%;
     }
 }
 
 @media (max-width: 768px) {
-    .section2 .card {
+    .Section2 .card {
         width: 80%;
     }
 }
 
-.section2 .icon {
+.Section2 .icon {
     height: 4rem;
     width: auto;
     margin-right: 30px;
 }
 
-.section3 {
+.Section3 {
     text-align: center;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
 
-.section3 .icon {
+.Section3 .icon {
     height: 4rem;
     width: auto;
     margin: 30px;
 }
 
 @media (min-width: 769px) {
-    .section3 .card {
+    .Section3 .card {
         width: 25%;
     }
 }
 
 @media (max-width: 768px) {
-    .section3 .card {
+    .Section3 .card {
         width: 70%;
     }
 
-    .section3 {
+    .Section3 {
         flex-direction: column;
         gap: 30px;
         align-items: center;
     }
 }
 
-.section4 {
+.Section4 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -84,35 +84,35 @@
 }
 
 @media (min-width: 769px) {
-    .section4 .card {
+    .Section4 .card {
         width: 40%;
     }
 }
 
 @media (max-width: 768px) {
-    .section4 .card {
+    .Section4 .card {
         width: 70%; 
     }
 
-    .section4 {
+    .Section4 {
         flex-direction: column;
         gap: 30px;
         align-items: center;
     }
 }
 
-.section4 .card {
+.Section4 .card {
     display: flex;
     align-content: center;
 }
 
-.section4 .icon {
+.Section4 .icon {
     height: 3rem;
     width: auto;
     margin-right: 30px;
 }
 
-.section4 :nth-child(2 of .icon) {
+.Section4 :nth-child(2 of .icon) {
     height: 4.5rem;
     width: auto;
 }

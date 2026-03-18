@@ -16,7 +16,7 @@ function Realizations() {
                 </div>
 
                 <div className={`mainContent ${s.mainContent}`}>
-                    <div id="RealizationsSection2" className={s.section2}>
+                    <div id="RealizationsSection2" className={s.Section2}>
                         <h3>Nasze</h3>
                         <h2 className={s.h2}>Doświadczenie</h2>
                         <ul className={s.ul}>
@@ -35,7 +35,7 @@ function Realizations() {
                         </ul>
                     </div>
 
-                    <div id="RealizationsSection3" className={s.section3}>
+                    <div id="RealizationsSection3" className={s.Section3}>
                         <h2 className={s.h2}>Wybrane realizacje</h2>
                         <ul className={s.ul}>
                             <li className={`card ${s.card} ${s.li}`}>Budowa i modernizacja biogazowni rolniczych i instalacji kogeneracyjnych o mocach od 499 kW do 1,2 MW (technologia, projekt, budowa, rozruch technologiczny).</li>
@@ -45,7 +45,7 @@ function Realizations() {
                         </ul>
                     </div>
 
-                    <div id="RealizationsSection4" className={s.section4}>
+                    <div id="RealizationsSection4" className={s.Section4}>
                         <h2 className={s.h2}>Efekty</h2>
                         <h3 className={s.h3}>Naszej Pracy</h3>
                         <ul className={s.stats}>
@@ -62,7 +62,7 @@ function Realizations() {
                         </ul>
                     </div>
 
-                    <div id="RealizationsSection5" className={s.section5} style={{display: 'none'}}>
+                    <div id="RealizationsSection5" className={s.Section5} style={{display: 'none'}}>
                         <h2 className={s.h2}>Etapy budowy biogazowni</h2>
                         <div className="img landscape-only"><img src="/img/build-stages/stages.png" alt="Trzy etapy realizacji biogazowni: Etap I Planowanie (weryfikacja prawna, warunki zabudowy, analizy, projekt i pozwolenia); Etap II Budowanie (budowa, dostawy i montaż, instalacje pomocnicze); Etap III Uruchomienie (rozruch, odbiory i legalizacja, szkolenia, monitoring i serwis 24/7)." /></div>
                         <div className="portrait-only">

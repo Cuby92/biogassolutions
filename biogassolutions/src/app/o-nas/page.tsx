@@ -7,7 +7,7 @@ function About() {
     return (
         <>
             <div className="content">
-                <div id="AboutSection1" className={`cover ${s.section1}`}>
+                <div id="AboutSection1" className={`cover ${s.Section1}`}>
                     <div className="content">
                         <h1 className="hero-header">Kim jesteśmy?</h1>
                         <p className="lead">Specjalizujemy się w projektowaniu, budowie i uruchamianiu instalacji biogazu i biometanu dla sektora rolnictwa i przemysłu - od małych biogazowni rolniczych o mocy kilkudziesięciu kW po duże instalacje przemysłowe o mocy kilku MW. Celem jest efektywne wykorzystanie odpadów organicznych do produkcji energii i paliw odnawialnych w bezpiecznych i automatycznych instalacjach przetwarzania odpadów.</p>
@@ -16,7 +16,7 @@ function About() {
                 </div>
 
                 <div className="mainContent">
-                    <div id="AboutSection2" className={s.section2}>
+                    <div id="AboutSection2" className={s.Section2}>
                         <h2>Jak pracujemy?</h2>
                         <div className={`card ${s.card}`}>
                             <img className={s.icon} src="/img/icons/hand.png" alt="Ikona finansowania" />
@@ -29,7 +29,7 @@ function About() {
                         <div className={`cta ${s.cta}`}><Link className={`cta-button ${styles['cta-button']}`} href="/kontakt">Uzyskaj bezpłatną wstępną wycenę</Link></div>
                     </div>
 
-                    <div id="AboutSection3" className={s.section3}>
+                    <div id="AboutSection3" className={s.Section3}>
                         <h2>Technologia i dobór</h2>
 
                         <div className={`card ${s.card}`}>
@@ -49,7 +49,7 @@ function About() {
                         <div className={`cta ${s.cta}`}><Link className="cta-button" href="/technologia">Poznaj technologię</Link></div>
                     </div>
 
-                    <div id="AboutSection4" className={s.section4}>
+                    <div id="AboutSection4" className={s.Section4}>
                         <h2>Gdzie działamy?</h2>
 
                         <div className={`card ${s.card}`}>

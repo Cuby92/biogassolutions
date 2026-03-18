@@ -1,5 +1,5 @@
 /* B A C K G R O U N D */
-.section1::before {
+.Section1::before {
     content: "";
     background-image: url('/img/bg/bg1.jpg');
     background-size: cover;
@@ -16,89 +16,89 @@
     box-sizing: border-box;
 }
 
-.section2 {
+.Section2 {
     flex-wrap: wrap;
     justify-content: space-around;
     text-align: center;
 }
 
-.section2 .column {
+.Section2 .column {
     flex-basis: 25%;
     min-width: 300px;
 }
 
-.section2 .icon {
+.Section2 .icon {
     width: 3rem;
     height: auto;
     margin: 10px auto;
     display: block;
 }
 
-.section2 .card {
+.Section2 .card {
     display: grid;
     grid-template-rows: subgrid;
     grid-row: span 2;
     margin-inline: 20px;
 }
 
-.section2 .p {
+.Section2 .p {
     font-size: 1.5rem;
 }
 
-.section3 {
+.Section3 {
     display: flex;
     flex-direction: column;
 }
 
-.section3 .icon {
+.Section3 .icon {
     height: 3rem;
     width: auto;
 }
 
-.section3 .gridWrapper {
+.Section3 .gridWrapper {
     grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
     gap: 30px;
     margin-inline: 30px;
 }
 
 @media (max-width: 989px) {
-    .section3 .gridWrapper {
+    .Section3 .gridWrapper {
         grid-template-columns: repeat(auto-fit, minmax(50%, 70%));
         justify-content: center;
     }
 }
 
 @media (max-width: 680px) {
-    .section3 .gridWrapper {
+    .Section3 .gridWrapper {
         grid-template-columns: repeat(auto-fit, 90%) !important;
     }
 }
 
-.section3 .card {
+.Section3 .card {
     display: grid;
     grid-template-rows: subgrid;
     grid-row: span 2;
 }
 
-.section4 {
+.Section4 {
     text-align: center;
     display: flex;
     flex-direction: column;
 }
 
-.section4 .timeline {
+.Section4 .timeline {
     width: 94%;
     height: auto;
     justify-content: center;
     margin-inline: 3%;
 }
 
-.section5 {
+.Section5 {
     flex-wrap: wrap;
     text-align: center;
 }
 
-.section5 .grants {
+.Section5 .grants {
     display: flex;
     gap: 30px;
     justify-content: space-around;
@@ -108,28 +108,28 @@
     margin-top: 30px;
 }
 
-.section5 .grantLogo {
+.Section5 .grantLogo {
     height: 5rem;
     width: auto;    
 }
 
-.section5 .cta {
+.Section5 .cta {
     width: 100%;
 }
 
 @media screen and (max-width: 480px) {      
-    .section2 .column {
+    .Section2 .column {
         flex-basis: 100%;
         min-width: auto;
     }
     
-    .section3 .card {
+    .Section3 .card {
         max-width: none;
     }
 }
 
 @media screen and (min-width: 481px) and (max-width: 768px) {    
-    .section2 .column {
+    .Section2 .column {
         flex-basis: 45%;
     }
 }

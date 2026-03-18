@@ -1,0 +1,88 @@
+.Section4 {
+    scroll-margin-top: 150px;
+}
+
+.cover::before {
+    content: "";
+    background-image: url('/img/bg/bg3.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    filter: brightness(0.4);
+    z-index: -10;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.card {
+    width: 80%;
+    margin-inline: auto;
+}
+
+.card .icon {
+    height: 3rem;
+    width: auto;   
+}
+
+.Section2 {
+    text-align: center;
+    scroll-margin: 100px;
+}
+
+.Section2 .scheme {
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.Section3 .ol,
+.Section4 .ol {
+    list-style: none;
+    counter-reset: num;
+}
+
+.Section3 .ol .li,
+.Section4 .ol .li {
+    counter-increment: num;
+    position: relative;
+}
+
+.Section3 .ol .li::before,
+.Section4 .ol .li::before {
+    content: counter(num);
+    color: var(--primary-color);
+}
+
+.Section5 .ul {
+    list-style: none;
+}
+
+.Section5 .li {
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 20px 20px;
+    background-size: 1.5rem 1.5rem;
+}
+
+.Section5 :nth-child(1 of .li) {
+    background-image: url('/img/icons/thunder.png');
+}
+
+.Section5 :nth-child(2 of .li) {
+    background-image: url('/img/icons/smoke.png');
+}
+
+.Section6 .li::marker {
+    color: var(--primary-color);
+}
+
+.Section7 .li::marker,
+.Section8 .li::marker {
+    content: '✓ ';
+    color: var(--primary-color);
+}
