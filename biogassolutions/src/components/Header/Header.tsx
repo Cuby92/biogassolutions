@@ -42,7 +42,10 @@ function Header() {
                     </ul>
                 </nav>
 
-                <button className={s.hitBox} onClick={toggleHamburger}></button>
+                <button 
+                    className={s.hitBox} 
+                    onClick={toggleHamburger}
+                    style={{display: hamburgerState ? 'block' : 'none'}}></button>
 
                 <button className={s.SidebarToggle} onClick={toggleHamburger}>
                     <div className={s.bar}></div>
