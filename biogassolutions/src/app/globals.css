@@ -100,7 +100,7 @@ h4 {
 }
 
 /* H E A D E R */
-header {
+/* header {
     position: fixed;
     top: 5px;
     left: 1%;
@@ -117,9 +117,9 @@ header {
         0 8px 32px 0 rgba(0, 0, 0, 0.3),
         inset 0 1px 1px 0 rgba(200, 200, 200, 0.1);
     border-radius: 30px;
-}
+} */
 
-.glass-background {
+/* .glass-background {
     position: absolute;
     inset: 0;
     z-index: 0;
@@ -133,16 +133,16 @@ header {
     );
     backdrop-filter: blur(14px) !important;
     -webkit-backdrop-filter: blur(14px);
-}
+} */
 
-header .logo,
+/* header .logo,
 header nav,
 header .hamburger-menu {
     position: relative;
     z-index: 1;
-}
+} */
 
-header .logo {  
+/* header .logo {  
     height: 4rem;
     width: auto;
     margin-left: 25px;
@@ -177,7 +177,7 @@ header nav a {
 
 header .logo {
     margin-left: 25px;
-}
+} */
 
 /* C O V E R */
 .cover {
@@ -431,7 +431,7 @@ footer details {
 }
 
 /* S I D E B A R   M E N U */
-.sidebar-menu {
+/* .sidebar-menu {
     box-sizing: border-box;
     margin: 0;
     position: fixed;
@@ -494,7 +494,7 @@ footer details {
 
 .hamburger-menu input:checked ~ .sidebar-menu {
     right: 10px;
-}
+} */
 
 /* C T A */
 .cta {
@@ -537,11 +537,11 @@ footer details {
 
 /* H O V E R   E F F E C T S */
 @media (hover: hover) and (pointer: fine) {
-    header nav a:hover {
+    /* header nav a:hover {
         text-underline-offset: 0.3rem;
         color: rgb(255, 236, 161);
         text-decoration-color: #ffeca1ee;
-    }
+    } */
 
     footer a:hover {
         text-underline-offset: 0.2rem;
