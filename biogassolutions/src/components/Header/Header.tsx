@@ -42,6 +42,8 @@ function Header() {
                     </ul>
                 </nav>
 
+                <button className={s.hitBox} onClick={toggleHamburger}></button>
+
                 <button className={s.SidebarToggle} onClick={toggleHamburger}>
                     <div className={s.bar}></div>
                     <div className={s.bar}></div>

@@ -78,6 +78,17 @@
     border-radius: 0.1rem;
 }
 
+/* H I T   B O X */
+.hitBox {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    inset: 0;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
 /* S I D E B A R   M E N U */
 .SidebarMenu {
     position: fixed;
