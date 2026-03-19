@@ -1,0 +1,40 @@
+.content {
+    color: black;
+    margin-top: 35vh;
+    padding: 5vw;
+}
+
+.h1 {
+    font-size: 3rem !important;
+    font-weight: 200;
+    margin-bottom: 3rem;
+    position: relative;
+}
+
+.h1::after {
+    content: '';
+    width: 12rem;
+    height: 3px;
+    background: var(--primary-color);
+    position: absolute; 
+    left: 0;
+    bottom: calc(-15% - 1vw);
+}
+
+.h2 {
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin: 4rem 0 2.5rem 0 !important;
+    position: relative;
+    line-height: 2rem;
+}
+
+.h2::before {
+    content: '';
+    width: 7rem;
+    height: 2px;
+    background: var(--secondary-color);
+    position: absolute;
+    left: 0;
+    bottom: calc(10% - 2vw);
+}
