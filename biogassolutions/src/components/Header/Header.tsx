@@ -24,7 +24,7 @@ function Header() {
         return () => {
             window.removeEventListener('resize', handleResize);
         }
-    })
+    }, [])
 
     return (
         <>
