@@ -1,0 +1,118 @@
+/* B A C K G R O U N D */
+.Section1::before {
+    content: '';
+    background-image: url('/img/bg/bg1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    filter: brightness(0.4);
+    z-index: -10;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.Section2 {
+    display: flex;
+    flex-wrap: wrap;    
+}
+
+.Section2 .card {
+    display: flex;
+    align-items: center;
+    margin: 20px auto;
+}
+
+@media (min-width: 769px) {
+    .Section2 .card {
+        width: 40%;
+    }
+}
+
+@media (max-width: 768px) {
+    .Section2 .card {
+        width: 80%;
+    }
+}
+
+.Section2 .icon {
+    height: 4rem;
+    width: auto;
+    margin-right: 30px;
+}
+
+.Section3 {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.Section3 .icon {
+    height: 4rem;
+    width: auto;
+    margin: 30px;
+}
+
+@media (min-width: 769px) {
+    .Section3 .card {
+        width: 25%;
+    }
+}
+
+@media (max-width: 768px) {
+    .Section3 .card {
+        width: 70%;
+    }
+
+    .Section3 {
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+    }
+}
+
+.Section4 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+@media (min-width: 769px) {
+    .Section4 .card {
+        width: 40%;
+    }
+}
+
+@media (max-width: 768px) {
+    .Section4 .card {
+        width: 70%; 
+    }
+
+    .Section4 {
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+    }
+}
+
+.Section4 .card {
+    display: flex;
+    align-content: center;
+}
+
+.Section4 .icon {
+    height: 3rem;
+    width: auto;
+    margin-right: 30px;
+}
+
+.Section4 :nth-child(2 of .icon) {
+    height: 4.5rem;
+    width: auto;
+}

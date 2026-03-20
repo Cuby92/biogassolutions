@@ -1,0 +1,129 @@
+#mikrobiogazownie, #biogazownie, #biometanownie, #serwis {
+    scroll-margin-top: 150px;
+}
+
+body::before {
+    content: "";
+    background-image: url('/img/bg/bg3.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    filter: brightness(0.4);
+    z-index: -10;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.card .li::marker {
+    content: "✓ ";
+    color: var(--primary-color);
+    size: 1.2rem;
+}
+
+.miniature {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.iconContainer {
+    text-align: center;
+    margin: auto;
+}   
+
+.icon {
+    height: calc(3rem + 7vw);
+}
+
+.Section2 .Offer {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 200px;
+    justify-content: center;
+    width: 100%;
+}
+
+.offerItem {
+    width: 100%;
+    justify-content: center;
+}
+
+.gridWrapper {
+    margin: 0 30px;
+    width: calc(100% - 60px);
+    grid-template-columns: repeat(3, minmax(150px, 1fr));
+    grid-template-rows: auto;
+    gap: 30px;
+    grid-template-areas:
+        'for-whom for-whom miniature'
+        'benefits  benefits benefits';
+}
+
+@media (hover: hover) and (pointer: fine) and (min-width: 701px) {
+    .card:hover {
+        transform: scale(1.025);
+        box-shadow: 5px 15px 30px rgba(0, 0, 0, 0.175)
+    }
+}
+
+.Offer :nth-child(1 of .offerItem) .gridWrapper,
+.Offer :nth-child(2 of .offerItem) .gridWrapper {
+    grid-template-areas:
+        'miniature  for-whom for-whom'
+        'benefits   benefits    power';
+}
+
+.Offer :nth-child(4 of .offerItem) .gridWrapper,
+.Offer :nth-child(5 of .offerItem) .gridWrapper {
+    grid-template-areas:
+        'miniature for-whom for-whom'
+        'benefits  benefits benefits';
+}
+
+.Offer :nth-child(5 of .offerItem) .h2 {
+    font-size: calc(1.5rem + 3vw);
+    line-height: calc(2rem + 3vw);
+}
+
+@media (max-width: 700px) {
+    .gridWrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .miniature {
+        display: none;
+    }
+
+    .card:hover {
+        transform: none !important;
+        box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.15) !important;
+    }
+}
+
+.power {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.power .value {
+    font-size: calc(3rem + 1.5vw);
+    font-family: var(--poppins);
+    font-weight: 100;
+    text-align: center;
+}
+
+.power .value .num {
+    font-weight: 400;
+}
+
+.mainContent .cta {
+    margin-top: -80px;
+}

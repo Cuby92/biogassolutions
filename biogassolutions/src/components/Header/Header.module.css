@@ -1,0 +1,182 @@
+.Header {
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+    backdrop-filter: blur(20px);
+    background: #55665555;
+    position: fixed;
+    top: 0;
+    left: 0;
+    border-bottom: 1px solid #aaaaaa55;
+    transition: 
+        width 0.4s ease-in-out,
+        top 0.5s ease-in-out;
+}
+
+.headerHidden {
+    top: -8rem;
+}
+
+.Header .logo {
+    height: 100%;
+    width: 100%;
+}
+
+.DesktopNavMenu .ul {
+    display: flex;
+    flex-wrap: nowrap;
+    list-style: none;
+    gap: 1.5rem;
+    font-size: 1.3rem;
+    margin-right: 1.5rem;
+}
+
+.DesktopNavMenu .a,
+.SidebarMenu .a {
+    font-size: 1.4rem;
+    color: var(--secondary-color);
+    text-decoration: underline;
+    font-weight: 500;
+    text-underline-offset: 1rem;
+    transition: 
+        text-underline-offset 500ms,
+        color 300ms, 
+        text-decoration-color 500ms ease;
+    text-decoration-color: #ffcc0000;
+}
+
+.Header .linkContainer {
+    height: 4.5rem;
+    width: 11.214375rem;
+    overflow: hidden;
+    transition: clip-path 0.5s ease-out;
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .DesktopNavMenu .a:hover,
+    .SidebarMenu .a:hover {
+        text-underline-offset: 0.3rem;
+        color: rgb(255, 236, 161);
+        text-decoration-color: #ffeca1ee;
+    }
+}
+
+/* H A M B U R G E R */
+.SidebarToggle {
+    appearance: none;
+    background: none;
+    border: none;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 3.3rem;
+    height: 3rem;
+    gap: calc((3rem - 3 * 0.4rem) / 2);
+    z-index: 1002;
+}
+
+.SidebarToggle .bar {
+    width: 3.3rem;
+    height: 0.4rem;
+    background: var(--secondary-color);
+    border-radius: 0.1rem;
+}
+
+/* H I T   B O X */
+.hitBox {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    inset: 0;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* S I D E B A R   M E N U */
+.SidebarMenu {
+    position: fixed;
+    top: 0;
+    right: -251px;
+    height: 100vh;
+    width: 250px;
+    padding: 32px;
+    backdrop-filter: blur(30px);
+    background: linear-gradient(
+        -40deg,
+        #00ff0011,
+        #ffb70011
+    );
+    z-index: 1001;
+    border-left: 1px solid #aaaaaa99;
+    transition: right 0.4s ease-in-out;
+}
+
+.SidebarMenu .ul {
+    list-style: none;   
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    position: relative;
+    z-index: 1;
+    margin: auto;
+}
+
+/* M E D I A   Q U E R I E S */
+@media (min-width: 950px) {
+    .SidebarMenu {
+        display: none
+    }
+
+    .SidebarToggle {
+        display: none;
+    }
+
+    .DesktopNavMenu {
+        display: flex;
+    }
+}
+
+@media (max-width: 949px) {
+    .SidebarMenu {
+        display: flex;
+    }
+
+    .SidebarToggle {
+        display: flex;
+    }
+
+    .DesktopNavMenu {
+        display: none;
+    }
+}
+
+/* A C T I V E   P A G E */
+.SidebarMenu .a,
+.Header .a {
+    font-family: var(--poppins);
+    width: 100%;
+}
+.SidebarMenu .active {
+    position: relative;
+    font-weight: 800;
+}
+
+.SidebarMenu .active::before {
+    content: '';
+    width: 3px;
+    height: 100%;
+    background: var(--primary-color);
+    position: absolute;
+    top: 0;
+    left: -1.5rem;
+}
+
+.Header .active {
+    text-decoration: underline;
+    text-decoration-color: var(--primary-color);
+    font-weight: 700;
+}

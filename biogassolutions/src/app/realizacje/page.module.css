@@ -1,0 +1,145 @@
+/* B A C K G R O U N D */
+.cover::before {
+    content: "";
+    background-image: url('/img/bg/bg2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    filter: brightness(0.4);
+    z-index: -10;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.card {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.65rem;
+}
+
+.Section2 {
+    scroll-margin: 130px;
+    display: flex;
+    flex-direction: column;
+}
+
+.Section2 .h3, .Section2 .h2 {
+    width: 100%;
+}
+
+.Section2 .ul {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.Section2 .li::marker {
+    content: "✓ ";
+    color: var(--primary-color);
+    size: 1.2rem;
+}
+
+.Section2 .card {
+    margin-inline: auto;
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+.Section2 .iconContainer {
+    width: 6rem;
+    height: 6rem;
+    padding: 1rem;
+    margin-right: 1rem;
+}
+
+.Section2 .icon {
+    width: 4rem;
+    height: 4rem;
+}
+
+.Section3 {
+    display: flex;
+    flex-direction: column;
+}
+
+.Section3 .ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.Section4 {
+    display: flex;
+    flex-direction: column;
+}
+
+.Section4 .num {
+    font-size: 5rem;
+    line-height: 6rem;
+    color: var(--primary-color);
+    font-family: var(--poppins);
+    font-weight: 100;
+}
+
+.Section4 .counter {
+    font-weight: 400;
+}
+
+.Section4 .stats {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.Section4 .card {
+    margin-inline: 20px;
+    height: 17rem;
+    max-width: 500px;
+    text-align: center;
+}
+
+.Section4 .h3 {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    font-weight: normal;
+}
+
+.Section4 .p, .Section4 .h3 {
+    font-size: 1.5rem;
+}
+
+.Section5 {
+    width: 100%;
+    padding-bottom: 200px;
+}
+
+.Section5 .image {
+    width: 100%;
+    text-align: center;
+}
+
+.Section5 .img {
+    width: 90%;
+    height: auto;
+    margin-inline: auto;
+}
+
+.Section5 .portrait-only .img {
+    width: 60%;
+    height: auto;
+    margin-inline: auto;
+}
