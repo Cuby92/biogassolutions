@@ -52,7 +52,6 @@ function Technology() {
                             <p className={s.p}>Technologia dobierana jest do dostępności i sezonowości substratów, aby zapewnić stabilną pracę układu.</p>
                         </li>
                         <li className={`${s.li} ${s.card} card`}>
-                            <p className={s.p}>Optymalizujemy mieszankę wsadu dla wysokiego uzysku i stabilności procesu.</p>
                             <Image
                                 src="/img/icons/checked.png"
                                 alt=''
@@ -60,6 +59,7 @@ function Technology() {
                                 height={512}
                                 className={s.icon}
                             />
+                            <p className={s.p}>Optymalizujemy mieszankę wsadu dla wysokiego uzysku i stabilności procesu.</p>
                         </li>
                         <li className={`${s.li} ${s.card} card`}>
                             <Image
