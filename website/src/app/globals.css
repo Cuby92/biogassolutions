@@ -39,6 +39,17 @@ strong {
     display: grid;
 }
 
+.pageBg {
+    filter: brightness(0.4);
+    z-index: -10;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: auto;
+    overflow: hidden;
+}
+
 /* M A I N   C O N T E N T */
 .mainContent {
     background: var(--bg-white);
