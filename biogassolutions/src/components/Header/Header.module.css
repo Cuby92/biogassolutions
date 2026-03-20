@@ -8,8 +8,16 @@
     backdrop-filter: blur(20px);
     background: #55665555;
     position: fixed;
+    top: 0;
+    left: 0;
     border-bottom: 1px solid #aaaaaa55;
-    transition: width 0.4s ease-in-out;
+    transition: 
+        width 0.4s ease-in-out,
+        top 0.5s ease-in-out;
+}
+
+.headerHidden {
+    top: -8rem;
 }
 
 .Header .logo {

@@ -29,9 +29,33 @@ function Header() {
         }
     }, []);
 
+    const [headerHidden, setHeaderHidden] = useState(false);
+
+    useEffect(() => {
+        let lastScroll = 0;
+
+        function handleScroll() {
+            let currentScroll = window.scrollY;
+
+            if (currentScroll > lastScroll && currentScroll > 100) {
+                setHeaderHidden(true);
+            } else {
+                setHeaderHidden(false);
+            }
+
+            lastScroll = currentScroll;
+        }
+
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        }
+    }, []);
+
     return (
         <>
-            <header id="#header" className={styles.Header} style={{width: hamburgerState ? 'calc(100vw - 250px)' : '100vw'}}>
+            <header id="#header" className={`${s.Header} ${headerHidden ? s.headerHidden : ''}`} style={{width: hamburgerState ? 'calc(100vw - 250px)' : '100vw'}}>
                 <Link style={{clipPath: hamburgerState ? 'circle(30% at 13% 52%)' : 'circle(150% at 13% 52%)'}} className={s.linkContainer} href="/"><img className={s.logo} src="/img/brand/logo.svg" alt="Biogas Solutions" /></Link>
 
                 <nav className={s.DesktopNavMenu}>
