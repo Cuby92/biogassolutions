@@ -95,7 +95,7 @@
     right: -251px;
     height: 100vh;
     width: 250px;
-    padding: 64px;
+    padding: 32px;
     backdrop-filter: blur(30px);
     background: linear-gradient(
         -40deg,
@@ -150,6 +150,7 @@
 .SidebarMenu .a,
 .Header .a {
     font-family: var(--poppins);
+    width: 100%;
 }
 .SidebarMenu .active {
     position: relative;
@@ -163,11 +164,11 @@
     background: var(--primary-color);
     position: absolute;
     top: 0;
-    left: -20%;
+    left: -1.5rem;
 }
 
 .Header .active {
     text-decoration: underline;
-    text-decoration-color: Var(--primary-color);
+    text-decoration-color: var(--primary-color);
     font-weight: 700;
 }
