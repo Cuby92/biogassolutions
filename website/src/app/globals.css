@@ -31,15 +31,20 @@ strong {
     display: grid;
 }
 
+/* B A C K G R O U N D */
 .pageBg {
     filter: brightness(0.4);
     z-index: -10;
-    position: fixed;
     top: 0;
     left: 0;
+}
+
+.bgContainer {
+    width: 100vw;
     height: 100vh;
-    width: auto;
-    overflow: hidden;
+    position: fixed;
+    inset: 0;
+    z-index: -10;
 }
 
 /* M A I N   C O N T E N T */
