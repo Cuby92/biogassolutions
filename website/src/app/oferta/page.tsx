@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import styles from './page.module.css';
+import Image from 'next/image';
 
 const s = styles;
 
@@ -7,6 +8,16 @@ function Offer() {
     return (
         <>
             <div className="content">
+                <div className="bgContainer">
+                    <Image
+                        src="/img/bg/bg3.jpg"
+                        alt=''
+                        fill={true}
+                        priority={true}
+                        quality={80}
+                        className="pageBg"
+                    />
+                </div>
                 <section id="OfferSection1" className={`cover ${s.cover}`}>
                     <div className="content">
                         <h1 className="hero-header">Oferta Biogas Solutions</h1>
