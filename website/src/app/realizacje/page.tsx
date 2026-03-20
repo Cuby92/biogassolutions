@@ -19,8 +19,8 @@ function Realizations() {
                     />
                 </div>
                 
-                <div className={`cover ${s.cover}`}>
-                    <div id="RealizationsSection1">
+                <div id="RealizationsSection1" className={`cover ${s.cover}`}>
+                    <div className="content">
                         <h1 className="hero-header">Nasze realizacje</h1>
                         <p className="lead">Od kilkunastu lat projektujemy, budujemy i modernizujemy instalacje biogazowe w całej Polsce - od koncepcji i technologii, przez projekt i dokumentację, aż po budowę, rozruch oraz późniejsze zarządzanie eksploatacją.</p>
                         <div className="cta"><a href="#Section2" className="cta-button">Dowiedz się więcej</a></div>
