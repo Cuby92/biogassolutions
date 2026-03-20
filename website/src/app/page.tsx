@@ -7,6 +7,17 @@ const s = styles;
 function Home() {
     return (
         <section className="content">
+            <div className="bgContainer">
+                <Image
+                    src='/img/bg/bg1.jpg'
+                    alt=''
+                    fill={true}
+                    quality={80}
+                    loading="eager"
+                    className="pageBg"
+                />
+            </div>
+            
             <section className={`cover ${s.Section1}`} id="HomeSection1">
                 <div className="content">
                     <h1 className="hero-header">Tańsza energia i ciepło z własnych odpadów - instalacje biogazu</h1>
@@ -62,7 +73,14 @@ function Home() {
 
                 <section className={s.Section4} id="HomeSection4">
                     <h2>Proces inwestycyjny</h2>
-                    <img className={s.timeline} src="/img/timeline.png" alt="Przebieg procesu inwestycyjnego - oś czasu" />
+                    <Image
+                        src="/img/timeline.png"
+                        alt="Przebieg procesu inwestycyjnego - oś czasu" 
+                        width={1772}
+                        height={501}
+                        quality={60}
+                        className={s.timeline}
+                    />
                 </section>
 
                 <section className={s.Section5} id="HomeSection5">
@@ -70,9 +88,27 @@ function Home() {
                     <p>Przygotowujemy dokumentację i wnioski oraz wspieramy rozliczenia w programach krajowych i unijnych.</p>
 
                     <div className={s.grants}>
-                        <img className={s.grantLogo} src="/img/grants/feng-logo.png"            alt="Fundusze Europejskie dla Nowoczesnej Gospodarki"/>
-                        <img className={s.grantLogo} src="/img/grants/nfosigw-logo.png"         alt="Narodowy Fundusz Ochrony Środowiska i Gospodarki Wodnej" />
-                        <img className={s.grantLogo} src="/img/grants/energia-dla-wsi-logo.png" alt="Energia Dla Wsi" />
+                        <Image
+                            src="/img/grants/feng-logo.png"
+                            alt="Fundusze Europejskie dla Nowoczesnej Gospodarki"
+                            width={220}
+                            height={64}
+                            className={s.grantLogo}
+                        />
+                        <Image
+                            src="/img/grants/nfosigw-logo.png"
+                            alt="Narodowy Fundusz Ochrony Środowiska i Gospodarki Wodnej"
+                            width={1759}
+                            height={425}
+                            className={s.grantLogo}
+                        />
+                        <Image
+                            src="/img/grants/energia-dla-wsi-logo.png"
+                            alt="Energia Dla Wsi"
+                            width={655}
+                            height={201}
+                            className={s.grantLogo}
+                        />
                     </div>
 
                     <div className={`cta ${s.cta}`}>

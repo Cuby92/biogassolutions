@@ -1,11 +1,23 @@
 import Link from 'next/link';
 import styles from './page.module.css';
+import Image from 'next/image';
 
 const s = styles;
 
 function Technology() {
     return (
         <div className="content">
+            <div className="bgContainer">
+                <Image
+                    src="/img/bg/bg3.jpg"
+                    alt=''
+                    fill={true}
+                    quality={80}
+                    loading="eager"
+                    className="pageBg"
+                />
+            </div>
+            
             <div id="TechnologySection1" className={`cover ${s.cover}`}>
                 <div className="content">
                     <h1 className="hero-header">Jak działa nasza technologia?</h1>
@@ -16,7 +28,14 @@ function Technology() {
             
             <div className={`mainContent ${s.mainContent}`}>
                 <div id="TechnologySection2" className={s.Section2}>
-                    <img className={s.scheme} src="/img/scheme.png" alt="Schemat działania biogazowni" />
+                    <Image 
+                        src="/img/scheme.png" 
+                        alt="Schemat działania biogazowni" 
+                        width={1228}
+                        height={735}
+                        quality={50}
+                        className={s.Scheme}
+                    />
                 </div>
 
                 <div id="TechnologySection3" className={`card ${s.card} ${s.Section3}`}>

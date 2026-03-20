@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import styles from './page.module.css';
+import Image from 'next/image';
 
 const s = styles;
 
@@ -7,6 +8,17 @@ function About() {
     return (
         <>
             <div className="content">
+                <div className="bgContainer">
+                    <Image
+                        src="/img/bg/bg1.jpg"
+                        alt=''
+                        fill={true}
+                        quality={80}
+                        loading="eager"
+                        className="pageBg"
+                    />
+                </div>
+                
                 <div id="AboutSection1" className={`cover ${s.Section1}`}>
                     <div className="content">
                         <h1 className="hero-header">Kim jesteśmy?</h1>

@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import styles from './page.module.css';
+import Image from 'next/image';
 
 const s = styles;
 
@@ -7,6 +8,17 @@ function Realizations() {
     return (
         <>
             <div className="content">
+                <div className="bgContainer">
+                    <Image
+                        src="/img/bg/bg2.jpg"
+                        alt=''
+                        fill={true}
+                        quality={80}
+                        loading="eager"
+                        className="pageBg"
+                    />
+                </div>
+                
                 <div className={`cover ${s.cover}`}>
                     <div id="RealizationsSection1">
                         <h1 className="hero-header">Nasze realizacje</h1>

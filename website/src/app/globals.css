@@ -9,14 +9,6 @@
     --primary-color: rgb(4, 175, 95);
     --secondary-color: rgb(255, 204, 0);
     --bg-white: #f4f4f4;
-
-    /* Hamburger Menu */
-    --bar-height: 6px;
-    --bar-width: 40px;
-    --hamburger-spacing: 8px;
-    --background-color: var(--secondary-color);
-    --animation-timing: 200ms ease-in-out;
-    --hamburger-height: calc(var(--bar-height) * 3 + var(--hamburger-spacing) * 2);
 }
 
 body, html {
@@ -28,7 +20,7 @@ body, html {
 
 html {
     font-family: var(--dm-sans), Arial;
-    color: white;
+    color: var(--bg-white);
 }
 
 strong {
@@ -37,6 +29,23 @@ strong {
 
 .gridWrapper {
     display: grid;
+}
+
+/* B A C K G R O U N D */
+.pageBg {
+    filter: brightness(0.4);
+    z-index: -10;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+
+.bgContainer {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    inset: 0;
+    z-index: -10;
 }
 
 /* M A I N   C O N T E N T */
@@ -141,7 +150,7 @@ h4 {
 footer {
     color: white;
     margin-top: 30px;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.9);
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
     font-size: 0.8rem;
