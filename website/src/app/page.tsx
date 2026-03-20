@@ -85,7 +85,7 @@ function Home() {
 
                 <section className={s.Section5} id="HomeSection5">
                     <h2>Finansowanie</h2>
-                    <p>Przygotowujemy dokumentację i wnioski oraz wspieramy rozliczenia w programach krajowych i unijnych.</p>
+                    <p style={{width: '100%', textAlign: 'center'}}>Przygotowujemy dokumentację i wnioski oraz wspieramy rozliczenia w programach krajowych i unijnych.</p>
 
                     <div className={s.grants}>
                         <Image
