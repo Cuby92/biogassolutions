@@ -9,14 +9,6 @@
     --primary-color: rgb(4, 175, 95);
     --secondary-color: rgb(255, 204, 0);
     --bg-white: #f4f4f4;
-
-    /* Hamburger Menu */
-    --bar-height: 6px;
-    --bar-width: 40px;
-    --hamburger-spacing: 8px;
-    --background-color: var(--secondary-color);
-    --animation-timing: 200ms ease-in-out;
-    --hamburger-height: calc(var(--bar-height) * 3 + var(--hamburger-spacing) * 2);
 }
 
 body, html {
