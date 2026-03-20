@@ -110,11 +110,31 @@ function Technology() {
                     </ol>
                 </div>
 
-                <div id="TechnologySection6" className={`card ${s.card} ${s.Section6}`}>
+                <div id="TechnologySection6" className={s.Section6}>
                     <h2 className={s.h2}>Kogeneracja (CHP)</h2>
                     <ul className={s.ul}>
-                        <li className={s.li}>Jednoczesna produkcja prądu i ciepła zwiększa efektywność wykorzystania biogazu i stabilizuje koszty energii.</li>
-                        <li className={s.li}>Ciepło można wykorzystać w procesach technologicznych lub do ogrzewania obiektów.</li>
+                        <li className={`${s.li} card ${s.card}`}>
+                            <Image
+                                src="/img/icons/thunder.png"
+                                alt="Ikona błyskawicy"
+                                width={512}
+                                height={512}
+                                quality={30}
+                                className={s.icon}
+                            />
+                            <p>Jednoczesna produkcja prądu i ciepła zwiększa efektywność wykorzystania biogazu i stabilizuje koszty energii.</p>
+                        </li>
+                        <li className={`${s.li} card ${s.card}`}>
+                            <Image
+                                src="/img/icons/smoke.png"
+                                alt="Ikona błyskawicy"
+                                width={512}
+                                height={512}
+                                quality={30}
+                                className={s.icon}
+                            />
+                            <p>Ciepło można wykorzystać w procesach technologicznych lub do ogrzewania obiektów.</p>
+                        </li>
                     </ul>
                 </div>
 
