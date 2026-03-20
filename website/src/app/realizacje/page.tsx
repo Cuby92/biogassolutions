@@ -13,8 +13,8 @@ function Realizations() {
                         src="/img/bg/bg2.jpg"
                         alt=''
                         fill={true}
-                        priority={true}
                         quality={80}
+                        loading="eager"
                         className="pageBg"
                     />
                 </div>

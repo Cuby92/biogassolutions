@@ -12,8 +12,8 @@ function Technology() {
                     src="/img/bg/bg3.jpg"
                     alt=''
                     fill={true}
-                    priority={true}
                     quality={80}
+                    loading="eager"
                     className="pageBg"
                 />
             </div>

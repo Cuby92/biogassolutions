@@ -12,8 +12,8 @@ function Home() {
                     src='/img/bg/bg1.jpg'
                     alt=''
                     fill={true}
-                    priority={true}
                     quality={80}
+                    loading="eager"
                     className="pageBg"
                 />
             </div>
