@@ -8,7 +8,7 @@ function Contact() {
         <section className="content">
             <div className="bgContainer">
                 <Image 
-                    src="/img/bg/bg2.jpg"
+                    src="/img/bg/bg2.avif"
                     alt=''
                     fill={true}
                     priority={true}

@@ -9,7 +9,7 @@ function Home() {
         <section className="content">
             <div className="bgContainer">
                 <Image
-                    src='/img/bg/bg1.jpg'
+                    src='/img/bg/bg1.avif'
                     alt=''
                     fill={true}
                     priority={true}

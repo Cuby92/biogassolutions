@@ -9,7 +9,7 @@ function FAQ() {
         <div className="content">
             <div className="bgContainer">
                 <Image 
-                    src="/img/bg/bg3.jpg"
+                    src="/img/bg/bg3.avif"
                     alt=''
                     fill={true}
                     priority={true}
