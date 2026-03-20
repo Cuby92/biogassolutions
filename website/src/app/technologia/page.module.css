@@ -7,9 +7,14 @@
     margin-inline: auto;
 }
 
-.card .icon {
-    height: 3rem;
-    width: auto;   
+.icon {
+    height: 100%;
+    width: auto;
+    position: absolute; 
+}
+
+.Section3, .Section4, .Section5 {
+    position: relative;
 }
 
 .Section2 {

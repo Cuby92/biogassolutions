@@ -38,18 +38,16 @@ function Technology() {
                     />
                 </div>
 
-                <div id="TechnologySection3" className={`card ${s.card} ${s.Section3}`}>
-                    <img src="/img/icons/elasticity.png" alt="Ikona elastyczności" className={s.icon} />
+                <div id="TechnologySection3" className={s.Section3}>
                     <h2 className={s.h2}>Substraty i elastyczność</h2>
                     <ul className={s.ul}>
-                        <li className={s.li}>Technologia dobierana jest do dostępności i sezonowości substratów, aby zapewnić stabilną pracę układu.</li>
-                        <li className={s.li}>Optymalizujemy mieszankę wsadu dla wysokiego uzysku i stabilności procesu.</li>
-                        <li className={s.li}>Zapewniamy wieloletnią elastyczność instalacji dzięki zastosowaniu buforów energetycznych, które umożliwiają dostosowanie się do zmienności substratów na rynku odpadów.</li>
+                        <li className={`${s.li} ${s.card} card`}>Technologia dobierana jest do dostępności i sezonowości substratów, aby zapewnić stabilną pracę układu.</li>
+                        <li className={`${s.li} ${s.card} card`}>Optymalizujemy mieszankę wsadu dla wysokiego uzysku i stabilności procesu.</li>
+                        <li className={`${s.li} ${s.card} card`}>Zapewniamy wieloletnią elastyczność instalacji dzięki zastosowaniu buforów energetycznych, które umożliwiają dostosowanie się do zmienności substratów na rynku odpadów.</li>
                     </ul>
                 </div>
 
                 <div id="TechnologySection3" className={`card ${s.card} ${s.Section3}`}>
-                    <img src="/img/icons/industry-tank.png" alt="Ikona zbiornika" className={s.icon} />
                     <h2 className={s.h2}>Fermentacja</h2>
                     <ol className={s.ol}>
                         <li className={s.li}>Gnojowica, odpady rolnicze i przetwórstwa oraz kiszonki przetwarzane są do postaci płynnej, która kierowana zostaje do zbiorników fermentacyjnych.</li>
@@ -59,7 +57,6 @@ function Technology() {
                 </div>
 
                 <div id="Section4" className={`card ${s.card} ${s.Section4}`}>
-                    <img src="/img/icons/clean.png" alt="Ikona czystości" className={s.icon} />
                     <h2 className={s.h2}>Uzdatnianie biogazu</h2>
                     <ol className={s.ol}>
                         <li className={s.li}>Zmagazynowany surowy biogaz zostaje na bieżąco kierowany do systemu uzdatniania biogazu.</li>
@@ -69,7 +66,6 @@ function Technology() {
                 </div>
 
                 <div id="Section5" className={`card ${s.card} ${s.Section5}`}>
-                    <img src="/img/icons/cogeneration.png" alt="Ikona kogeneracji" className={s.icon} />
                     <h2 className={s.h2}>Kogeneracja (CHP)</h2>
                     <ul className={s.ul}>
                         <li className={s.li}>Jednoczesna produkcja prądu i ciepła zwiększa efektywność wykorzystania biogazu i stabilizuje koszty energii.</li>
@@ -78,7 +74,6 @@ function Technology() {
                 </div>
 
                 <div id="Section6" className={`card ${s.card} ${s.Section6}`}>
-                    <img src="/img/icons/forward.png" alt="Ikona ulepszenia" className={s.icon} />
                     <h2 className={s.h2}>Upgrading do biometanu</h2>
                     <ul className={s.ul}>
                         <li className={s.li}>Zastosowanie systemu membranowego, PSA lub absorpcji pozwala uzyskać biometan i zintegrować go z siecią lub systemami bioCNG/bioLNG.</li>
@@ -87,7 +82,6 @@ function Technology() {
                 </div>
 
                 <div id="Section7" className={`card ${s.card} ${s.Section7}`}>
-                    <img src="/img/icons/24-hours-service.png" alt="Ikona serwisu 24h" className={s.icon} />
                     <h2 className={s.h2}>Automatyka i monitoring</h2>
                     <ul className={s.ul}>
                         <li className={s.li}>Zdalny nadzór 24/7, alarmy i szkolenia operatorów wspierają bezpieczeństwo i dyspozycyjność.</li>
