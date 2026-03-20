@@ -13,6 +13,7 @@ function Contact() {
                     priority={true}
                     alt=''
                     quality={80}
+                    className="pageBg"
                 />
             </div>
             <section id="ContactSection1" className={`cover ${s.cover}`}>

@@ -15,6 +15,7 @@ function About() {
                         fill={true}
                         priority={true}
                         quality={80}
+                        className="pageBg"
                     />
                 </div>
                 <div id="AboutSection1" className={`cover ${s.Section1}`}>
