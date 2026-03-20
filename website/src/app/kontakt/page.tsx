@@ -16,6 +16,7 @@ function Contact() {
                     className="pageBg"
                 />
             </div>
+            
             <section id="ContactSection1" className={`cover ${s.cover}`}>
                 <div className="content">
                     <h1 className="hero-header">Skontaktujmy się</h1>

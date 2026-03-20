@@ -18,6 +18,7 @@ function About() {
                         className="pageBg"
                     />
                 </div>
+                
                 <div id="AboutSection1" className={`cover ${s.Section1}`}>
                     <div className="content">
                         <h1 className="hero-header">Kim jesteśmy?</h1>

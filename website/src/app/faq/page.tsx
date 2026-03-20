@@ -17,6 +17,7 @@ function FAQ() {
                     className="pageBg"
                 />
             </div>
+            
             <div id="FaqSection1" className={`cover ${s.cover}`}>
                 <div className="content">
                     <h1 className="hero-header">Najczęściej zadawane pytania</h1>

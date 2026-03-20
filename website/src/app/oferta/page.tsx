@@ -18,6 +18,7 @@ function Offer() {
                         className="pageBg"
                     />
                 </div>
+                
                 <section id="OfferSection1" className={`cover ${s.cover}`}>
                     <div className="content">
                         <h1 className="hero-header">Oferta Biogas Solutions</h1>

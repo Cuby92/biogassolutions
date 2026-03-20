@@ -17,6 +17,7 @@ function Home() {
                     className="pageBg"
                 />
             </div>
+            
             <section className={`cover ${s.Section1}`} id="HomeSection1">
                 <div className="content">
                     <h1 className="hero-header">Tańsza energia i ciepło z własnych odpadów - instalacje biogazu</h1>
