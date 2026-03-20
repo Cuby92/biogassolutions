@@ -127,7 +127,7 @@ function Technology() {
                         <li className={`${s.li} card ${s.card}`}>
                             <Image
                                 src="/img/icons/smoke.png"
-                                alt="Ikona błyskawicy"
+                                alt="Ikona ciepła"
                                 width={512}
                                 height={512}
                                 quality={30}
