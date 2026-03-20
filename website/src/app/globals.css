@@ -16,6 +16,7 @@ body, html {
     padding: 0;
     width: 100%;
     overflow-x: hidden;
+    text-wrap: balance;
 }
 
 html {
@@ -129,6 +130,7 @@ h4 {
 
 .cover .lead {
     margin-bottom: 30px;
+    font-size: 1.2rem;
 }
 
 .cover .cta-button {
