@@ -28,7 +28,14 @@ function Technology() {
             
             <div className={`mainContent ${s.mainContent}`}>
                 <div id="TechnologySection2" className={s.Section2}>
-                    <img className={s.scheme} src="/img/scheme.png" alt="Schemat działania biogazowni" />
+                    <Image 
+                        src="/img/scheme.png" 
+                        alt="Schemat działania biogazowni" 
+                        width={1228}
+                        height={735}
+                        quality={50}
+                        className={s.Scheme}
+                    />
                 </div>
 
                 <div id="TechnologySection3" className={`card ${s.card} ${s.Section3}`}>
