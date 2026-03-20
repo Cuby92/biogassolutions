@@ -11,8 +11,13 @@ function Header() {
     const pathname = usePathname();
 
     const [hamburgerState, setHamburgerState] = useState(false);
+
     function toggleHamburger() {
         setHamburgerState(!hamburgerState);
+    }
+
+    function handlePageChange() {
+        setHamburgerState(false);
     }
 
     function handleResize() {
@@ -83,13 +88,13 @@ function Header() {
 
             <nav className={s.SidebarMenu} style={{right: hamburgerState ? 0 : '-251px'}}>
                 <ul className={s.ul}>
-                    <li className={s.li}><Link className={`${s.a} ${pathname === '/' || pathname === 'index' ? s.active : ''}`} href="/">Strona Główna</Link></li>
-                    <li className={s.li}><Link className={`${s.a} ${pathname === '/o-nas' ? s.active : ''}`} href="/o-nas">O Nas</Link></li>    
-                    <li className={s.li}><Link className={`${s.a} ${pathname === '/oferta' ? s.active : ''}`} href="/oferta">Oferta</Link></li>
-                    <li className={s.li}><Link className={`${s.a} ${pathname === '/realizacje' ? s.active : ''}`} href="/realizacje">Realizacje</Link></li>
-                    <li className={s.li}><Link className={`${s.a} ${pathname === '/technologia' ? s.active : ''}`} href="/technologia">Technologia</Link></li>
-                    <li className={s.li}><Link className={`${s.a} ${pathname === '/faq' ? s.active : ''}`} href="/faq">FAQ</Link></li>
-                    <li className={s.li}><Link className={`${s.a} ${pathname === '/kontakt' ? s.active : ''}`} href="/kontakt">Kontakt</Link></li>
+                    <li className={s.li}><Link onClick={handlePageChange} className={`${s.a} ${pathname === '/' || pathname === 'index' ? s.active : ''}`} href="/">Strona Główna</Link></li>
+                    <li className={s.li}><Link onClick={handlePageChange} className={`${s.a} ${pathname === '/o-nas' ? s.active : ''}`} href="/o-nas">O Nas</Link></li>    
+                    <li className={s.li}><Link onClick={handlePageChange} className={`${s.a} ${pathname === '/oferta' ? s.active : ''}`} href="/oferta">Oferta</Link></li>
+                    <li className={s.li}><Link onClick={handlePageChange} className={`${s.a} ${pathname === '/realizacje' ? s.active : ''}`} href="/realizacje">Realizacje</Link></li>
+                    <li className={s.li}><Link onClick={handlePageChange} className={`${s.a} ${pathname === '/technologia' ? s.active : ''}`} href="/technologia">Technologia</Link></li>
+                    <li className={s.li}><Link onClick={handlePageChange} className={`${s.a} ${pathname === '/faq' ? s.active : ''}`} href="/faq">FAQ</Link></li>
+                    <li className={s.li}><Link onClick={handlePageChange} className={`${s.a} ${pathname === '/kontakt' ? s.active : ''}`} href="/kontakt">Kontakt</Link></li>
                 </ul>
             </nav>
         </>
