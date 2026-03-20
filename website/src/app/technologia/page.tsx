@@ -74,25 +74,43 @@ function Technology() {
                     </ul>
                 </div>
 
-                <div id="TechnologySection3" className={`card ${s.card} ${s.Section3}`}>
+                <div id="TechnologySection4" className={s.Section4}>
                     <h2 className={s.h2}>Fermentacja</h2>
                     <ol className={s.ol}>
-                        <li className={s.li}>Gnojowica, odpady rolnicze i przetwórstwa oraz kiszonki przetwarzane są do postaci płynnej, która kierowana zostaje do zbiorników fermentacyjnych.</li>
-                        <li className={s.li}>W zbiornikach fermentacyjnych materia organiczna pochodząca z opadów zostaje poddana procesom rozkładu beztlenowego (anaerobowym), w wyniku czego powstaje biogaz (tj. mieszanina gazów: metanu (CH4), dwutlenku węgla (CO2), siarkowodoru (H2S), tlenu (O2) oraz pozostałe gazy odpadowe (w niewielkich stężeniach).</li>
-                        <li className={s.li}>Wyprodukowany biogaz zostaje zmagazynowany w specjalnych szczelnych zbiornikach gazu (zlokalizowanych nad strefą płynną).</li>
+                        <li className={`${s.li} card ${s.card}`}>
+                            <span className={s.num}>1</span>
+                            <p>Gnojowica, odpady rolnicze i przetwórstwa oraz kiszonki przetwarzane są do postaci płynnej, która kierowana zostaje do zbiorników fermentacyjnych.</p>
+                        </li>
+                        <li className={`${s.li} card ${s.card}`}>
+                            <span className={s.num}>2</span>
+                            <p>W zbiornikach fermentacyjnych materia organiczna pochodząca z opadów zostaje poddana procesom rozkładu beztlenowego (anaerobowym), w wyniku czego powstaje biogaz (tj. mieszanina gazów: metanu (CH4), dwutlenku węgla (CO2), siarkowodoru (H2S), tlenu (O2) oraz pozostałe gazy odpadowe (w niewielkich stężeniach).</p>
+                        </li>
+                        <li className={`${s.li} card ${s.card}`}>
+                            <span className={s.num}>3</span>
+                            <p>Wyprodukowany biogaz zostaje zmagazynowany w specjalnych szczelnych zbiornikach gazu (zlokalizowanych nad strefą płynną).</p>
+                        </li>
                     </ol>
                 </div>
 
-                <div id="Section4" className={`card ${s.card} ${s.Section4}`}>
+                <div id="TechnologySection5" className={s.Section5}>
                     <h2 className={s.h2}>Uzdatnianie biogazu</h2>
                     <ol className={s.ol}>
-                        <li className={s.li}>Zmagazynowany surowy biogaz zostaje na bieżąco kierowany do systemu uzdatniania biogazu.</li>
-                        <li className={s.li}>Biogaz zostaje oczyszczony ze szkodliwych związków dla urządzeń oraz dalszej części instalacji (siarkowodór (H2S), lotne związki organiczne (LZO/ VOC)).</li>
-                        <li className={s.li}>Po uzdatnieniu gaz zasila CHP lub jest kierowany do upgradingu w celu uzyskania biometanu.</li>
+                        <li className={`card ${s.card} ${s.li}`}>
+                            <span className={s.num}>1</span>
+                            <p className={s.p}>Zmagazynowany surowy biogaz zostaje na bieżąco kierowany do systemu uzdatniania biogazu.</p>
+                        </li>
+                        <li className={`card ${s.card} ${s.li}`}>
+                            <span className={s.num}>2</span>
+                            <p className={s.p}>Biogaz zostaje oczyszczony ze szkodliwych związków dla urządzeń oraz dalszej części instalacji (siarkowodór (H2S), lotne związki organiczne (LZO/ VOC)).</p>
+                        </li>
+                        <li className={`card ${s.card} ${s.li}`}>
+                            <span className={s.num}>3</span>
+                            <p className={s.p}>Po uzdatnieniu gaz zasila CHP lub jest kierowany do upgradingu w celu uzyskania biometanu.</p>
+                        </li>
                     </ol>
                 </div>
 
-                <div id="Section5" className={`card ${s.card} ${s.Section5}`}>
+                <div id="TechnologySection6" className={`card ${s.card} ${s.Section6}`}>
                     <h2 className={s.h2}>Kogeneracja (CHP)</h2>
                     <ul className={s.ul}>
                         <li className={s.li}>Jednoczesna produkcja prądu i ciepła zwiększa efektywność wykorzystania biogazu i stabilizuje koszty energii.</li>
@@ -100,7 +118,7 @@ function Technology() {
                     </ul>
                 </div>
 
-                <div id="Section6" className={`card ${s.card} ${s.Section6}`}>
+                <div id="TechnologySection7" className={`card ${s.card} ${s.Section7}`}>
                     <h2 className={s.h2}>Upgrading do biometanu</h2>
                     <ul className={s.ul}>
                         <li className={s.li}>Zastosowanie systemu membranowego, PSA lub absorpcji pozwala uzyskać biometan i zintegrować go z siecią lub systemami bioCNG/bioLNG.</li>
@@ -108,7 +126,7 @@ function Technology() {
                     </ul>
                 </div>
 
-                <div id="Section7" className={`card ${s.card} ${s.Section7}`}>
+                <div id="TechnologySection8" className={`card ${s.card} ${s.Section8}`}>
                     <h2 className={s.h2}>Automatyka i monitoring</h2>
                     <ul className={s.ul}>
                         <li className={s.li}>Zdalny nadzór 24/7, alarmy i szkolenia operatorów wspierają bezpieczeństwo i dyspozycyjność.</li>
