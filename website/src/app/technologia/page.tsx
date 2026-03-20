@@ -41,9 +41,36 @@ function Technology() {
                 <div id="TechnologySection3" className={s.Section3}>
                     <h2 className={s.h2}>Substraty i elastyczność</h2>
                     <ul className={s.ul}>
-                        <li className={`${s.li} ${s.card} card`}>Technologia dobierana jest do dostępności i sezonowości substratów, aby zapewnić stabilną pracę układu.</li>
-                        <li className={`${s.li} ${s.card} card`}>Optymalizujemy mieszankę wsadu dla wysokiego uzysku i stabilności procesu.</li>
-                        <li className={`${s.li} ${s.card} card`}>Zapewniamy wieloletnią elastyczność instalacji dzięki zastosowaniu buforów energetycznych, które umożliwiają dostosowanie się do zmienności substratów na rynku odpadów.</li>
+                        <li className={`${s.li} ${s.card} card`}>
+                            <Image
+                                src="/img/icons/checked.png"
+                                alt=''
+                                width={512}
+                                height={512}
+                                className={s.icon}
+                            />
+                            <p className={s.p}>Technologia dobierana jest do dostępności i sezonowości substratów, aby zapewnić stabilną pracę układu.</p>
+                        </li>
+                        <li className={`${s.li} ${s.card} card`}>
+                            <p className={s.p}>Optymalizujemy mieszankę wsadu dla wysokiego uzysku i stabilności procesu.</p>
+                            <Image
+                                src="/img/icons/checked.png"
+                                alt=''
+                                width={512}
+                                height={512}
+                                className={s.icon}
+                            />
+                        </li>
+                        <li className={`${s.li} ${s.card} card`}>
+                            <Image
+                                src="/img/icons/checked.png"
+                                alt=''
+                                width={512}
+                                height={512}
+                                className={s.icon}
+                            />
+                            <p className={s.p}>Zapewniamy wieloletnią elastyczność instalacji dzięki zastosowaniu buforów energetycznych, które umożliwiają dostosowanie się do zmienności substratów na rynku odpadów.</p>
+                        </li>
                     </ul>
                 </div>
 
