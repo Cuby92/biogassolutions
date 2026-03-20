@@ -9,7 +9,7 @@ function Technology() {
         <div className="content">
             <div className="bgContainer">
                 <Image
-                    src="/img/bg/bg3.avif"
+                    src="/img/bg/bg3.jpg"
                     alt=''
                     fill={true}
                     priority={true}

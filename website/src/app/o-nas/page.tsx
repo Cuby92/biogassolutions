@@ -10,7 +10,7 @@ function About() {
             <div className="content">
                 <div className="bgContainer">
                     <Image
-                        src="/img/bg/bg1.avif"
+                        src="/img/bg/bg1.jpg"
                         alt=''
                         fill={true}
                         priority={true}
