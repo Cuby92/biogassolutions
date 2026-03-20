@@ -10,10 +10,10 @@ function Home() {
             <div className="bgContainer">
                 <Image
                     src='/img/bg/bg1.jpg'
+                    alt=''
                     fill={true}
                     priority={true}
                     quality={80}
-                    alt=''
                     className="pageBg"
                 />
             </div>

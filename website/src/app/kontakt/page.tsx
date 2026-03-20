@@ -9,9 +9,9 @@ function Contact() {
             <div className="bgContainer">
                 <Image 
                     src="/img/bg/bg2.jpg"
+                    alt=''
                     fill={true}
                     priority={true}
-                    alt=''
                     quality={80}
                     className="pageBg"
                 />
