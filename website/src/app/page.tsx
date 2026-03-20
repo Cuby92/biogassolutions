@@ -88,9 +88,27 @@ function Home() {
                     <p>Przygotowujemy dokumentację i wnioski oraz wspieramy rozliczenia w programach krajowych i unijnych.</p>
 
                     <div className={s.grants}>
-                        <img className={s.grantLogo} src="/img/grants/feng-logo.png"            alt="Fundusze Europejskie dla Nowoczesnej Gospodarki"/>
-                        <img className={s.grantLogo} src="/img/grants/nfosigw-logo.png"         alt="Narodowy Fundusz Ochrony Środowiska i Gospodarki Wodnej" />
-                        <img className={s.grantLogo} src="/img/grants/energia-dla-wsi-logo.png" alt="Energia Dla Wsi" />
+                        <Image
+                            src="/img/grants/feng-logo.png"
+                            alt="Fundusze Europejskie dla Nowoczesnej Gospodarki"
+                            width={220}
+                            height={64}
+                            className={s.grantLogo}
+                        />
+                        <Image
+                            src="/img/grants/nfosigw-logo.png"
+                            alt="Narodowy Fundusz Ochrony Środowiska i Gospodarki Wodnej"
+                            width={1759}
+                            height={425}
+                            className={s.grantLogo}
+                        />
+                        <Image
+                            src="/img/grants/energia-dla-wsi-logo.png"
+                            alt="Energia Dla Wsi"
+                            width={655}
+                            height={201}
+                            className={s.grantLogo}
+                        />
                     </div>
 
                     <div className={`cta ${s.cta}`}>
