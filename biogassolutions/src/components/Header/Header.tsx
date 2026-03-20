@@ -3,10 +3,13 @@
 import Link from "next/link";
 import styles from './Header.module.css';
 import { useState, useEffect } from 'react';
+import { usePathname } from 'next/navigation';
 
 const s = styles;
 
 function Header() {
+    const pathname = usePathname();
+
     const [hamburgerState, setHamburgerState] = useState(false);
     function toggleHamburger() {
         setHamburgerState(!hamburgerState);
@@ -24,7 +27,7 @@ function Header() {
         return () => {
             window.removeEventListener('resize', handleResize);
         }
-    }, [])
+    }, []);
 
     return (
         <>
@@ -33,12 +36,12 @@ function Header() {
 
                 <nav className={s.DesktopNavMenu}>
                     <ul className={s.ul}>
-                        <li><Link className={s.a} href="/o-nas">O Nas</Link></li>
-                        <li><Link className={s.a} href="/oferta">Oferta</Link></li>
-                        <li><Link className={s.a} href="/realizacje">Realizacje</Link></li>
-                        <li><Link className={s.a} href="/technologia">Technologia</Link></li>
-                        <li><Link className={s.a} href="/faq">FAQ</Link></li>
-                        <li><Link className={s.a} href="/kontakt">Kontakt</Link></li>
+                        <li><Link className={`${s.a} ${pathname === '/o-nas' ? s.active : ''}`} href="/o-nas">O Nas</Link></li>
+                        <li><Link className={`${s.a} ${pathname === '/oferta' ? s.active : ''}`} href="/oferta">Oferta</Link></li>
+                        <li><Link className={`${s.a} ${pathname === '/realizacje' ? s.active : ''}`} href="/realizacje">Realizacje</Link></li>
+                        <li><Link className={`${s.a} ${pathname === '/technologia' ? s.active : ''}`} href="/technologia">Technologia</Link></li>
+                        <li><Link className={`${s.a} ${pathname === '/faq' ? s.active : ''}`} href="/faq">FAQ</Link></li>
+                        <li><Link className={`${s.a} ${pathname === '/kontakt' ? s.active : ''}`} href="/kontakt">Kontakt</Link></li>
                     </ul>
                 </nav>
 
@@ -56,12 +59,13 @@ function Header() {
 
             <nav className={s.SidebarMenu} style={{right: hamburgerState ? 0 : '-251px'}}>
                 <ul className={s.ul}>
-                    <li className={s.li}><Link className={s.a} href="/o-nas">O Nas</Link></li>    
-                    <li className={s.li}><Link className={s.a} href="/oferta">Oferta</Link></li>
-                    <li className={s.li}><Link className={s.a} href="/realizacje">Realizacje</Link></li>
-                    <li className={s.li}><Link className={s.a} href="/technologia">Technologia</Link></li>
-                    <li className={s.li}><Link className={s.a} href="/faq">FAQ</Link></li>
-                    <li className={s.li}><Link className={s.a} href="/kontakt">Kontakt</Link></li>
+                    <li className={s.li}><Link className={`${s.a} ${pathname === '/' || pathname === 'index' ? s.active : ''}`} href="/">Strona Główna</Link></li>
+                    <li className={s.li}><Link className={`${s.a} ${pathname === '/o-nas' ? s.active : ''}`} href="/o-nas">O Nas</Link></li>    
+                    <li className={s.li}><Link className={`${s.a} ${pathname === '/oferta' ? s.active : ''}`} href="/oferta">Oferta</Link></li>
+                    <li className={s.li}><Link className={`${s.a} ${pathname === '/realizacje' ? s.active : ''}`} href="/realizacje">Realizacje</Link></li>
+                    <li className={s.li}><Link className={`${s.a} ${pathname === '/technologia' ? s.active : ''}`} href="/technologia">Technologia</Link></li>
+                    <li className={s.li}><Link className={`${s.a} ${pathname === '/faq' ? s.active : ''}`} href="/faq">FAQ</Link></li>
+                    <li className={s.li}><Link className={`${s.a} ${pathname === '/kontakt' ? s.active : ''}`} href="/kontakt">Kontakt</Link></li>
                 </ul>
             </nav>
         </>

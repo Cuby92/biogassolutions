@@ -64,7 +64,6 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    position: relative;
     width: 3.3rem;
     height: 3rem;
     gap: calc((3rem - 3 * 0.4rem) / 2);
@@ -134,7 +133,7 @@
 }
 
 @media (max-width: 949px) {
-    .MobileMenu {
+    .SidebarMenu {
         display: flex;
     }
 
@@ -145,4 +144,30 @@
     .DesktopNavMenu {
         display: none;
     }
+}
+
+/* A C T I V E   P A G E */
+.SidebarMenu .a,
+.Header .a {
+    font-family: var(--poppins);
+}
+.SidebarMenu .active {
+    position: relative;
+    font-weight: 800;
+}
+
+.SidebarMenu .active::before {
+    content: '';
+    width: 3px;
+    height: 100%;
+    background: var(--primary-color);
+    position: absolute;
+    top: 0;
+    left: -20%;
+}
+
+.Header .active {
+    text-decoration: underline;
+    text-decoration-color: Var(--primary-color);
+    font-weight: 700;
 }
