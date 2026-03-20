@@ -7,15 +7,16 @@ const s = styles;
 function Home() {
     return (
         <section className="content">
-            <Image
-                src='/img/bg/bg1.jpg'
-                width={3550}
-                height={1895}
-                priority={true}
-                quality={80}
-                alt=''
-                className="pageBg"
-            />
+            <div className="bgContainer">
+                <Image
+                    src='/img/bg/bg1.jpg'
+                    fill={true}
+                    priority={true}
+                    quality={80}
+                    alt=''
+                    className="pageBg"
+                />
+            </div>
             <section className={`cover ${s.Section1}`} id="HomeSection1">
                 <div className="content">
                     <h1 className="hero-header">Tańsza energia i ciepło z własnych odpadów - instalacje biogazu</h1>
