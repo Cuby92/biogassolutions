@@ -67,12 +67,13 @@
     font-size: 5rem;
     line-height: 6rem;
     color: var(--primary-color);
-    font-family: var(--poppins);
+    font-family: var(--raleway);
     font-weight: 100;
 }
 
 .Section4 .counter {
     font-weight: 400;
+    font-family: var(--poppins);
 }
 
 .Section4 .stats {

@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Header from "@/components/Header/Header";
 import Footer from "@/components/Footer";
-import { DM_Sans, Poppins, Space_Grotesk } from 'next/font/google';
+import { DM_Sans, Poppins, Space_Grotesk, Raleway } from 'next/font/google';
 
 export const metadata: Metadata = {
   title: "Realizacje biogazowni i CHP - projekty 499 kW-2 MW | Biogas Solutions",
@@ -25,9 +25,14 @@ const spaceGrotesk = Space_Grotesk({
   variable: '--space-grotesk'
 });
 
+const raleway = Raleway({
+  subsets: ['latin'],
+  variable: '--raleway'
+});
+
 function RootLayout({ children, }: Readonly<{ children: React.ReactNode; }>) {
   return (
-    <html lang="pl" className={`${dmSans.variable} ${poppins.variable} ${spaceGrotesk.variable}`}>
+    <html lang="pl" className={`${dmSans.variable} ${poppins.variable} ${spaceGrotesk.variable} ${raleway.variable}`}>
       <body>
         <Header />
           { children }
