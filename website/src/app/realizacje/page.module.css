@@ -27,7 +27,7 @@
     size: 1.2rem;
 }
 
-.Section2 .card {
+.Section2 .card, .Section3 .card {
     margin-inline: auto;
     display: flex;
     align-items: center;
