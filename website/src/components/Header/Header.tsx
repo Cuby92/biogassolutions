@@ -1,19 +1,120 @@
 'use client';
 
 import Link from "next/link";
-import styles from './Header.module.css';
 import { useState, useEffect } from 'react';
 import { usePathname } from 'next/navigation';
-
-const s = styles;
+import { Bar, completeValue, s, getBarStyles } from './functions';
 
 function Header() {
     const pathname = usePathname();
 
     const [hamburgerState, setHamburgerState] = useState(false);
+    const [topBar, setTopBar]       = useState<Bar>({
+        angle: 0,
+        length: {
+            value: 3.3,
+            unit: 'rem',
+        },
+        offsetY: {
+            value: 0,
+            unit: 'rem'
+        }
+    });
+    const [middleBar, setMiddleBar] = useState<Bar>({
+        angle: 0,
+        length: {
+            value: 3.3,
+            unit: 'rem'
+        },
+        offsetY: {
+            value: 0,
+            unit: 'rem'
+        }
+    });
+    const [bottomBar, setBottomBar] = useState<Bar>({
+        angle: 0,
+        length: {
+            value: 3.3,
+            unit: 'rem'
+        },
+        offsetY: {
+            value: 0,
+            unit: 'rem'
+        }
+    });
 
     function toggleHamburger() {
-        setHamburgerState(!hamburgerState);
+        setHamburgerState((prev => !prev));
+        if (!hamburgerState) {
+            setTopBar({
+                angle: 45,
+                length: {
+                    value: 3.3 * Math.sqrt(2),
+                    unit: 'rem'
+                },
+                offsetY: {
+                    value: -0.25,
+                    unit: 'rem'
+                }
+            });
+            setMiddleBar({
+                angle: 0,
+                length: {
+                    value: 0,
+                    unit: 'rem'
+                },
+                offsetY: {
+                    value: 0,
+                    unit: 'rem'
+                }
+            });
+            setBottomBar({
+                angle: -45,
+                length: {
+                    value: 3.3 * Math.sqrt(2),
+                    unit: 'rem'
+                },
+                offsetY: {
+                    value: 0.25,
+                    unit: 'rem'
+                }
+            });
+        } else {
+            setTopBar({
+                angle: 0,
+                length: {
+                    value: 3.3,
+                    unit: 'rem'
+                },
+                offsetY: {
+                    value: 0,
+                    unit: 'rem'
+                }
+
+            });
+            setMiddleBar({
+                angle: 0,
+                length: {
+                    value: 3.3,
+                    unit: 'rem'
+                },
+                offsetY: {
+                    value: 0,
+                    unit: 'rem'
+                }
+            });
+            setBottomBar({
+                angle: 0,
+                length: {
+                    value: 3.3,
+                    unit: 'rem'
+                },
+                offsetY: {
+                    value: 0,
+                    unit: 'rem'
+                }
+            });
+        }
     }
 
     function handlePageChange() {
@@ -80,9 +181,9 @@ function Header() {
                     style={{display: hamburgerState ? 'block' : 'none'}}></button>
 
                 <button className={s.SidebarToggle} onClick={toggleHamburger}>
-                    <div className={s.bar}></div>
-                    <div className={s.bar}></div>
-                    <div className={s.bar}></div>
+                    <div className={s.bar} style={getBarStyles(topBar)}></div>
+                    <div className={s.bar} style={getBarStyles(middleBar)}></div>
+                    <div className={s.bar} style={getBarStyles(bottomBar)}></div>
                 </button>
             </header>
 
