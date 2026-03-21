@@ -13,7 +13,7 @@
     height: 3rem;
 }
 
-.Section3, .Section4, .Section5, .Section6 {
+.Section3, .Section4, .Section5, .Section6, .Section7 {
     display: flex;
     flex-direction: column;
 }

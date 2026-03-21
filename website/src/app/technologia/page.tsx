@@ -138,11 +138,11 @@ function Technology() {
                     </ul>
                 </div>
 
-                <div id="TechnologySection7" className={`card ${s.card} ${s.Section7}`}>
+                <div id="TechnologySection7" className={s.Section7}>
                     <h2 className={s.h2}>Upgrading do biometanu</h2>
                     <ul className={s.ul}>
-                        <li className={s.li}>Zastosowanie systemu membranowego, PSA lub absorpcji pozwala uzyskać biometan i zintegrować go z siecią lub systemami bioCNG/bioLNG.</li>
-                        <li className={s.li}>Konfigurację dobieramy do parametrów gazu i wymagań operatora sieci.</li>
+                        <li className={`${s.li} card ${s.card}`}>Zastosowanie systemu membranowego, PSA lub absorpcji pozwala uzyskać biometan i zintegrować go z siecią lub systemami bioCNG/bioLNG.</li>
+                        <li className={`${s.li} card ${s.card}`}>Konfigurację dobieramy do parametrów gazu i wymagań operatora sieci.</li>
                     </ul>
                 </div>
 
