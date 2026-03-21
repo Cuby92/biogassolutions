@@ -1,19 +1,83 @@
 'use client';
 
 import Link from "next/link";
-import styles from './Header.module.css';
 import { useState, useEffect } from 'react';
 import { usePathname } from 'next/navigation';
-
-const s = styles;
+import { Bar, completeValue, s } from './functions';
 
 function Header() {
     const pathname = usePathname();
 
     const [hamburgerState, setHamburgerState] = useState(false);
+    const [topBar, setTopBar]       = useState<Bar>({
+        angle: 0,
+        length: {
+            value: 3.3,
+            unit: 'rem',
+        }
+    });
+    const [middleBar, setMiddleBar] = useState<Bar>({
+        angle: 0,
+        length: {
+            value: 3.3,
+            unit: 'rem'
+        }
+    });
+    const [bottomBar, setBottomBar] = useState<Bar>({
+        angle: 0,
+        length: {
+            value: 3.3,
+            unit: 'rem'
+        }
+    });
 
     function toggleHamburger() {
-        setHamburgerState(!hamburgerState);
+        setHamburgerState((prev => !prev));
+        if (hamburgerState) {
+            setTopBar({
+                angle: 45,
+                length: {
+                    value: 3.3 * Math.sqrt(2),
+                    unit: 'rem'
+                }
+            });
+            setMiddleBar({
+                angle: 0,
+                length: {
+                    value: 3.3,
+                    unit: 'rem'
+                }
+            });
+            setBottomBar({
+                angle: -45,
+                length: {
+                    value: 3.3 * Math.sqrt(2),
+                    unit: 'rem'
+                }
+            });
+        } else {
+            setTopBar({
+                angle: 0,
+                length: {
+                    value: 3.3,
+                    unit: 'rem'
+                }
+            });
+            setMiddleBar({
+                angle: 0,
+                length: {
+                    value: 3.3,
+                    unit: 'rem'
+                }
+            });
+            setBottomBar({
+                angle: 0,
+                length: {
+                    value: 3.3,
+                    unit: 'rem'
+                }
+            });
+        }
     }
 
     function handlePageChange() {
