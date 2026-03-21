@@ -22,6 +22,7 @@ body, html {
 html {
     font-family: var(--dm-sans), Arial;
     color: var(--bg-white);
+    font-size: 16px;
 }
 
 strong {
