@@ -85,6 +85,10 @@
     border-radius: 0.1rem;
 }
 
+.SidebarToggle .bar:nth-child(1), .SidebarToggle .bar:nth-child(3) {
+    transform-origin: 0 50%;
+}
+
 /* H I T   B O X */
 .hitBox {
     width: 100vw;
