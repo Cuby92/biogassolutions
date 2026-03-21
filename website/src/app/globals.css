@@ -423,6 +423,13 @@ footer details {
 }
 
 /* S C R O L L B A R */
+@supports not selector(::-webkit-scrollbar) {
+    * {
+        scrollbar-color: var(--primary-color) var(--bg-white);
+        scrollbar-width: thin;
+    }
+}
+
 ::-webkit-scrollbar {
     width: 7px;
 }
@@ -439,15 +446,4 @@ footer details {
     );
     border-radius: 3.5px;
     border: 1px solid var(--bg-white);
-}
-
-::-webkit-scrollbar-button {
-    background: var(--secondary-color);
-}
-
-@supports (scrollbar-color: var(--primary-color) var(--bg-white)) {
-    * {
-        scrollbar-color: var(--primary-color) var(--bg-white);
-        scrollbar-width: thin;
-    }
 }
