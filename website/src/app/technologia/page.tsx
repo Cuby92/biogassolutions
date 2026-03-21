@@ -146,11 +146,11 @@ function Technology() {
                     </ul>
                 </div>
 
-                <div id="TechnologySection8" className={`card ${s.card} ${s.Section8}`}>
+                <div id="TechnologySection8" className={s.Section8}>
                     <h2 className={s.h2}>Automatyka i monitoring</h2>
                     <ul className={s.ul}>
-                        <li className={s.li}>Zdalny nadzór 24/7, alarmy i szkolenia operatorów wspierają bezpieczeństwo i dyspozycyjność.</li>
-                        <li className={s.li}>Serwis reaguje zgodnie z SLA, standardowo do 24 h.</li>
+                        <li className={`${s.li} card ${s.card}`}>Zdalny nadzór 24/7, alarmy i szkolenia operatorów wspierają bezpieczeństwo i dyspozycyjność.</li>
+                        <li className={`${s.li} card ${s.card}`}>Serwis reaguje zgodnie z SLA, standardowo do 24 h.</li>
                     </ul>
                 </div>
 
