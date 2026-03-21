@@ -151,10 +151,9 @@ function Technology() {
                     <ul className={s.ul}>
                         <li className={`${s.li} card ${s.card}`}>Zdalny nadzór 24/7, alarmy i szkolenia operatorów wspierają bezpieczeństwo i dyspozycyjność.</li>
                         <li className={`${s.li} card ${s.card}`}>Serwis reaguje zgodnie z SLA, standardowo do 24 h.</li>
+                        <div className="cta"><Link href="/kontakt" className="cta-button">Uzyskaj bezpłatną wstępną wycenę</Link></div>
                     </ul>
                 </div>
-
-                <div className="cta"><Link href="/kontakt" className="cta-button">Uzyskaj bezpłatną wstępną wycenę</Link></div>
             </div>
         </div>
     );
