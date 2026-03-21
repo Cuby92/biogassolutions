@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Header from "@/components/Header/Header";
 import Footer from "@/components/Footer";
-import { DM_Sans, Poppins, Monda } from 'next/font/google';
+import { DM_Sans, Poppins, Space_Grotesk } from 'next/font/google';
 
 export const metadata: Metadata = {
   title: "Realizacje biogazowni i CHP - projekty 499 kW-2 MW | Biogas Solutions",
@@ -20,14 +20,14 @@ const poppins = Poppins({
   variable: '--poppins'
 });
 
-const monda = Monda({
+const spaceGrotesk = Space_Grotesk({
   subsets: ['latin'],
-  variable: '--monda'
+  variable: '--space-grotesk'
 });
 
 function RootLayout({ children, }: Readonly<{ children: React.ReactNode; }>) {
   return (
-    <html lang="pl" className={`${dmSans.variable} ${poppins.variable} ${monda.variable}`}>
+    <html lang="pl" className={`${dmSans.variable} ${poppins.variable} ${spaceGrotesk.variable}`}>
       <body>
         <Header />
           { children }

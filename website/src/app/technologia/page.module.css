@@ -1,15 +1,28 @@
-.Section4 {
-    scroll-margin-top: 150px;
-}
-
 .card {
-    width: 80%;
+    width: 70%;
     margin-inline: auto;
+    display: flex;
+    flex-wrap: nowrap;
+    font-size: 1.2rem;
+    align-items: center;
+    gap: 2rem;
 }
 
-.card .icon {
+.icon {
+    width: 3rem;
     height: 3rem;
-    width: auto;   
+}
+
+.Section3, .Section4, .Section5, .Section6, .Section7, .Section8 {
+    display: flex;
+    flex-direction: column;
+}
+
+.ul, .ol {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
 }
 
 .Section2 {
@@ -23,49 +36,50 @@
     margin: 0 auto;
 }
 
-.Section3 .ol,
-.Section4 .ol {
-    list-style: none;
-    counter-reset: num;
+.Section3 .ul {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
 }
 
-.Section3 .ol .li,
-.Section4 .ol .li {
-    counter-increment: num;
+.Section4 .card, .Section5 .card {
     position: relative;
 }
 
-.Section3 .ol .li::before,
-.Section4 .ol .li::before {
-    content: counter(num);
-    color: var(--primary-color);
+.Section4 .num, .Section5 .num {
+    position: absolute;
+    font-family: var(--space-grotesk);
+    font-weight: 300;
+    font-size: 7rem;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -4.1rem;
+    width: 7rem;
+    text-align: center;
 }
 
-.Section5 .ul {
-    list-style: none;
+.Section6 .ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-inline: 64px;
+    gap: 32px;
 }
 
-.Section5 .li {
-    background-repeat: no-repeat;
-    background-position: left center;
-    background-size: 20px 20px;
-    background-size: 1.5rem 1.5rem;
+.Section6 .card {
+    width: clamp(300px, 500px, 40%);
+    position: relative;
+    font-size: 1.5rem;
+    text-align: center;
 }
 
-.Section5 :nth-child(1 of .li) {
-    background-image: url('/img/icons/thunder.png');
-}
-
-.Section5 :nth-child(2 of .li) {
-    background-image: url('/img/icons/smoke.png');
-}
-
-.Section6 .li::marker {
-    color: var(--primary-color);
-}
-
-.Section7 .li::marker,
-.Section8 .li::marker {
-    content: '✓ ';
-    color: var(--primary-color);
+.Section6 .icon {
+    position: absolute;
+    height: 90%;
+    width: auto;
+    opacity: 0.2;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
 }
