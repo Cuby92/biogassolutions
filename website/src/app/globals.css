@@ -421,3 +421,29 @@ footer details {
         box-shadow: 10px 20px 30px rgba(0, 0, 0, 0.2);
     }
 }
+
+/* S C R O L L B A R */
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--bg-white);
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(
+        45deg,
+        rgb(0, 210, 112),
+        rgb(208, 166, 0)
+    );
+    border-radius: 3.5px;
+    border: 1px solid var(--bg-white);
+}
+
+@supports (scrollbar-color: var(--primary-color) var(--bg-white)) {
+    * {
+        scrollbar-color: var(--primary-color) var(--bg-white);
+        scrollbar-width: thin;
+    }
+}
