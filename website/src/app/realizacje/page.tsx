@@ -1,6 +1,9 @@
+'use client';
+
 import Link from 'next/link';
 import styles from './page.module.css';
 import Image from 'next/image';
+import AnimatedCounter from '@/components/AnimatedCounter';
 
 const s = styles;
 
@@ -63,12 +66,12 @@ function Realizations() {
                         <ul className={s.stats}>
                             <li className={`card ${s.card} ${s.stat}`}>
                                 <p className={s.p}>Łączna moc zrealizowanych i zmodernizowanych biogazowni:</p>
-                                <span className={s.num}><span className={s.counter}>17.2</span> MW</span>
+                                <span className={s.num}><AnimatedCounter end={17.2} decimalPlaces={1} className={s.counter}></AnimatedCounter> MW</span>
                             </li>
 
                             <li className={`card ${s.card} ${s.stat}`}>
                                 <p className={s.p}>Uzyskana średnioroczna sprawność eksploatowanych instalacji</p>
-                                <span className={s.num}>{'>'}<span className={s.counter}>95</span>%</span>
+                                <span className={s.num}>{'>'}<AnimatedCounter end={95} className={s.counter}></AnimatedCounter>%</span>
                                 <p className={s.p}>mocy zainstalowanej</p>
                             </li>
                         </ul>

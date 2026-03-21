@@ -7,9 +7,10 @@ interface AnimatedCounterProps {
     end: number;
     duration?: number;
     decimalPlaces?: number
+    className?: string
 };
 
-function AnimatedCounter({ end, duration, decimalPlaces }: AnimatedCounterProps) {
+function AnimatedCounter({ end, duration, decimalPlaces, className }: AnimatedCounterProps) {
     const [ref, inView] = useInView({
         triggerOnce: true,
         threshold: 0.3
@@ -20,8 +21,9 @@ function AnimatedCounter({ end, duration, decimalPlaces }: AnimatedCounterProps)
         duration, 
         decimalPlaces
     });
+
     return (
-        <div>{ counter }</div>
+        <div ref={ref} className={className || ''}>{ counter }</div>
     );
 }
 

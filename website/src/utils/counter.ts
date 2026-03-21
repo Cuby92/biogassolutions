@@ -15,7 +15,7 @@ function easeInOutExpo(x: number): number {
     : (2 - Math.pow(2, -20 * x + 10)) / 2;
 }
 
-export const useCounter = ({ end, decimalPlaces = 0, duration = 2000 }: UseCounterProps) => {
+export const useCounter = ({ end, decimalPlaces = 0, duration = 4000 }: UseCounterProps) => {
     const [counter, setCounter] = useState<number | string>(0);
 
     const rafRef = useRef<number | null>(null);
