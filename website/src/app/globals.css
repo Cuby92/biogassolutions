@@ -441,6 +441,10 @@ footer details {
     border: 1px solid var(--bg-white);
 }
 
+::-webkit-scrollbar-button {
+    background: var(--secondary-color);
+}
+
 @supports (scrollbar-color: var(--primary-color) var(--bg-white)) {
     * {
         scrollbar-color: var(--primary-color) var(--bg-white);
