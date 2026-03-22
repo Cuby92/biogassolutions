@@ -12,14 +12,8 @@
 .ErrorCode {
     color: black;
     writing-mode: vertical-lr;
-    transform: rotate(180deg) translateX(-40%);
     z-index: 1;
     font-family: var(--space-grotesk);
-    transition: transform 0.4s ease-in-out;
-}
-
-.ErrorCode:hover {
-    transform: rotate(180deg) translateX(-15%);
 }
 
 .ErrorTranslation {
