@@ -6,16 +6,6 @@ import Link from "next/link";
 import { useState, useEffect } from 'react';
 
 const s = styles;
-interface TimelineStyles {
-    dot?: {
-        color?: string;
-        scale?: string | number;
-    };
-    icon?: {
-        color?: string;
-        scale?: string | number;
-    }
-}
 
 function Home() {
     const [currentPoint, setCurrentPoint] = useState(1);
