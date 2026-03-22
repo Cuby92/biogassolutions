@@ -6,15 +6,38 @@ import Link from "next/link";
 import { useState, useEffect } from 'react';
 
 const s = styles;
+type Point = 1 | 2 | 3 | 4 | 5 | 6;
 
 function Home() {
     const [currentPoint, setCurrentPoint] = useState(1);
 
     function nextPoint() {
-        setCurrentPoint(prev => prev === 6 ? 1 : prev + 1);
+        setCurrentPoint(prev => prev === 6 ? 6 : prev + 1);
     }
     function prevPoint() {
-        setCurrentPoint(prev => prev === 1 ? 6 : prev - 1);
+        setCurrentPoint(prev => prev === 1 ? 1 : prev - 1);
+    }
+
+    function checkActive(point: Point, returnDifference: boolean = false): boolean | number {
+        if (point === currentPoint) {
+            return returnDifference ? 0 : true;
+        } else {
+            return returnDifference ? point - currentPoint : false;
+        }
+    }
+
+    function addClass(point: Point, carousel: boolean = false): string {
+        const diff = checkActive(point, true);
+        switch (diff) {
+            case -1:
+                return carousel ? s.left : '';
+            case 0:
+                return s.active;
+            case 1:
+                return carousel ? s.right : '';
+            default:
+                return '';
+        }
     }
 
     return (
@@ -88,69 +111,69 @@ function Home() {
                     <div className={s.timeline}>
                         <div className={s.line}></div>
                         <div className={s.dots}>
-                            <div className={`${s.dot} ${currentPoint === 1 ? s.active : ''}`} onClick={() => setCurrentPoint(1)}>
+                            <div className={`${s.dot} ${addClass(1)}`} onClick={() => setCurrentPoint(1)}>
                                 <Image
                                     src="/img/icons/task-list.png"
                                     alt='Ikona'
                                     width={512}
                                     height={512}
                                     quality={100}
-                                    className={`${s.icon} ${currentPoint === 1 ? s.active : ''}`}
+                                    className={`${s.icon} ${addClass(1)}`}
                                     onClick={() => setCurrentPoint(1)}
                                 />
                             </div>
-                            <div className={`${s.dot} ${currentPoint === 2 ? s.active : ''}`} onClick={() => setCurrentPoint(2)}>
+                            <div className={`${s.dot} ${addClass(2)}`} onClick={() => setCurrentPoint(2)}>
                                 <Image
                                     src="/img/icons/hand.png"
                                     alt='Ikona'
                                     width={512}
                                     height={512}
                                     quality={100}
-                                    className={`${s.icon} ${currentPoint === 2 ? s.active : ''}`}
+                                    className={`${s.icon} ${addClass(2)}`}
                                     onClick={() => setCurrentPoint(2)}
                                 />
                             </div>
-                            <div className={`${s.dot} ${currentPoint === 3 ? s.active : ''}`} onClick={() => setCurrentPoint(3)}>
+                            <div className={`${s.dot} ${addClass(3)}`} onClick={() => setCurrentPoint(3)}>
                                 <Image
                                     src="/img/icons/assessment.png"
                                     alt='Ikona'
                                     width={512}
                                     height={512}
                                     quality={100}
-                                    className={`${s.icon} ${currentPoint === 3 ? s.active : ''}`}
+                                    className={`${s.icon} ${addClass(3)}`}
                                     onClick={() => setCurrentPoint(3)}
                                 />
                             </div>
-                            <div className={`${s.dot} ${currentPoint === 4 ? s.active : ''}`} onClick={() => setCurrentPoint(4)}>
+                            <div className={`${s.dot} ${addClass(4)}`} onClick={() => setCurrentPoint(4)}>
                                 <Image
                                     src="/img/icons/contract.png"
                                     alt='Ikona'
                                     width={512}
                                     height={512}
                                     quality={100}
-                                    className={`${s.icon} ${currentPoint === 4 ? s.active : ''}`}
+                                    className={`${s.icon} ${addClass(4)}`}
                                     onClick={() => setCurrentPoint(4)}
                                 />
                             </div>
-                            <div className={`${s.dot} ${currentPoint === 5 ? s.active : ''}`} onClick={() => setCurrentPoint(5)}>
+                            <div className={`${s.dot} ${addClass(5)}`} onClick={() => setCurrentPoint(5)}>
                                 <Image
                                     src="/img/icons/brick-wall.png"
                                     alt='Ikona'
                                     width={512}
                                     height={512}
                                     quality={100}
-                                    className={`${s.icon} ${currentPoint === 5 ? s.active : ''}`}
+                                    className={`${s.icon} ${addClass(5)}`}
                                     onClick={() => setCurrentPoint(5)}
                                 />
                             </div>
-                            <div className={`${s.dot} ${currentPoint === 6 ? s.active : ''}`} onClick={() => setCurrentPoint(6)}>
+                            <div className={`${s.dot} ${addClass(6)}`} onClick={() => setCurrentPoint(6)}>
                                 <Image
                                     src="/img/icons/power-button.png"
                                     alt='Ikona'
                                     width={512}
                                     height={512}
                                     quality={100}
-                                    className={`${s.icon} ${currentPoint === 6 ? s.active : ''}`}
+                                    className={`${s.icon} ${addClass(6)}`}
                                     onClick={() => setCurrentPoint(6)}
                                 />
                             </div>
@@ -158,38 +181,38 @@ function Home() {
                     </div>
 
                     <div className={s.Descriptions}>
-                        <div className={`card ${s.card} ${currentPoint === 1 ? s.active : ''}`}>
+                        <div className={`card ${s.card} ${addClass(1, true)}`}>
                             <h3 className={s.h3}>Przygotowanie Projektu</h3>
                             <p>Analiza wykonalności, tworzenie dokumentacji formalnej i technicznej, uzyskiwanie warunków zabudowy i przyłączeniowych.</p>
                         </div>
 
-                        <div className={`card ${s.card} ${currentPoint === 2 ? s.active : ''}`}>
+                        <div className={`card ${s.card} ${addClass(2, true)}`}>
                             <h3 className={s.h3}>Złożenie Wniosku o Dofinansowanie</h3>
                             <p>Terminowe złożenie wniosku o dofinansowanie jest kluczowe, zwłaszcza dla programów wsparcia.</p>                          
                         </div>                        
                         
-                        <div className={`card ${s.card} ${currentPoint === 3 ? s.active : ''}`}>
+                        <div className={`card ${s.card} ${addClass(3, true)}`}>
                             <h3 className={s.h3}>Ocena Wniosku</h3>
                             <p>Ocena formalna (kompletność) i merytoryczna (zasadność) projektu.</p>
                         </div>
                             
-                        <div className={`card ${s.card} ${currentPoint === 4 ? s.active : ''}`}>
+                        <div className={`card ${s.card} ${addClass(4, true)}`}>
                             <h3 className={s.h3}>Podpisanie Umowy i Wypłata Zaliczki</h3>
                             <p>Podpisanie umowy o dofinansowanie, z możliwością wypłaty zaliczki do 95% kosztów, co poprawia płynność finansową.</p>
                         </div>
 
-                        <div className={`card ${s.card} ${currentPoint === 5 ? s.active : ''}`}>
+                        <div className={`card ${s.card} ${addClass(5, true)}`}>
                             <h3 className={s.h3}>Realizacja Budowy</h3>
                             <p>Faktyczne prace budowlane, instalacja technologii. Terminowość i jakość wykonania są kluczowe.</p>
                         </div>
 
-                        <div className={`card ${s.card} ${currentPoint === 6 ? s.active : ''}`}>
+                        <div className={`card ${s.card} ${addClass(6, true)}`}>
                             <h3 className={s.h3}>Uruchomienie i Rozliczenie Projektu</h3>
                             <p>Faza uruchomienia, testowania i odbiorów, a następnie złożenie końcowej dokumentacji i wypłata pozostałych środków.</p>                            
                         </div>   
 
-                        <button className={s.prevBtn} onClick={prevPoint}></button>
-                        <button className={s.nextBtn} onClick={nextPoint}></button>
+                        <button className={`${s.prevBtn} ${addClass(6)}`} onClick={prevPoint} style={{opacity: checkActive(1) ? 0.3 : 1, cursor: checkActive(1) ? 'not-allowed' : 'pointer'}}></button>
+                        <button className={`${s.nextBtn} ${addClass(1)}`} onClick={nextPoint} style={{opacity: checkActive(6) ? 0.3 : 1, cursor: checkActive(6) ? 'not-allowed' : 'pointer'}}></button>
                     </div>
                 </section>
 

@@ -145,15 +145,23 @@
 }
 
 .Section4 .nextBtn, .Section4 .prevBtn {
-    background: var(--primary-color);
+    background-color: var(--primary-color);
     height: 4rem;
     width: 4rem;
     border: none;
     mask-size: cover;
     mask-position: center !important;
     position: absolute;
-    top: 50%;
+    top: calc(50% - 2rem);
     mask-image: url('/img/icons/arrow-forward.svg');
+    transition: 
+        opacity 0.3s ease-in-out,
+        background-color 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.Section4 .nextBtn.active:hover, .Section4 .prevBtn.active:hover {
+    background-color: #8affa6;
 }
 
 .Section4 .nextBtn {
@@ -191,6 +199,23 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+.Section4 .card.left, .Section4 .card.right {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+}
+
+.Section4 .card.left {
+    transform: translate(-100%, -50%) scale(0.9);
+}
+
+.Section4 .card.right {
+    transform: translate(0, -50%) scale(0.9);
 }
 
 .Section4 .card .h3 {
