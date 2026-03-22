@@ -196,10 +196,6 @@
     text-wrap: balance;
 }
 
-.Section4 .p {
-    height: 100%;
-}
-
 .Section4 .card.active {
     display: flex;
     position: absolute;
