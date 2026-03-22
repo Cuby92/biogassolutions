@@ -73,14 +73,7 @@ function Home() {
 
                 <section className={s.Section4} id="HomeSection4">
                     <h2>Proces inwestycyjny</h2>
-                    <Image
-                        src="/img/timeline.png"
-                        alt="Przebieg procesu inwestycyjnego - oś czasu" 
-                        width={1772}
-                        height={501}
-                        quality={60}
-                        className={s.timeline}
-                    />
+
                 </section>
 
                 <section className={s.Section5} id="HomeSection5">
