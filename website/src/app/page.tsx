@@ -1,10 +1,32 @@
+'use client';
+
 import Image from "next/image";
 import styles from './page.module.css';
 import Link from "next/link";
+import { useState, useEffect } from 'react';
 
 const s = styles;
+interface TimelineStyles {
+    dot?: {
+        color?: string;
+        scale?: string | number;
+    };
+    icon?: {
+        color?: string;
+        scale?: string | number;
+    }
+}
 
 function Home() {
+    const [currentPoint, setCurrentPoint] = useState(1);
+
+    function nextPoint() {
+        setCurrentPoint(prev => prev === 6 ? 1 : prev++);
+    }
+    function prevPoint() {
+        setCurrentPoint(prev => prev === 1 ? 6 : prev--);
+    }
+
     return (
         <section className="content">
             <div className="bgContainer">
@@ -76,64 +98,70 @@ function Home() {
                     <div className={s.timeline}>
                         <div className={s.line}></div>
                         <div className={s.dots}>
-                            <div className={s.dot}>
+                            <div className={`${s.dot} ${currentPoint === 1 ? s.active : ''}`} onClick={() => setCurrentPoint(1)}>
                                 <Image
                                     src="/img/icons/task-list.png"
                                     alt='Ikona'
                                     width={512}
                                     height={512}
                                     quality={100}
-                                    className={s.icon}
+                                    className={`${s.icon} ${currentPoint === 1 ? s.active : ''}`}
+                                    onClick={() => setCurrentPoint(1)}
                                 />
                             </div>
-                            <div className={s.dot}>
+                            <div className={`${s.dot} ${currentPoint === 2 ? s.active : ''}`} onClick={() => setCurrentPoint(2)}>
                                 <Image
                                     src="/img/icons/hand.png"
                                     alt='Ikona'
                                     width={512}
                                     height={512}
                                     quality={100}
-                                    className={s.icon}
+                                    className={`${s.icon} ${currentPoint === 2 ? s.active : ''}`}
+                                    onClick={() => setCurrentPoint(2)}
                                 />
                             </div>
-                            <div className={s.dot}>
+                            <div className={`${s.dot} ${currentPoint === 3 ? s.active : ''}`} onClick={() => setCurrentPoint(3)}>
                                 <Image
                                     src="/img/icons/assessment.png"
                                     alt='Ikona'
                                     width={512}
                                     height={512}
                                     quality={100}
-                                    className={s.icon}
+                                    className={`${s.icon} ${currentPoint === 3 ? s.active : ''}`}
+                                    onClick={() => setCurrentPoint(3)}
                                 />
                             </div>
-                            <div className={s.dot}>
+                            <div className={`${s.dot} ${currentPoint === 4 ? s.active : ''}`} onClick={() => setCurrentPoint(4)}>
                                 <Image
                                     src="/img/icons/contract.png"
                                     alt='Ikona'
                                     width={512}
                                     height={512}
                                     quality={100}
-                                    className={s.icon}
+                                    className={`${s.icon} ${currentPoint === 4 ? s.active : ''}`}
+                                    onClick={() => setCurrentPoint(4)}
                                 />
                             </div>
-                            <div className={s.dot}>
+                            <div className={`${s.dot} ${currentPoint === 5 ? s.active : ''}`} onClick={() => setCurrentPoint(5)}>
                                 <Image
                                     src="/img/icons/brick-wall.png"
                                     alt='Ikona'
                                     width={512}
                                     height={512}
                                     quality={100}
-                                    className={s.icon}
+                                    className={`${s.icon} ${currentPoint === 5 ? s.active : ''}`}
+                                    onClick={() => setCurrentPoint(5)}
                                 />
                             </div>
-                            <div className={s.dot}>
+                            <div className={`${s.dot} ${currentPoint === 6 ? s.active : ''}`} onClick={() => setCurrentPoint(6)}>
                                 <Image
                                     src="/img/icons/power-button.png"
                                     alt='Ikona'
                                     width={512}
                                     height={512}
                                     quality={100}
-                                    className={s.icon}
+                                    className={`${s.icon} ${currentPoint === 6 ? s.active : ''}`}
+                                    onClick={() => setCurrentPoint(6)}
                                 />
                             </div>
                         </div>
