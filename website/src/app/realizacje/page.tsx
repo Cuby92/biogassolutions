@@ -1,6 +1,9 @@
+'use client';
+
 import Link from 'next/link';
 import styles from './page.module.css';
 import Image from 'next/image';
+import AnimatedCounter from '@/components/AnimatedCounter';
 
 const s = styles;
 
@@ -63,12 +66,26 @@ function Realizations() {
                         <ul className={s.stats}>
                             <li className={`card ${s.card} ${s.stat}`}>
                                 <p className={s.p}>Łączna moc zrealizowanych i zmodernizowanych biogazowni:</p>
-                                <span className={s.num}><span className={s.counter}>17.2</span> MW</span>
+                                <div className={s.counterContainer}>
+                                    <AnimatedCounter
+                                        end={17.2}
+                                        after={{text: 'MW', font: 'var(--raleway)'}}
+                                        decimalPlaces={1}
+                                        className={s.counter}
+                                    />
+                                </div>
                             </li>
 
                             <li className={`card ${s.card} ${s.stat}`}>
                                 <p className={s.p}>Uzyskana średnioroczna sprawność eksploatowanych instalacji</p>
-                                <span className={s.num}>{'>'}<span className={s.counter}>95</span>%</span>
+                                <div className={s.counterContainer}>
+                                    <AnimatedCounter
+                                        before={{text: '>'}}
+                                        end={95}
+                                        after={{text: '%', font: 'var(--raleway)'}}
+                                        className={s.counter}
+                                    />
+                                </div>
                                 <p className={s.p}>mocy zainstalowanej</p>
                             </li>
                         </ul>

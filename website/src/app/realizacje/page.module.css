@@ -27,7 +27,7 @@
     size: 1.2rem;
 }
 
-.Section2 .card {
+.Section2 .card, .Section3 .card {
     margin-inline: auto;
     display: flex;
     align-items: center;
@@ -67,12 +67,24 @@
     font-size: 5rem;
     line-height: 6rem;
     color: var(--primary-color);
-    font-family: var(--poppins);
+    font-family: var(--raleway);
     font-weight: 100;
 }
 
 .Section4 .counter {
     font-weight: 400;
+    font-family: var(--poppins);
+    display: flex;    
+    font-size: 5rem;
+    color: var(--primary-color);
+    line-height: 6rem;
+}
+
+.Section4 .counterContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .Section4 .stats {
