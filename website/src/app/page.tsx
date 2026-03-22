@@ -73,7 +73,71 @@ function Home() {
 
                 <section className={s.Section4} id="HomeSection4">
                     <h2>Proces inwestycyjny</h2>
-
+                    <div className={s.timeline}>
+                        <div className={s.line}></div>
+                        <div className={s.dots}>
+                            <div className={s.dot}>
+                                <Image
+                                    src="/img/icons/task-list.png"
+                                    alt='Ikona'
+                                    width={512}
+                                    height={512}
+                                    quality={100}
+                                    className={s.icon}
+                                />
+                            </div>
+                            <div className={s.dot}>
+                                <Image
+                                    src="/img/icons/hand.png"
+                                    alt='Ikona'
+                                    width={512}
+                                    height={512}
+                                    quality={100}
+                                    className={s.icon}
+                                />
+                            </div>
+                            <div className={s.dot}>
+                                <Image
+                                    src="/img/icons/assessment.png"
+                                    alt='Ikona'
+                                    width={512}
+                                    height={512}
+                                    quality={100}
+                                    className={s.icon}
+                                />
+                            </div>
+                            <div className={s.dot}>
+                                <Image
+                                    src="/img/icons/contract.png"
+                                    alt='Ikona'
+                                    width={512}
+                                    height={512}
+                                    quality={100}
+                                    className={s.icon}
+                                />
+                            </div>
+                            <div className={s.dot}>
+                                <Image
+                                    src="/img/icons/brick-wall.png"
+                                    alt='Ikona'
+                                    width={512}
+                                    height={512}
+                                    quality={100}
+                                    className={s.icon}
+                                />
+                            </div>
+                            <div className={s.dot}>
+                                <Image
+                                    src="/img/icons/power-button.png"
+                                    alt='Ikona'
+                                    width={512}
+                                    height={512}
+                                    quality={100}
+                                    className={s.icon}
+                                />
+                            </div>
+                        </div>
+                    </div>
                 </section>
 
                 <section className={s.Section5} id="HomeSection5">
