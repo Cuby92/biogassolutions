@@ -142,6 +142,7 @@
     display: flex;
     position: relative;
     height: 350px;
+    perspective: 1000px;
 }
 
 .Section4 .nextBtn, .Section4 .prevBtn {
@@ -158,6 +159,7 @@
         opacity 0.3s ease-in-out,
         background-color 0.2s ease-in-out;
     cursor: pointer;
+    z-index: 5;
 }
 
 .Section4 .nextBtn.active:hover, .Section4 .prevBtn.active:hover {
@@ -181,6 +183,11 @@
     height: 350px;
     font-size: 1.2rem;
     justify-content: space-around;
+    transition:
+        transform 0.3s ease-in-out,
+        opacity 0.2s ease-in-out,
+        filter 0.2s ease-in-out,
+        box-shadow 0.25s ease-in-out;
 }
 
 .Section4 .card .h3, .Section4 .card .p {
@@ -200,6 +207,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 2;
+    box-shadow: 0px 0px 100px rgba(4, 175, 95, 0.3);
 }
 
 .Section4 .card.left, .Section4 .card.right {
@@ -208,14 +216,16 @@
     top: 50%;
     left: 50%;
     z-index: 1;
+    opacity: 0.5;
+    filter: blur(2px);
 }
 
 .Section4 .card.left {
-    transform: translate(-100%, -50%) scale(0.9);
+    transform: translate(-100%, -50%) translateZ(-300px) rotateY(30deg);
 }
 
 .Section4 .card.right {
-    transform: translate(0, -50%) scale(0.9);
+    transform: translate(0, -50%)     translateZ(-300px) rotateY(-30deg);
 }
 
 .Section4 .card .h3 {
