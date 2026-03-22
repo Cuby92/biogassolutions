@@ -166,6 +166,38 @@ function Home() {
                             </div>
                         </div>
                     </div>
+
+                    <div className={s.Descriptions}>
+                        <div className={`card ${s.card}`}>
+                            <h3 className={s.h3}>Przygotowanie Projektu</h3>
+                            <p>Analiza wykonalności, tworzenie dokumentacji formalnej i technicznej, uzyskiwanie warunków zabudowy i przyłączeniowych.</p>
+                        </div>
+
+                        <div className={`card ${s.card}`}>
+                            <h3 className={s.h3}>Złożenie Wniosku o Dofinansowanie</h3>
+                            <p>Terminowe złożenie wniosku o dofinansowanie jest kluczowe, zwłaszcza dla programów wsparcia.</p>                          
+                        </div>                        
+                        
+                        <div className={`card ${s.card}`}>
+                            <h3 className={s.h3}>Ocena Wniosku</h3>
+                            <p>Ocena formalna (kompletność) i merytoryczna (zasadność) projektu.</p>
+                        </div>
+                            
+                        <div className={`card ${s.card}`}>
+                            <h3 className={s.h3}>Podpisanie Umowy i Wypłata Zaliczki</h3>
+                            <p>Podpisanie umowy o dofinansowanie, z możliwością wypłaty zaliczki do 95% kosztów, co poprawia płynność finansową.</p>
+                        </div>
+
+                        <div className={`card ${s.card}`}>
+                            <h3 className={s.h3}>Realizacja Budowy</h3>
+                            <p>Faktyczne prace budowlane, instalacja technologii. Terminowość i jakość wykonania są kluczowe.</p>
+                        </div>
+
+                        <div className={`card ${s.card}`}>
+                            <h3 className={s.h3}>Uruchomienie i Rozliczenie Projektu</h3>
+                            <p>Faza uruchomienia, testowania i odbiorów, a następnie złożenie końcowej dokumentacji i wypłata pozostałych środków.</p>                            
+                        </div>                        
+                    </div>
                 </section>
 
                 <section className={s.Section5} id="HomeSection5">
