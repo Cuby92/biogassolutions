@@ -81,7 +81,7 @@
     margin-inline: auto;
     position: relative;
     margin-top: 128px;
-    margin-bottom: 64px;
+    margin-bottom: 32px;
 }
 
 .Section4 .icon {
@@ -141,12 +141,62 @@
     width: 100%;
     display: flex;
     position: relative;
+    height: 350px;
+}
+
+.Section4 .nextBtn, .Section4 .prevBtn {
+    background: var(--primary-color);
+    height: 4rem;
+    width: 4rem;
+    border: none;
+    mask-size: cover;
+    mask-position: center !important;
+    position: absolute;
+    top: 50%;
+    mask-image: url('/img/icons/arrow-forward.svg');
+}
+
+.Section4 .nextBtn {
+    right: 32px;
+}
+
+.Section4 .prevBtn {
+    left: 32px;
+    transform: rotate(180deg);
+}
+
+.Section4 .card {
+    display: none;
+    width: clamp(250px, 300px, 60%);
+    text-align: center;
+    flex-direction: column;
+    height: 350px;
+    font-size: 1.2rem;
+    justify-content: space-around;
+}
+
+.Section4 .card .h3, .Section4 .card .p {
+    width: 100% !important;
+    text-align: center;
+    text-wrap: balance;
+}
+
+.Section4 .p {
+    height: 100%;
+}
+
+.Section4 .card.active {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .Section4 .card .h3 {
     letter-spacing: normal;
-    font-size: 1.3rem;
-    font-weight: 400;
+    font-size: 1.5rem;
+    font-weight: 500;
     width: 30%;
 }
 

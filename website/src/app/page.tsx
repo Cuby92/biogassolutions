@@ -11,10 +11,10 @@ function Home() {
     const [currentPoint, setCurrentPoint] = useState(1);
 
     function nextPoint() {
-        setCurrentPoint(prev => prev === 6 ? 1 : prev++);
+        setCurrentPoint(prev => prev === 6 ? 1 : prev + 1);
     }
     function prevPoint() {
-        setCurrentPoint(prev => prev === 1 ? 6 : prev--);
+        setCurrentPoint(prev => prev === 1 ? 6 : prev - 1);
     }
 
     return (
@@ -158,35 +158,38 @@ function Home() {
                     </div>
 
                     <div className={s.Descriptions}>
-                        <div className={`card ${s.card}`}>
+                        <div className={`card ${s.card} ${currentPoint === 1 ? s.active : ''}`}>
                             <h3 className={s.h3}>Przygotowanie Projektu</h3>
                             <p>Analiza wykonalności, tworzenie dokumentacji formalnej i technicznej, uzyskiwanie warunków zabudowy i przyłączeniowych.</p>
                         </div>
 
-                        <div className={`card ${s.card}`}>
+                        <div className={`card ${s.card} ${currentPoint === 2 ? s.active : ''}`}>
                             <h3 className={s.h3}>Złożenie Wniosku o Dofinansowanie</h3>
                             <p>Terminowe złożenie wniosku o dofinansowanie jest kluczowe, zwłaszcza dla programów wsparcia.</p>                          
                         </div>                        
                         
-                        <div className={`card ${s.card}`}>
+                        <div className={`card ${s.card} ${currentPoint === 3 ? s.active : ''}`}>
                             <h3 className={s.h3}>Ocena Wniosku</h3>
                             <p>Ocena formalna (kompletność) i merytoryczna (zasadność) projektu.</p>
                         </div>
                             
-                        <div className={`card ${s.card}`}>
+                        <div className={`card ${s.card} ${currentPoint === 4 ? s.active : ''}`}>
                             <h3 className={s.h3}>Podpisanie Umowy i Wypłata Zaliczki</h3>
                             <p>Podpisanie umowy o dofinansowanie, z możliwością wypłaty zaliczki do 95% kosztów, co poprawia płynność finansową.</p>
                         </div>
 
-                        <div className={`card ${s.card}`}>
+                        <div className={`card ${s.card} ${currentPoint === 5 ? s.active : ''}`}>
                             <h3 className={s.h3}>Realizacja Budowy</h3>
                             <p>Faktyczne prace budowlane, instalacja technologii. Terminowość i jakość wykonania są kluczowe.</p>
                         </div>
 
-                        <div className={`card ${s.card}`}>
+                        <div className={`card ${s.card} ${currentPoint === 6 ? s.active : ''}`}>
                             <h3 className={s.h3}>Uruchomienie i Rozliczenie Projektu</h3>
                             <p>Faza uruchomienia, testowania i odbiorów, a następnie złożenie końcowej dokumentacji i wypłata pozostałych środków.</p>                            
-                        </div>                        
+                        </div>   
+
+                        <button className={s.prevBtn} onClick={prevPoint}></button>
+                        <button className={s.nextBtn} onClick={nextPoint}></button>
                     </div>
                 </section>
 
