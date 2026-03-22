@@ -66,12 +66,26 @@ function Realizations() {
                         <ul className={s.stats}>
                             <li className={`card ${s.card} ${s.stat}`}>
                                 <p className={s.p}>Łączna moc zrealizowanych i zmodernizowanych biogazowni:</p>
-                                <span className={s.num}><AnimatedCounter end={17.2} decimalPlaces={1} className={s.counter}></AnimatedCounter> MW</span>
+                                <div className={s.counterContainer}>
+                                    <AnimatedCounter
+                                        end={17.2}
+                                        after={{text: 'MW', font: 'var(--raleway)'}}
+                                        decimalPlaces={1}
+                                        className={s.counter}
+                                    />
+                                </div>
                             </li>
 
                             <li className={`card ${s.card} ${s.stat}`}>
                                 <p className={s.p}>Uzyskana średnioroczna sprawność eksploatowanych instalacji</p>
-                                <span className={s.num}>{'>'}<AnimatedCounter end={95} className={s.counter}></AnimatedCounter>%</span>
+                                <div className={s.counterContainer}>
+                                    <AnimatedCounter
+                                        before={{text: '>'}}
+                                        end={95}
+                                        after={{text: '%', font: 'var(--raleway)'}}
+                                        className={s.counter}
+                                    />
+                                </div>
                                 <p className={s.p}>mocy zainstalowanej</p>
                             </li>
                         </ul>

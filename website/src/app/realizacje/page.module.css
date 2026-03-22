@@ -74,6 +74,17 @@
 .Section4 .counter {
     font-weight: 400;
     font-family: var(--poppins);
+    display: flex;    
+    font-size: 5rem;
+    color: var(--primary-color);
+    line-height: 6rem;
+}
+
+.Section4 .counterContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .Section4 .stats {
