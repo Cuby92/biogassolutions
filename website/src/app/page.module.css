@@ -193,6 +193,7 @@
 
 .Section4 .card .h4 {
     font-family: var(--space-grotesk);
+    font-weight: 900;
     opacity: 0.1;
     position: absolute;
     font-size: 400px;
