@@ -230,6 +230,13 @@
     filter: blur(2px);
 }
 
+@-moz-document url-prefix() {
+    .Section4 .card.left, .Section4 .card.right {
+        filter: none;
+        opacity: 0.4;
+    }
+}
+
 .Section4 .card.left {
     transform: translate(-100%, -50%) translateZ(-300px) rotateY(30deg);
 }

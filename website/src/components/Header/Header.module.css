@@ -184,15 +184,3 @@
     text-decoration-color: var(--primary-color);
     font-weight: 700;
 }
-
-@-moz-document url-prefix() {
-    .Header {
-        backdrop-filter: none;
-        background: #55555555;
-    }
-
-    .Sidebar {
-        backdrop-filter: none !important;
-        background: #55555588;
-    }
-}
