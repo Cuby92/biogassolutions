@@ -183,31 +183,37 @@ function Home() {
                     <div className={s.Descriptions}>
                         <div className={`card ${s.card} ${addClass(1, true)}`}>
                             <h3 className={s.h3}>Przygotowanie Projektu</h3>
+                            <h4 className={s.h4}>1</h4>
                             <p>Analiza wykonalności, tworzenie dokumentacji formalnej i technicznej, uzyskiwanie warunków zabudowy i przyłączeniowych.</p>
                         </div>
 
                         <div className={`card ${s.card} ${addClass(2, true)}`}>
                             <h3 className={s.h3}>Złożenie Wniosku o Dofinansowanie</h3>
+                            <h4 className={s.h4}>2</h4>
                             <p>Terminowe złożenie wniosku o dofinansowanie jest kluczowe, zwłaszcza dla programów wsparcia.</p>                          
                         </div>                        
                         
                         <div className={`card ${s.card} ${addClass(3, true)}`}>
                             <h3 className={s.h3}>Ocena Wniosku</h3>
+                            <h4 className={s.h4}>3</h4>
                             <p>Ocena formalna (kompletność) i merytoryczna (zasadność) projektu.</p>
                         </div>
                             
                         <div className={`card ${s.card} ${addClass(4, true)}`}>
                             <h3 className={s.h3}>Podpisanie Umowy i Wypłata Zaliczki</h3>
+                            <h4 className={s.h4}>4</h4>
                             <p>Podpisanie umowy o dofinansowanie, z możliwością wypłaty zaliczki do 95% kosztów, co poprawia płynność finansową.</p>
                         </div>
 
                         <div className={`card ${s.card} ${addClass(5, true)}`}>
                             <h3 className={s.h3}>Realizacja Budowy</h3>
+                            <h4 className={s.h4}>5</h4>
                             <p>Faktyczne prace budowlane, instalacja technologii. Terminowość i jakość wykonania są kluczowe.</p>
                         </div>
 
                         <div className={`card ${s.card} ${addClass(6, true)}`}>
                             <h3 className={s.h3}>Uruchomienie i Rozliczenie Projektu</h3>
+                            <h4 className={s.h4}>6</h4>
                             <p>Faza uruchomienia, testowania i odbiorów, a następnie złożenie końcowej dokumentacji i wypłata pozostałych środków.</p>                            
                         </div>   
 

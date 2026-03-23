@@ -191,6 +191,17 @@
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
 }
 
+.Section4 .card .h4 {
+    font-family: var(--space-grotesk);
+    opacity: 0.1;
+    position: absolute;
+    font-size: 400px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
+
 .Section4 .card .h3, .Section4 .card .p {
     width: 100% !important;
     text-align: center;
