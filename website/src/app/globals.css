@@ -446,3 +446,20 @@ footer details {
     border-radius: 3.5px;
     border: 1px solid var(--bg-white);
 }
+
+/* G E N E R A L   L I N K S */
+a {
+    color: black;
+    text-underline-offset: 1rem;
+    text-decoration-color: transparent;
+    transition:
+        text-underline-offset 0.5s ease-in-out,
+        text-decoration-color 0.6s ease-in-out,
+        color 0.3s ease-in-out;
+}
+
+a:hover {
+    text-underline-offset: 0.3rem;
+    text-decoration-color: var(--primary-color);
+    color: var(--primary-color);
+}
