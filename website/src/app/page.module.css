@@ -188,6 +188,7 @@
         opacity 0.2s ease-in-out,
         filter 0.2s ease-in-out,
         box-shadow 0.25s ease-in-out;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
 }
 
 .Section4 .card .h3, .Section4 .card .p {
