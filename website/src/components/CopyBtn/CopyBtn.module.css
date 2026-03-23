@@ -26,16 +26,17 @@
 }
 
 .copyIcon:hover {
-    background-color: var(--primary-color);
+    background-color: var(--primary-color) !important;
 }
 
 .copyIcon {
     mask-image: url('/img/icons/copy.svg');
-    background-color: black;
+    z-index: 2;
 }
 
 .copiedIcon {
     mask-image: url('/img/icons/check.svg');
     background-color: var(--primary-color);
-    pointer-events: 'none'
+    pointer-events: none;
+    z-index: 1;
 }

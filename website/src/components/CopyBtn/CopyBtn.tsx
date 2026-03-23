@@ -25,15 +25,14 @@ function CopyBtn({ toCopy, color, className, copiedColor}: CopyBtnProps) {
         <button className={`${s.btn} ${className || ''}`} onClick={copy} style={{pointerEvents: copied ? 'none' : 'all'}}>
             <div
                 style={{
-                    background: color,
+                    backgroundColor: color || 'black',
                     opacity: copied ? 0.1 : 1,
-                    pointerEvents: copied ? 'none' : 'all'
                 }}
                 className={s.copyIcon}
             ></div>
             <div
                 style={{
-                    background: copiedColor,
+                    backgroundColor: copiedColor || 'var(--primary-color)',
                     opacity: copied ? 1 : 0,
                 }}
                 className={s.copiedIcon}
