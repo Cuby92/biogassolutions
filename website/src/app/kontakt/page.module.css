@@ -12,7 +12,7 @@
 }
 
 .Section2 .ul {
-    padding-inline: 128px;
+    padding-inline: clamp(8px, 5%, 128px);
 }
 
 .Section2 .li {
