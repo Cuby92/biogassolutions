@@ -4,6 +4,9 @@ import Image from "next/image";
 import styles from './page.module.css';
 import Link from "next/link";
 import { useState, useEffect } from 'react';
+import fengLogo from '@/../public/img/grants/feng-logo.png';
+import nfosigwLogo from '@/../public/img/grants/nfosigw-logo.png';
+import edwLogo from '@/../public/img/grants/energia-dla-wsi-logo.png';
 
 const s = styles;
 type Point = 1 | 2 | 3 | 4 | 5 | 6;
@@ -228,24 +231,30 @@ function Home() {
 
                     <div className={s.grants}>
                         <Image
-                            src="/img/grants/feng-logo.png"
+                            src={fengLogo}
                             alt="Fundusze Europejskie dla Nowoczesnej Gospodarki"
                             width={220}
                             height={64}
+                            placeholder="blur"
+                            quality={50}
                             className={s.grantLogo}
                         />
                         <Image
-                            src="/img/grants/nfosigw-logo.png"
+                            src={nfosigwLogo}
                             alt="Narodowy Fundusz Ochrony Środowiska i Gospodarki Wodnej"
                             width={1759}
                             height={425}
+                            placeholder="blur"
+                            quality={50}
                             className={s.grantLogo}
                         />
                         <Image
-                            src="/img/grants/energia-dla-wsi-logo.png"
+                            src={edwLogo}
                             alt="Energia Dla Wsi"
                             width={655}
                             height={201}
+                            quality={50}
+                            placeholder="blur"
                             className={s.grantLogo}
                         />
                     </div>

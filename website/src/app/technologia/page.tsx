@@ -2,6 +2,7 @@ import Link from 'next/link';
 import styles from './page.module.css';
 import Image from 'next/image';
 import bg from '@/../public/img/bg/bg3.jpg';
+import scheme from '@/../public/img/scheme.png';
 
 const s = styles;
 
@@ -31,11 +32,12 @@ function Technology() {
             <div className={`mainContent ${s.mainContent}`}>
                 <div id="TechnologySection2" className={s.Section2}>
                     <Image 
-                        src="/img/scheme.png" 
+                        src={scheme}
                         alt="Schemat działania biogazowni" 
                         width={1228}
                         height={735}
                         quality={50}
+                        placeholder='blur'
                         className={s.Scheme}
                     />
                 </div>
