@@ -73,8 +73,8 @@ function Contact() {
                                 <div className={s.divider}></div>
                             </div>
                             <div className={s.content}>
-                                <p><span className={s.tag}>Email:</span> <strong>biuro@biogassolutions.pl</strong></p>
-                                <p><span className={s.tag}>Tel.:</span> <strong>+48 607 152 386</strong></p>
+                                <p><span className={s.tag}>Email:</span> <a href="mailto:biuro@biogassolutions.pl">biuro@biogassolutions.pl</a></p>
+                                <p><span className={s.tag}>Tel.:</span> <a href="tel:+48607152386">+48 607 152 386</a></p>
                             </div>
                         </div>
 
