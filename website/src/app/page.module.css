@@ -141,7 +141,7 @@
     width: 100%;
     display: flex;
     position: relative;
-    height: 350px;
+    height: 450px;
     perspective: 1000px;
 }
 
@@ -180,7 +180,7 @@
     width: clamp(250px, 300px, 60%);
     text-align: center;
     flex-direction: column;
-    height: 350px;
+    height: 400px;
     font-size: 1.2rem;
     justify-content: space-around;
     transition:
@@ -194,6 +194,7 @@
     width: 100% !important;
     text-align: center;
     text-wrap: balance;
+    margin: 0;
 }
 
 .Section4 .card.active {
