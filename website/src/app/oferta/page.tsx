@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import styles from './page.module.css';
 import Image from 'next/image';
+import bg from '@/../public/img/bg/bg3.jpg';
 
 const s = styles;
 
@@ -10,11 +11,12 @@ function Offer() {
             <div className="content">
                 <div className="bgContainer">
                     <Image
-                        src="/img/bg/bg3.jpg"
+                        src={bg}
                         alt=''
                         fill={true}
-                        quality={80}
+                        quality={70}
                         loading="eager"
+                        placeholder="blur"
                         className="pageBg"
                     />
                 </div>
