@@ -1,10 +1,45 @@
+'use client';
+
 import Image from "next/image";
 import styles from './page.module.css';
 import Link from "next/link";
+import { useState, useEffect } from 'react';
 
 const s = styles;
+type Point = 1 | 2 | 3 | 4 | 5 | 6;
 
 function Home() {
+    const [currentPoint, setCurrentPoint] = useState(1);
+
+    function nextPoint() {
+        setCurrentPoint(prev => prev === 6 ? 6 : prev + 1);
+    }
+    function prevPoint() {
+        setCurrentPoint(prev => prev === 1 ? 1 : prev - 1);
+    }
+
+    function checkActive(point: Point, returnDifference: boolean = false): boolean | number {
+        if (point === currentPoint) {
+            return returnDifference ? 0 : true;
+        } else {
+            return returnDifference ? point - currentPoint : false;
+        }
+    }
+
+    function addClass(point: Point, carousel: boolean = false): string {
+        const diff = checkActive(point, true);
+        switch (diff) {
+            case -1:
+                return carousel ? s.left : '';
+            case 0:
+                return s.active;
+            case 1:
+                return carousel ? s.right : '';
+            default:
+                return '';
+        }
+    }
+
     return (
         <section className="content">
             <div className="bgContainer">
@@ -73,14 +108,118 @@ function Home() {
 
                 <section className={s.Section4} id="HomeSection4">
                     <h2>Proces inwestycyjny</h2>
-                    <Image
-                        src="/img/timeline.png"
-                        alt="Przebieg procesu inwestycyjnego - oś czasu" 
-                        width={1772}
-                        height={501}
-                        quality={60}
-                        className={s.timeline}
-                    />
+                    <div className={s.timeline}>
+                        <div className={s.line}></div>
+                        <div className={s.dots}>
+                            <div className={`${s.dot} ${addClass(1)}`} onClick={() => setCurrentPoint(1)}>
+                                <Image
+                                    src="/img/icons/task-list.png"
+                                    alt='Ikona'
+                                    width={512}
+                                    height={512}
+                                    quality={100}
+                                    className={`${s.icon} ${addClass(1)}`}
+                                    onClick={() => setCurrentPoint(1)}
+                                />
+                            </div>
+                            <div className={`${s.dot} ${addClass(2)}`} onClick={() => setCurrentPoint(2)}>
+                                <Image
+                                    src="/img/icons/hand.png"
+                                    alt='Ikona'
+                                    width={512}
+                                    height={512}
+                                    quality={100}
+                                    className={`${s.icon} ${addClass(2)}`}
+                                    onClick={() => setCurrentPoint(2)}
+                                />
+                            </div>
+                            <div className={`${s.dot} ${addClass(3)}`} onClick={() => setCurrentPoint(3)}>
+                                <Image
+                                    src="/img/icons/assessment.png"
+                                    alt='Ikona'
+                                    width={512}
+                                    height={512}
+                                    quality={100}
+                                    className={`${s.icon} ${addClass(3)}`}
+                                    onClick={() => setCurrentPoint(3)}
+                                />
+                            </div>
+                            <div className={`${s.dot} ${addClass(4)}`} onClick={() => setCurrentPoint(4)}>
+                                <Image
+                                    src="/img/icons/contract.png"
+                                    alt='Ikona'
+                                    width={512}
+                                    height={512}
+                                    quality={100}
+                                    className={`${s.icon} ${addClass(4)}`}
+                                    onClick={() => setCurrentPoint(4)}
+                                />
+                            </div>
+                            <div className={`${s.dot} ${addClass(5)}`} onClick={() => setCurrentPoint(5)}>
+                                <Image
+                                    src="/img/icons/brick-wall.png"
+                                    alt='Ikona'
+                                    width={512}
+                                    height={512}
+                                    quality={100}
+                                    className={`${s.icon} ${addClass(5)}`}
+                                    onClick={() => setCurrentPoint(5)}
+                                />
+                            </div>
+                            <div className={`${s.dot} ${addClass(6)}`} onClick={() => setCurrentPoint(6)}>
+                                <Image
+                                    src="/img/icons/power-button.png"
+                                    alt='Ikona'
+                                    width={512}
+                                    height={512}
+                                    quality={100}
+                                    className={`${s.icon} ${addClass(6)}`}
+                                    onClick={() => setCurrentPoint(6)}
+                                />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className={s.Descriptions}>
+                        <div className={`card ${s.card} ${addClass(1, true)}`}>
+                            <h3 className={s.h3}>Przygotowanie Projektu</h3>
+                            <h4 className={s.h4}>1</h4>
+                            <p>Analiza wykonalności, tworzenie dokumentacji formalnej i technicznej, uzyskiwanie warunków zabudowy i przyłączeniowych.</p>
+                        </div>
+
+                        <div className={`card ${s.card} ${addClass(2, true)}`}>
+                            <h3 className={s.h3}>Złożenie Wniosku o Dofinansowanie</h3>
+                            <h4 className={s.h4}>2</h4>
+                            <p>Terminowe złożenie wniosku o dofinansowanie jest kluczowe, zwłaszcza dla programów wsparcia.</p>                          
+                        </div>                        
+                        
+                        <div className={`card ${s.card} ${addClass(3, true)}`}>
+                            <h3 className={s.h3}>Ocena Wniosku</h3>
+                            <h4 className={s.h4}>3</h4>
+                            <p>Ocena formalna (kompletność) i merytoryczna (zasadność) projektu.</p>
+                        </div>
+                            
+                        <div className={`card ${s.card} ${addClass(4, true)}`}>
+                            <h3 className={s.h3}>Podpisanie Umowy i Wypłata Zaliczki</h3>
+                            <h4 className={s.h4}>4</h4>
+                            <p>Podpisanie umowy o dofinansowanie, z możliwością wypłaty zaliczki do 95% kosztów, co poprawia płynność finansową.</p>
+                        </div>
+
+                        <div className={`card ${s.card} ${addClass(5, true)}`}>
+                            <h3 className={s.h3}>Realizacja Budowy</h3>
+                            <h4 className={s.h4}>5</h4>
+                            <p>Faktyczne prace budowlane, instalacja technologii. Terminowość i jakość wykonania są kluczowe.</p>
+                        </div>
+
+                        <div className={`card ${s.card} ${addClass(6, true)}`}>
+                            <h3 className={s.h3}>Uruchomienie i Rozliczenie Projektu</h3>
+                            <h4 className={s.h4}>6</h4>
+                            <p>Faza uruchomienia, testowania i odbiorów, a następnie złożenie końcowej dokumentacji i wypłata pozostałych środków.</p>                            
+                        </div>   
+
+                        <button className={`${s.prevBtn} ${addClass(6)}`} onClick={prevPoint} style={{opacity: checkActive(1) ? 0.3 : 1, cursor: checkActive(1) ? 'not-allowed' : 'pointer'}}></button>
+                        <button className={`${s.nextBtn} ${addClass(1)}`} onClick={nextPoint} style={{opacity: checkActive(6) ? 0.3 : 1, cursor: checkActive(6) ? 'not-allowed' : 'pointer'}}></button>
+                    </div>
                 </section>
 
                 <section className={s.Section5} id="HomeSection5">
