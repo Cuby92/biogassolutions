@@ -1,6 +1,7 @@
 import styles from './page.module.css';
 import Image from 'next/image';
 import bg from '@/../public/img/bg/bg2.jpg';
+import CopyBtn from '@/components/CopyBtn/CopyBtn';
 
 const s = styles;
 
@@ -75,8 +76,8 @@ function Contact() {
                                 <div className={s.divider}></div>
                             </div>
                             <div className={s.content}>
-                                <p><span className={s.tag}>Email:</span> <a href="mailto:biuro@biogassolutions.pl">biuro@biogassolutions.pl</a></p>
-                                <p><span className={s.tag}>Tel.:</span> <a href="tel:+48607152386">+48 607 152 386</a></p>
+                                <p><span className={s.tag}>Email:</span> <a href="mailto:biuro@biogassolutions.pl">biuro@biogassolutions.pl</a><CopyBtn toCopy="biuro@biogassolutions.pl" /></p>
+                                <p><span className={s.tag}>Tel.:</span> <a href="tel:+48607152386">+48 607 152 386</a><CopyBtn toCopy="+48 607 152 386" /></p>
                             </div>
                         </div>
 
@@ -88,8 +89,8 @@ function Contact() {
                             <div className={s.content}>
                                 <p>Biogas Solutions Sp. z o.o.</p>
                                 <p>ul. Topolowa 27B, 62-028 Koziegłowy</p>
-                                <p><span className={s.tag}>NIP:</span> 777 345 10 10</p>
-                                <p><span className={s.tag}>REGON:</span> 542309232</p>
+                                <p><span className={s.tag}>NIP:</span> 777 345 10 10 <CopyBtn toCopy="777 345 10 10" /></p>
+                                <p><span className={s.tag}>REGON:</span> 542309232 <CopyBtn toCopy="542309232" /></p>
                             </div>
                         </div>
 
