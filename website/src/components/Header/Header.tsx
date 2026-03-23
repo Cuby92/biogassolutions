@@ -118,7 +118,7 @@ function Header() {
     }
 
     function handlePageChange() {
-        setHamburgerState(false);
+        toggleHamburger();
     }
 
     function handleResize() {
