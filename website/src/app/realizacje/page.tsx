@@ -28,12 +28,12 @@ function Realizations() {
                     <div className="content">
                         <h1 className="hero-header">Nasze realizacje</h1>
                         <p className="lead">Od kilkunastu lat projektujemy, budujemy i modernizujemy instalacje biogazowe w całej Polsce - od koncepcji i technologii, przez projekt i dokumentację, aż po budowę, rozruch oraz późniejsze zarządzanie eksploatacją.</p>
-                        <div className="cta"><a href="#Section2" className="cta-button">Dowiedz się więcej</a></div>
+                        <div className="cta"><a href="#nasze-doswiadczenie" className="cta-button">Dowiedz się więcej</a></div>
                     </div>
                 </div>
 
                 <div className={`mainContent ${s.mainContent}`}>
-                    <div id="RealizationsSection2" className={s.Section2}>
+                    <div id="nasze-doswiadczenie" className={s.Section2}>
                         <h3>Nasze</h3>
                         <h2 className={s.h2}>Doświadczenie</h2>
                         <ul className={s.ul}>
