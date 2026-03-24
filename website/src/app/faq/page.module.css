@@ -6,7 +6,7 @@
 
 .dropdown {
     cursor: pointer;
-    font-size: var(--std-font-size);
+    
 }
 
 .Section2 .dropdown .answer {

@@ -9,7 +9,6 @@
     --primary-color: rgb(4, 175, 95);
     --secondary-color: rgb(255, 204, 0);
     --bg-white: #f4f4f4;
-    --std-font-size: clamp(16px, 14.691px + 0.364vw, 24px);
 }
 
 body, html {
@@ -23,7 +22,7 @@ body, html {
 html {
     font-family: var(--dm-sans), Arial;
     color: var(--bg-white);
-    font-size: 16px;
+    font-size: clamp(16px, 14.691px + 0.364vw, 24px);
 }
 
 strong {
@@ -170,7 +169,7 @@ footer {
     text-align: left;
     flex-wrap: wrap;   
     flex-grow: 1; 
-    padding-inline: 1rem;
+    padding-inline: clamp(16px, 8.145px + 2.182vw, 64px);
 
     position: relative;
     bottom: 0;
