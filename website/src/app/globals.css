@@ -137,7 +137,7 @@ h4 {
 
 .cover .lead {
     margin-bottom: 30px;
-    font-size: 1.2rem;
+    font-size: clamp(20px, 18.036px + 0.545vw, 32px);
 }
 
 .cover .cta-button {
@@ -374,10 +374,11 @@ footer details {
 
 .cta-button {
     background-color: transparent;
-    padding: 15px;
-    border-radius: 10px;
+    padding: clamp(16px, 14.691px + 0.364vw, 24px);
+    border-radius: clamp(10px, 9.018px + 0.273vw, 16px);
     flex-wrap: nowrap;
     text-decoration: none;
+    font-size: clamp(20px, 18.036px + 0.545vw, 32px);
     font-weight: 500;
     color: white;
     box-shadow: 
