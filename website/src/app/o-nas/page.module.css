@@ -1,28 +1,25 @@
 .Section2 {
     display: flex;
-    flex-wrap: wrap;    
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 32px; 
 }
 
 .Section2 .card {
-    display: flex;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: subgrid;
+    grid-row: span 1;
     align-items: center;
-    margin: 20px auto;
+    width: clamp(300px, 218.182px + 22.727vw, 800px);
 }
 
-@media (min-width: 769px) {
-    .Section2 .card {
-        width: 40%;
-    }
-}
-
-@media (max-width: 768px) {
-    .Section2 .card {
-        width: 80%;
-    }
+.Section2 .card .p {
+    font-size: var(--std-font-size);
 }
 
 .Section2 .icon {
-    height: 4rem;
+    height: clamp(48px, 42.764px + 1.455vw, 80px);
     width: auto;
     margin-right: 30px;
 }
@@ -35,27 +32,25 @@
 }
 
 .Section3 .icon {
-    height: 4rem;
+    height: clamp(48px, 34.909px + 3.636vw, 128px);
     width: auto;
     margin: 30px;
 }
 
-@media (min-width: 769px) {
-    .Section3 .card {
-        width: 25%;
-    }
+.Section3 .p {
+    font-size: var(--std-font-size);
 }
 
-@media (max-width: 768px) {
-    .Section3 .card {
-        width: 70%;
-    }
+.Section3 .cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    justify-content: space-around;
+    width: 100%;
+}
 
-    .Section3 {
-        flex-direction: column;
-        gap: 30px;
-        align-items: center;
-    }
+.Section3 .card {
+    width: clamp(250px, 209.091px + 11.364vw, 700px);
 }
 
 .Section4 {
@@ -65,31 +60,29 @@
     align-items: center;
 }
 
-@media (min-width: 769px) {
-    .Section4 .card {
-        width: 40%;
-    }
-}
-
-@media (max-width: 768px) {
-    .Section4 .card {
-        width: 70%; 
-    }
-
-    .Section4 {
-        flex-direction: column;
-        gap: 30px;
-        align-items: center;
-    }
+.Section4 .cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    width: 100%;
+    justify-content: space-around;
 }
 
 .Section4 .card {
-    display: flex;
-    align-content: center;
+    width: clamp(300px, 40%, 800px);
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: subgrid;
+    grid-row: span 1;
+    place-items: center;
+}
+
+.Section4 .p {
+    font-size: var(--std-font-size);
 }
 
 .Section4 .icon {
-    height: 3rem;
+    height: clamp(48px, 42.764px + 1.455vw, 80px);
     width: auto;
     margin-right: 30px;
 }
