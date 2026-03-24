@@ -13,6 +13,10 @@
     size: 1.2rem;
 }
 
+.card .li {
+    margin-left: 1rem;
+}
+
 .miniature {
     display: flex;
     justify-content: center;
@@ -81,14 +85,20 @@
 
 @media (max-width: 700px) {
     .gridWrapper {
-        display: flex;
-        flex-direction: column;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, auto);
+        grid-template-areas: 
+            'power'
+            'for-whom'
+            'benefits' !important;
     }
 
     .miniature {
         display: none;
     }
+}
 
+@media (hover: none) and (pointer:coarse) {
     .card:hover {
         transform: none !important;
         box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.15) !important;
@@ -112,6 +122,6 @@
     font-weight: 400;
 }
 
-.mainContent .cta {
-    margin-top: -80px;
+.mainContent {
+    gap: 0;
 }
