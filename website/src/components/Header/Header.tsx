@@ -12,7 +12,7 @@ function Header() {
     const [topBar, setTopBar]       = useState<Bar>({
         angle: 0,
         length: {
-            value: 3.3,
+            value: 2.5,
             unit: 'rem',
         },
         offsetY: {
@@ -23,7 +23,7 @@ function Header() {
     const [middleBar, setMiddleBar] = useState<Bar>({
         angle: 0,
         length: {
-            value: 3.3,
+            value: 2.5,
             unit: 'rem'
         },
         offsetY: {
@@ -34,7 +34,7 @@ function Header() {
     const [bottomBar, setBottomBar] = useState<Bar>({
         angle: 0,
         length: {
-            value: 3.3,
+            value: 2.5,
             unit: 'rem'
         },
         offsetY: {
@@ -49,11 +49,11 @@ function Header() {
             setTopBar({
                 angle: 45,
                 length: {
-                    value: 3.3 * Math.sqrt(2),
+                    value: 2.5 * Math.sqrt(2),
                     unit: 'rem'
                 },
                 offsetY: {
-                    value: -0.25,
+                    value: -0.21,
                     unit: 'rem'
                 }
             });
@@ -71,11 +71,11 @@ function Header() {
             setBottomBar({
                 angle: -45,
                 length: {
-                    value: 3.3 * Math.sqrt(2),
+                    value: 2.5 * Math.sqrt(2),
                     unit: 'rem'
                 },
                 offsetY: {
-                    value: 0.25,
+                    value: 0.21,
                     unit: 'rem'
                 }
             });
@@ -83,7 +83,7 @@ function Header() {
             setTopBar({
                 angle: 0,
                 length: {
-                    value: 3.3,
+                    value: 2.5,
                     unit: 'rem'
                 },
                 offsetY: {
@@ -95,7 +95,7 @@ function Header() {
             setMiddleBar({
                 angle: 0,
                 length: {
-                    value: 3.3,
+                    value: 2.5,
                     unit: 'rem'
                 },
                 offsetY: {
@@ -106,7 +106,7 @@ function Header() {
             setBottomBar({
                 angle: 0,
                 length: {
-                    value: 3.3,
+                    value: 2.5,
                     unit: 'rem'
                 },
                 offsetY: {

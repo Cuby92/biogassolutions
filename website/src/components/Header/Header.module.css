@@ -72,14 +72,15 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    width: 3.3rem;
-    height: 3.3rem;
-    gap: calc((3rem - 3 * 0.4rem) / 2);
+    width: 2.5rem;
+    height: 2.5rem;
+    gap: calc((2.5rem - 3 * 0.4rem) / 2);
     z-index: 1002;
+    font-size: 16px;
 }
 
 .SidebarToggle .bar {
-    width: 3.3rem;
+    width: 2.5rem;
     height: 100%;
     background: var(--secondary-color);
     border-radius: 0.1rem;
