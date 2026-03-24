@@ -24,7 +24,6 @@
 
 .mainContent {
     gap: 0;
-    padding: clamp(64px, 32.582px + 8.727vw, 256px);
 }
 
 .mainContent .h2 {
