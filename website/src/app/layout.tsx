@@ -33,7 +33,11 @@ const raleway = Raleway({
 
 function RootLayout({ children, }: Readonly<{ children: React.ReactNode; }>) {
   return (
-    <html lang="pl" className={`${dmSans.variable} ${poppins.variable} ${spaceGrotesk.variable} ${raleway.variable}`}>
+    <html
+      lang="pl"
+      className={`${dmSans.variable} ${poppins.variable} ${spaceGrotesk.variable} ${raleway.variable}`}
+      data-scroll-behavior="smooth"
+    >
       <body>
         <Header />
           { children }
