@@ -9,6 +9,7 @@
     --primary-color: rgb(4, 175, 95);
     --secondary-color: rgb(255, 204, 0);
     --bg-white: #f4f4f4;
+    --std-font-size: clamp(16px, 14.691px + 0.364vw, 24px);
 }
 
 body, html {
