@@ -19,7 +19,7 @@
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
-    font-size: clamp(1rem, 1.5rem, 32px);
+    font-size: clamp(16px, 14.938px + 0.354vw, 24px);
 }
 
 .Section2 .li .icon {
@@ -37,7 +37,7 @@
     display: flex;
     gap: 70px;
     flex-wrap: wrap;
-    padding: 64px;
+    padding: clamp(8px, -11.636px + 5.455vw, 128px);
     justify-content: space-around;
 }
 
@@ -60,7 +60,7 @@
     background: var(--bg-white);
     padding: 8px 8px 8px 16px;
     line-height: 40px;
-    font-size: 20px;
+    font-size: clamp(16px, 14.606px + 0.367vw, 24px);
     z-index: 2;
     height: 230px;
     align-items: center;
