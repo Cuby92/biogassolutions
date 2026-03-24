@@ -1,5 +1,5 @@
 .card {
-    width: 70%;
+    width: clamp(300px, 21.818px + 77.273vw, 2000px);
     margin-inline: auto;
     display: flex;
     flex-wrap: nowrap;
