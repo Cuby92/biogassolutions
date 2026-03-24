@@ -90,7 +90,7 @@ h1, h2, h3, h4 {
 
 h1 {
     font-size: clamp(24px, 11.564px + 3.455vw, 100px);
-    line-height: auto;
+    line-height: clamp(34px, 21.564px + 3.455vw, 110px);
     font-weight: 300;
 }
 
@@ -138,7 +138,7 @@ h4 {
 
 .cover .lead {
     margin-bottom: 30px;
-    font-size: clamp(20px, 18.036px + 0.545vw, 32px);
+    font-size: clamp(16px, 14.691px + 0.364vw, 24px);
 }
 
 .cover .cta-button {
@@ -376,11 +376,11 @@ footer details {
 
 .cta-button {
     background-color: transparent;
-    padding: clamp(16px, 14.691px + 0.364vw, 24px);
-    border-radius: clamp(10px, 9.018px + 0.273vw, 16px);
+    padding: clamp(16px, 15.345px + 0.182vw, 20px);
+    border-radius: clamp(8px, 6.691px + 0.364vw, 16px);
     flex-wrap: nowrap;
     text-decoration: none;
-    font-size: clamp(20px, 18.036px + 0.545vw, 32px);
+    font-size: clamp(16px, 15.345px + 0.182vw, 20px);
     font-weight: 500;
     color: white;
     box-shadow: 
