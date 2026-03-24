@@ -54,7 +54,7 @@ strong {
 /* M A I N   C O N T E N T */
 .mainContent {
     background: var(--bg-white);
-    padding: clamp(10px, -9.309px + 5.364vw, 128px);
+    padding: 64px clamp(16px, -2.327px + 5.091vw, 128px);
     color: black;
     width: 100%;
     overflow-x: hidden;
@@ -121,7 +121,7 @@ h4 {
 /* C O V E R */
 .cover {
     height: 100vh;
-    padding: clamp(8px, -11.636px + 5.455vw, 128px);
+    padding: clamp(24px, 6.982px + 4.727vw, 128px);
     display: flex;
     align-items: center;
 }
@@ -372,6 +372,7 @@ footer details {
     width: 100%;
     margin-top: clamp(32px, 24.145px + 2.182vw, 80px) !important;
     text-align: center;
+    padding-block: 16px;
 }
 
 .cta-button {
