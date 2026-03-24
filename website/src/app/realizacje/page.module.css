@@ -98,8 +98,8 @@
 .Section4 .card {
     margin-inline: 20px;
     height: 17rem;
-    max-width: 500px;
     text-align: center;
+    width: clamp(300px, 201.818px + 27.273vw, 900px);
 }
 
 .Section4 .h3 {

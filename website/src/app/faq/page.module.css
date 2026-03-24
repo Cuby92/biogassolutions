@@ -1,11 +1,12 @@
 .card {
-    width: 80%;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
 }
 
 .dropdown {
     cursor: pointer;
+    
 }
 
 .Section2 .dropdown .answer {
@@ -13,10 +14,6 @@
     width: 70%;
     margin-left: auto;
     margin-top: 20px;
-}
-
-.Section2 .dropdown .answer {
-    font-size: 1.1rem;
 }
 
 .Section2 {
@@ -27,16 +24,14 @@
 
 .mainContent {
     gap: 0;
-    padding-block: 128px;
 }
 
 .mainContent .h2 {
-    font-size: calc(5rem + 20vw);
+    font-size: clamp(128px, 65.164px + 17.455vw, 512px);
     font-weight: 100;
 }
 
 .mainContent .h3 {
-    font-size: calc(1rem + 1vw);
-    margin-bottom: 32px;
-    margin-top: calc(80px + 1vw);
+    margin-bottom: clamp(24px, 17.455px + 1.818vw, 64px);
+    margin-top: clamp(16px, -2.327px + 5.091vw, 128px);
 }

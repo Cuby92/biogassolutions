@@ -22,7 +22,7 @@ body, html {
 html {
     font-family: var(--dm-sans), Arial;
     color: var(--bg-white);
-    font-size: 16px;
+    font-size: clamp(16px, 14.691px + 0.364vw, 24px);
 }
 
 strong {
@@ -53,7 +53,7 @@ strong {
 /* M A I N   C O N T E N T */
 .mainContent {
     background: var(--bg-white);
-    padding: 50px 0;
+    padding: 64px clamp(16px, -2.327px + 5.091vw, 128px);
     color: black;
     width: 100%;
     overflow-x: hidden;
@@ -88,9 +88,15 @@ h1, h2, h3, h4 {
 }
 
 h1 {
-    font-size: calc(3vw + 1.5rem) !important;
+    font-size: clamp(24px, 11.564px + 3.455vw, 100px);
+    line-height: clamp(34px, 21.564px + 3.455vw, 110px);
     font-weight: 300;
-    line-height: calc(3vw + 2rem);
+}
+
+@media (max-width: 500px) {
+    h1 {
+        font-weight: 500;
+    }
 }
 
 h2 {
@@ -102,9 +108,8 @@ h2 {
 
 h3 {
     font-weight: 200;
-    font-size: 2rem;
-    letter-spacing: 1.2rem;
-    margin-bottom: 1.5rem;
+    font-size: clamp(20px, 15.418px + 1.273vw, 48px);
+    letter-spacing: clamp(16px, 15.345px + 0.182vw, 20px);
 }
 
 h4 {
@@ -115,7 +120,7 @@ h4 {
 /* C O V E R */
 .cover {
     height: 100vh;
-    padding: 50px;
+    padding: clamp(24px, 6.982px + 4.727vw, 128px);
     display: flex;
     align-items: center;
 }
@@ -125,7 +130,6 @@ h4 {
 }
 
 .cover .content h1 {
-    font-size: 2.5rem;
     margin-bottom: 20px;
     display: flex;
     align-items: center;
@@ -133,7 +137,7 @@ h4 {
 
 .cover .lead {
     margin-bottom: 30px;
-    font-size: 1.2rem;
+    font-size: clamp(16px, 14.691px + 0.364vw, 24px);
 }
 
 .cover .cta-button {
@@ -165,7 +169,7 @@ footer {
     text-align: left;
     flex-wrap: wrap;   
     flex-grow: 1; 
-    padding-inline: 1rem;
+    padding-inline: clamp(16px, 8.145px + 2.182vw, 64px);
 
     position: relative;
     bottom: 0;
@@ -365,15 +369,18 @@ footer details {
 /* C T A */
 .cta {
     width: 100%;
+    margin-top: clamp(32px, 24.145px + 2.182vw, 80px) !important;
     text-align: center;
+    padding-block: 16px;
 }
 
 .cta-button {
     background-color: transparent;
-    padding: 15px;
-    border-radius: 10px;
+    padding: clamp(16px, 15.345px + 0.182vw, 20px);
+    border-radius: clamp(8px, 6.691px + 0.364vw, 16px);
     flex-wrap: nowrap;
     text-decoration: none;
+    font-size: clamp(16px, 15.345px + 0.182vw, 20px);
     font-weight: 500;
     color: white;
     box-shadow: 
@@ -390,8 +397,8 @@ footer details {
 .card {
     background-color: var(--bg-white);
     box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.15);
-    padding: 40px;
-    border-radius: 20px;
+    padding: clamp(16px, 8.145px + 2.182vw, 64px);
+    border-radius: clamp(20px, 18.036px + 0.545vw, 32px);
     transition: 
         transform 500ms, 
         box-shadow 500ms;

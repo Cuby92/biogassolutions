@@ -89,19 +89,19 @@ function Home() {
                     <div className={`gridWrapper ${styles['gridWrapper']}`}>
                         <div className={`card ${s.card}`}>
                             <img className={s.icon} src="/img/icons/workflow.png" alt="Ikona przepływu pracy" />
-                            <p>Kompleksowa obsługa "od A do Z" (studium, projekt, decyzje, budowa, rozruch, serwis) i wsparcie pozyskania dotacji.</p>
+                            <p className={s.p}>Kompleksowa obsługa "od A do Z" (studium, projekt, decyzje, budowa, rozruch, serwis) i wsparcie pozyskania dotacji.</p>
                         </div>
                         <div className={`card ${s.card}`}>
                             <img className={s.icon} src="/img/icons/technology.png" alt="Ikona technologii" />
-                            <p>Zaawansowane systemy procesowe - w zakresie urządzeń i elementów procesowych (w tym procesów higienizacji oraz sterylizacji), zdalnego sterowania oraz instalacji dla funkcjonalności obiektów.</p>
+                            <p className={s.p}>Zaawansowane systemy procesowe - w zakresie urządzeń i elementów procesowych (w tym procesów higienizacji oraz sterylizacji), zdalnego sterowania oraz instalacji dla funkcjonalności obiektów.</p>
                         </div>
                         <div className={`card ${s.card}`}>
                             <img className={s.icon} src="/img/icons/24-hours-service.png" alt="Ikona obsługa 24/7" />
-                            <p>Zdalny monitoring 24/7, szkolenia operatorów i standard reakcji serwisu do 48 h z opcją skrócenia wg umowy.</p>
+                            <p className={s.p}>Zdalny monitoring 24/7, szkolenia operatorów i standard reakcji serwisu do 48 h z opcją skrócenia wg umowy.</p>
                         </div>
                         <div className={`card ${s.card}`}>
                             <img className={s.icon} src="/img/icons/shield.png" alt="Ikona tarczy" />
-                            <p>Bezpieczeństwo i niezawodność instalacji w zakresie całości obiektów oraz poszczególnych urządzeń i elementów.</p>
+                            <p className={s.p}>Bezpieczeństwo i niezawodność instalacji w zakresie całości obiektów oraz poszczególnych urządzeń i elementów.</p>
                         </div>
                     </div>
                     <div className={`cta ${s.cta}`}>
@@ -187,37 +187,37 @@ function Home() {
                         <div className={`card ${s.card} ${addClass(1, true)}`}>
                             <h3 className={s.h3}>Przygotowanie Projektu</h3>
                             <h4 className={s.h4}>1</h4>
-                            <p>Analiza wykonalności, tworzenie dokumentacji formalnej i technicznej, uzyskiwanie warunków zabudowy i przyłączeniowych.</p>
+                            <p className={s.p}>Analiza wykonalności, tworzenie dokumentacji formalnej i technicznej, uzyskiwanie warunków zabudowy i przyłączeniowych.</p>
                         </div>
 
                         <div className={`card ${s.card} ${addClass(2, true)}`}>
                             <h3 className={s.h3}>Złożenie Wniosku o Dofinansowanie</h3>
                             <h4 className={s.h4}>2</h4>
-                            <p>Terminowe złożenie wniosku o dofinansowanie jest kluczowe, zwłaszcza dla programów wsparcia.</p>                          
+                            <p className={s.p}>Terminowe złożenie wniosku o dofinansowanie jest kluczowe, zwłaszcza dla programów wsparcia.</p>                          
                         </div>                        
                         
                         <div className={`card ${s.card} ${addClass(3, true)}`}>
                             <h3 className={s.h3}>Ocena Wniosku</h3>
                             <h4 className={s.h4}>3</h4>
-                            <p>Ocena formalna (kompletność) i merytoryczna (zasadność) projektu.</p>
+                            <p className={s.p}>Ocena formalna (kompletność) i merytoryczna (zasadność) projektu.</p>
                         </div>
                             
                         <div className={`card ${s.card} ${addClass(4, true)}`}>
                             <h3 className={s.h3}>Podpisanie Umowy i Wypłata Zaliczki</h3>
                             <h4 className={s.h4}>4</h4>
-                            <p>Podpisanie umowy o dofinansowanie, z możliwością wypłaty zaliczki do 95% kosztów, co poprawia płynność finansową.</p>
+                            <p className={s.p}>Podpisanie umowy o dofinansowanie, z możliwością wypłaty zaliczki do 95% kosztów, co poprawia płynność finansową.</p>
                         </div>
 
                         <div className={`card ${s.card} ${addClass(5, true)}`}>
                             <h3 className={s.h3}>Realizacja Budowy</h3>
                             <h4 className={s.h4}>5</h4>
-                            <p>Faktyczne prace budowlane, instalacja technologii. Terminowość i jakość wykonania są kluczowe.</p>
+                            <p className={s.p}>Faktyczne prace budowlane, instalacja technologii. Terminowość i jakość wykonania są kluczowe.</p>
                         </div>
 
                         <div className={`card ${s.card} ${addClass(6, true)}`}>
                             <h3 className={s.h3}>Uruchomienie i Rozliczenie Projektu</h3>
                             <h4 className={s.h4}>6</h4>
-                            <p>Faza uruchomienia, testowania i odbiorów, a następnie złożenie końcowej dokumentacji i wypłata pozostałych środków.</p>                            
+                            <p className={s.p}>Faza uruchomienia, testowania i odbiorów, a następnie złożenie końcowej dokumentacji i wypłata pozostałych środków.</p>                            
                         </div>   
 
                         <button className={`${s.prevBtn} ${addClass(6)}`} onClick={prevPoint} style={{opacity: checkActive(1) ? 0.3 : 1, cursor: checkActive(1) ? 'not-allowed' : 'pointer'}}></button>
@@ -227,7 +227,7 @@ function Home() {
 
                 <section className={s.Section5} id="HomeSection5">
                     <h2>Finansowanie</h2>
-                    <p style={{width: '100%', textAlign: 'center'}}>Przygotowujemy dokumentację i wnioski oraz wspieramy rozliczenia w programach krajowych i unijnych.</p>
+                    <p className={s.p}>Przygotowujemy dokumentację i wnioski oraz wspieramy rozliczenia w programach krajowych i unijnych.</p>
 
                     <div className={s.grants}>
                         <Image

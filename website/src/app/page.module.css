@@ -6,13 +6,14 @@
 
 .Section2 .column {
     flex-basis: 25%;
-    min-width: 300px;
+    min-width: 250px;
 }
 
 .Section2 .icon {
-    width: 3rem;
+    width: clamp(48px, 34.909px + 3.636vw, 128px);
     height: auto;
-    margin: 10px auto;
+    margin-inline: auto;
+    margin-bottom: clamp(8px, 4.073px + 1.091vw, 32px);
     display: block;
 }
 
@@ -24,10 +25,10 @@
 }
 
 .Section2 .p {
-    font-size: 1.5rem;
+    font-size: clamp(16px, 13.382px + 0.727vw, 32px);
 }
 
-@media (max-width: 1019px) {
+@media (max-width: 953px) {
     .Section2 .card:nth-of-type(1), .Section2 .card:nth-of-type(2) {
         margin-bottom: 32px;
     }
@@ -39,14 +40,18 @@
 }
 
 .Section3 .icon {
-    height: 3rem;
+    height: clamp(48px, 42.764px + 1.455vw, 80px);
     width: auto;
+}
+
+.Section3 .card .p {
+    
 }
 
 .Section3 .gridWrapper {
     grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
     gap: 32px;
-    margin-inline: 30px;
+    margin-inline: 32px;
 }
 
 @media (max-width: 989px) {
@@ -80,17 +85,42 @@
     justify-content: center;
     margin-inline: auto;
     position: relative;
-    margin-top: 128px;
+    margin-top: clamp(128px, 107.055px + 5.818vw, 256px);
     margin-bottom: 32px;
 }
 
 .Section4 .icon {
-    height: 3rem;
-    width: 3rem;
+    height: clamp(24px, 6.982px + 4.727vw, 128px);
+    width: auto;
     position: absolute;
-    top: -700%;
-    left: -150%;
+    bottom: 200%;
+    left: -125%;
     transition: filter 0.4s ease-in-out;
+}
+
+@media (max-width: 479px) {
+    .Section4 .icon {
+        left: -75%;
+    }
+}
+
+@media (max-width: 719px) {
+    .Section4 .icon {
+        left: -125%;
+    }
+}
+
+@media (max-width: 1028px) {
+    .Section4 .icon {
+        left: -175%;
+    }
+}
+
+@media (min-width: 1029px) {
+    .Section4 .icon {
+        left: -600%;
+        bottom: 300%
+    }
 }
 
 .Section4 .dots {
@@ -177,11 +207,10 @@
 
 .Section4 .card {
     display: none;
-    width: clamp(250px, 300px, 60%);
+    width: clamp(250px, 225.455px + 6.818vw, 400px);
     text-align: center;
     flex-direction: column;
     height: 400px;
-    font-size: 1.2rem;
     justify-content: space-around;
     transition:
         transform 0.3s ease-in-out,
@@ -189,6 +218,11 @@
         filter 0.2s ease-in-out,
         box-shadow 0.25s ease-in-out;
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+    padding: clamp(8px, 1.455px + 1.818vw, 48px);
+}
+
+.Section4 .card .h3 {
+    font-size: clamp(20px, 18.036px + 0.545vw, 32px) !important;
 }
 
 .Section4 .card .h4 {
@@ -201,6 +235,10 @@
     left: 50%;
     transform: translate(-50%, -50%);
     pointer-events: none;
+}
+
+.Section4 .card .p {
+    
 }
 
 .Section4 .card .h3, .Section4 .card .p {
@@ -257,6 +295,12 @@
     text-align: center;
 }
 
+.Section5 .p {
+    width: 100%;
+    text-align: center;
+    
+}
+
 .Section5 .grants {
     display: flex;
     gap: 32px;
@@ -265,12 +309,11 @@
     width: 100%;
     flex-wrap: wrap;
     margin-top: 32px;
-    padding-inline: 32px
 }
 
 .Section5 .grantLogo {
-    height: 5rem;
-    width: auto;    
+    height: clamp(64px, 53.527px + 2.909vw, 128px);
+    width: auto;
 }
 
 .Section5 .cta {

@@ -123,7 +123,7 @@ function Technology() {
                                 alt="Ikona błyskawicy"
                                 width={512}
                                 height={512}
-                                quality={30}
+                                quality={90}
                                 className={s.icon}
                             />
                             <p>Jednoczesna produkcja prądu i ciepła zwiększa efektywność wykorzystania biogazu i stabilizuje koszty energii.</p>
@@ -134,7 +134,7 @@ function Technology() {
                                 alt="Ikona ciepła"
                                 width={512}
                                 height={512}
-                                quality={30}
+                                quality={90}
                                 className={s.icon}
                             />
                             <p>Ciepło można wykorzystać w procesach technologicznych lub do ogrzewania obiektów.</p>
