@@ -4,7 +4,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.5rem;
+    padding: clamp(16px, 10.764px + 1.455vw, 48px);
     backdrop-filter: blur(20px);
     background: #55665555;
     position: fixed;
@@ -17,12 +17,12 @@
 }
 
 .headerHidden {
-    top: -8rem;
+    top: -100%;
 }
 
 .Header .logo {
-    height: 100%;
-    width: 100%;
+    height: clamp(48px, 42.764px + 1.455vw, 80px);
+    width: auto;
 }
 
 .DesktopNavMenu .ul {
@@ -36,7 +36,6 @@
 
 .DesktopNavMenu .a,
 .SidebarMenu .a {
-    font-size: 1.4rem;
     color: var(--secondary-color);
     text-decoration: underline;
     font-weight: 500;
@@ -48,8 +47,16 @@
     text-decoration-color: #ffcc0000;
 }
 
+.DesktopNavMenu .a {
+    font-size: 1.1rem;
+}
+
+.SidebarMenu .a {
+    font-size: 1.4rem;
+}
+
 .Header .linkContainer {
-    height: 4.5rem;
+    height: auto;
     width: 11.214375rem;
     overflow: hidden;
     transition: clip-path 0.5s ease-out;

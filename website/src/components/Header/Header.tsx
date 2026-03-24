@@ -162,7 +162,7 @@ function Header() {
     return (
         <>
             <header id="#header" className={`${s.Header} ${headerHidden ? s.headerHidden : ''}`} style={{width: hamburgerState ? 'calc(100vw - 250px)' : '100vw'}}>
-                <Link style={{clipPath: hamburgerState ? 'circle(30% at 13% 52%)' : 'circle(150% at 13% 52%)'}} className={s.linkContainer} href="/"><img className={s.logo} src="/img/brand/logo.svg" alt="Biogas Solutions" /></Link>
+                <Link style={{clipPath: hamburgerState ? 'circle(80% at 13% 52%)' : 'circle(150% at 13% 52%)'}} className={s.linkContainer} href="/"><img className={s.logo} src="/img/brand/logo.svg" alt="Biogas Solutions" /></Link>
 
                 <nav className={s.DesktopNavMenu}>
                     <ul className={s.ul}>
