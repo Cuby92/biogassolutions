@@ -22,7 +22,7 @@ body, html {
 html {
     font-family: var(--dm-sans), Arial;
     color: var(--bg-white);
-    font-size: clamp(16px, 14.691px + 0.364vw, 24px);
+    font-size: clamp(14px, 13.018px + 0.273vw, 20px);
 }
 
 strong {
