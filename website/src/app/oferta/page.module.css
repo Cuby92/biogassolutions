@@ -2,6 +2,11 @@
     scroll-margin-top: 150px;
 }
 
+.h3 {
+    margin-bottom: clamp(16px, 8.145px + 2.182vw, 64px);
+    margin-top: clamp(-32px, -13.382px + -0.727vw, -16px);
+}
+
 .card .li::marker {
     content: "✓ ";
     color: var(--primary-color);
