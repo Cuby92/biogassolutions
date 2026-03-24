@@ -369,6 +369,7 @@ footer details {
 /* C T A */
 .cta {
     width: 100%;
+    margin-top: clamp(32px, 24.145px + 2.182vw, 80px) !important;
     text-align: center;
 }
 
