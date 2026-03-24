@@ -1,11 +1,12 @@
 .card {
-    width: 80%;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
 }
 
 .dropdown {
     cursor: pointer;
+    font-size: clamp(16px, 13.382px + 0.727vw, 32px);
 }
 
 .Section2 .dropdown .answer {
@@ -13,10 +14,6 @@
     width: 70%;
     margin-left: auto;
     margin-top: 20px;
-}
-
-.Section2 .dropdown .answer {
-    font-size: 1.1rem;
 }
 
 .Section2 {
@@ -27,7 +24,7 @@
 
 .mainContent {
     gap: 0;
-    padding-block: 128px;
+    padding: clamp(64px, 32.582px + 8.727vw, 256px);
 }
 
 .mainContent .h2 {
