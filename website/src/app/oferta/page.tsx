@@ -153,7 +153,7 @@ function Offer() {
 
                                 <div className={`gridWrapper ${s.gridWrapper}`}>
                                     <div className={`card ${s.card} ${s.miniature}`} style={{gridArea: 'miniature'}}>
-                                        <div className={s.iconContainer}><img src="/img/icons/bars.png" alt="Ikona wykresu" className={s.icon} /></div>
+                                        <div className={s.iconContainer}><img src="/img/icons/money.png" alt="Analiza" className={s.icon} /></div>
                                     </div>
 
                                     <div className={`card ${s.card} ${s.forWhom}`} style={{gridArea: 'for-whom'}}>
