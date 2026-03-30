@@ -33,11 +33,11 @@ function About() {
                     <div id="AboutSection2" className={s.Section2}>
                         <h2>Jak pracujemy?</h2>
                         <div className={`card ${s.card}`}>
-                            <img className={s.icon} src="/img/icons/hand.png" alt="Ikona finansowania" />
+                            <img className={s.icon} src="/img/icons/hand.png" alt="Finansowanie" />
                             <p className={s.p}>Wspieramy pozyskanie dofinansowania, przygotowując dokumentację i rozliczenia.</p>
                         </div>
                         <div className={`card ${s.card}`}>
-                            <img className={s.icon} src="/img/icons/workflow.png" alt="Ikona przepływu pracy" />
+                            <img className={s.icon} src="/img/icons/workflow.png" alt="Przepływ pracy" />
                             <p className={s.p}>Kompleksowo prowadzimy inwestycję: studium wykonalności, projekt, decyzje, budowa, rozruch i wsparcie eksploatacyjne.</p>
                         </div>
                         <div className={`cta ${s.cta}`}><Link className={`cta-button ${styles['cta-button']}`} href="/kontakt">Uzyskaj bezpłatną wstępną wycenę</Link></div>
@@ -48,12 +48,12 @@ function About() {
 
                         <div className={s.cards}>
                             <div className={`card ${s.card}`}>
-                                <img className={s.icon} src="/img/icons/settings.png" alt="Ikona kół zębatych" />
+                                <img className={s.icon} src="/img/icons/settings.png" alt="Konfiguracja" />
                                 <p className={s.p}>Konfiguracje dobieramy do dostępnych substratów, sezonowości i profilu zapotrzebowania na energię.</p>
                             </div>
 
                             <div className={`card ${s.card}`}>
-                                <img className={s.icon} src="/img/icons/elasticity.png" alt="Ikona elastyczności" />
+                                <img className={s.icon} src="/img/icons/elasticity.png" alt="Elastyczność" />
                                 <p className={s.p}>Zapewniamy elastyczność instalacji dzięki zastosowaniu buforów technologicznych, co pozwala dostosować się do zmienności rynku substratów i utrzymać wysoką niezawodność na lata.</p>
                             </div>
 
@@ -71,12 +71,12 @@ function About() {
 
                         <div className={s.cards}>
                             <div className={`card ${s.card}`}>
-                                <img className={s.icon} src="/img/icons/planet-earth.png" alt="Ikona Ziemi" />
+                                <img className={s.icon} src="/img/icons/planet-earth.png" alt="Obszar działania" />
                                 <p className={s.p}>Działamy w całej Polsce oraz w krajach europejskich; oferujemy konsultacje na miejscu.</p>
                             </div>
 
                             <div className={`card ${s.card}`}>
-                                <img className={s.icon} src="/img/icons/graduate-hat.png" alt="Ikona czapki absolwenta" />
+                                <img className={s.icon} src="/img/icons/graduate-hat.png" alt="Szkolenia" />
                                 <p className={s.p}>Zapewniamy szkolenia, zdalny monitoring 24/7 i serwis zgodnie z zapisami umowy serwisowej (SLA).</p>
                             </div>
                         </div>
