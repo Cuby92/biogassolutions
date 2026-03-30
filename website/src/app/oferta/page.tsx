@@ -38,7 +38,7 @@ function Offer() {
 
                                 <div className={`gridWrapper ${s.gridWrapper}`}>
                                     <div className={`card ${s.miniature}`} style={{gridArea: 'miniature'}}>
-                                        <div className="iconContainer"><img src="/img/icons/biogas.png" alt="Ikona mikrobiogazowni" className={s.icon} /></div>
+                                        <div className="iconContainer"><img src="/img/icons/biogas.png" alt="Mikrobiogazownia" className={s.icon} /></div>
                                     </div>
 
                                     <div className={`card ${s.card} ${s.forWhom}`} style={{gridArea: 'for-whom'}}>
@@ -75,7 +75,7 @@ function Offer() {
 
                                 <div className={`gridWrapper ${s.gridWrapper}`}>
                                     <div className={`card ${s.card} ${s.miniature}`} style={{gridArea: 'miniature'}}>
-                                        <div className="iconContainer"><img className={s.icon} src="/img/icons/power-plant.png" alt="Ikona dużej biogazowni" /></div>
+                                        <div className="iconContainer"><img className={s.icon} src="/img/icons/power-plant.png" alt="Duża biogazownia" /></div>
                                     </div>
 
                                     <div className={`card ${s.card} ${s.forWhom}`} style={{gridArea: 'for-whom'}}>
@@ -117,7 +117,7 @@ function Offer() {
 
                                 <div className={`gridWrapper ${s.gridWrapper}`}>
                                     <div className={`card ${s.card} ${s.miniature}`} style={{gridArea: 'miniature'}}>
-                                        <div className={s.iconContainer}><img src="/img/icons/methane.png" alt="Ikona metanu" className={s.icon} /></div>
+                                        <div className={s.iconContainer}><img src="/img/icons/methane.png" alt="Metan" className={s.icon} /></div>
                                     </div>
 
                                     <div className={`card ${s.card} ${s.forWhom}`} style={{gridArea: 'for-whom'}}>
@@ -153,7 +153,7 @@ function Offer() {
 
                                 <div className={`gridWrapper ${s.gridWrapper}`}>
                                     <div className={`card ${s.card} ${s.miniature}`} style={{gridArea: 'miniature'}}>
-                                        <div className={s.iconContainer}><img src="/img/icons/money.png" alt="Analiza" className={s.icon} /></div>
+                                        <div className={s.iconContainer}><img src="/img/icons/money.png" alt="Analiza finansowa" className={s.icon} /></div>
                                     </div>
 
                                     <div className={`card ${s.card} ${s.forWhom}`} style={{gridArea: 'for-whom'}}>
@@ -185,7 +185,7 @@ function Offer() {
 
                                 <div className={`gridWrapper ${s.gridWrapper}`}>
                                     <div className={`card ${s.miniature} ${s.card}`} style={{gridArea: 'miniature'}}>
-                                        <div className={s.iconContainer}><img src="/img/icons/testing.png" alt="Ikona analizy" className={s.icon} /></div>
+                                        <div className={s.iconContainer}><img src="/img/icons/testing.png" alt="Analiza" className={s.icon} /></div>
                                     </div>
 
                                     <div className={`card ${s.card} ${s.forWhom}`} style={{gridArea: 'for-whom'}}>
@@ -215,7 +215,7 @@ function Offer() {
 
                                 <div className={`gridWrapper ${s.gridWrapper}`}>
                                     <div className={`card ${s.card} ${s.miniature}`} style={{gridArea: 'miniature'}}>
-                                        <div className={s.iconContainer}><img src="/img/icons/graduate-hat.png" alt="Ikona czapki studenta" className={s.icon} /></div>
+                                        <div className={s.iconContainer}><img src="/img/icons/graduate-hat.png" alt="Szkolenia" className={s.icon} /></div>
                                     </div>
 
                                     <div className={`card ${s.card} ${s.forWhom}`} style={{gridArea: 'for-whom'}}>
