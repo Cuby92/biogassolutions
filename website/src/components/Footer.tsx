@@ -48,14 +48,26 @@ function Footer() {
                 <details>
                     <summary>Użyte ikony (licencje)</summary>
 
-                    <a href="https://www.flaticon.com/free-icons/power-plant" title="power plant icons">Power plant icons created by Freepik - Flaticon</a>
                     <a href="https://www.flaticon.com/free-icons/biogas" title="biogas icons">Biogas icons created by Freepik - Flaticon</a>
+                    <a href="https://www.flaticon.com/free-icons/power-plant" title="power plant icons">Power plant icons created by Freepik - Flaticon</a>
                     <a href="https://www.flaticon.com/free-icons/methane" title="methane icons">Methane icons created by Freepik - Flaticon</a>
-                    <a href="https://www.flaticon.com/free-icons/from-a-to-z" title="from a to z icons">From a to z icons created by Prosymbols Premium - Flaticon</a>
-                    <a href="https://www.flaticon.com/free-icons/guarantee" title="guarantee icons">Guarantee icons created by Freepik - Flaticon</a>
-                    <a href="https://www.flaticon.com/free-icons/processor" title="processor icons">Processor icons created by Freepik - Flaticon</a>
+                    <a href="https://www.flaticon.com/free-icons/workflow" title="workflow icons">Workflow icons created by ghost_icon - Flaticon</a>
                     <a href="https://www.flaticon.com/free-icons/monitor" title="monitor icons">Monitor icons created by Freepik - Flaticon</a>
+                    <a href="https://www.flaticon.com/free-icons/guarantee" title="guarantee icons">Guarantee icons created by Freepik - Flaticon</a>
+                    <a href="https://www.flaticon.com/free-icons/prepare" title="prepare icons">Prepare icons created by kliwir art - Flaticon</a>
+                    <a href="https://www.flaticon.com/free-icons/money" title="money icons">Money icons created by Freepik - Flaticon</a>
+                    <a href="https://www.flaticon.com/free-icons/assessment" title="assessment icons">Assessment icons created by Design Circle - Flaticon</a>
+                    <a href="https://www.flaticon.com/free-icons/assessment" title="assessment icons">Assessment icons created by Design Circle - Flaticon</a>
+                    <a href="https://www.flaticon.com/free-icons/brick-wall" title="brick wall icons">Brick wall icons created by Freepik - Flaticon</a>
+                    <a href="https://www.flaticon.com/free-icons/power-button" title="power button icons">Power button icons created by afif fudin - Flaticon</a>
+                    <a href="https://www.flaticon.com/free-icons/settings" title="settings icons">Settings icons created by srip - Flaticon</a>
+                    <a href="https://www.flaticon.com/free-icons/elasticity" title="elasticity icons">Elasticity icons created by IconBaandar - Flaticon</a>
+                    <a href="https://www.flaticon.com/free-icons/quality" title="quality icons">Quality icons created by Freepik - Flaticon</a>
+                    <a href="https://www.flaticon.com/free-icons/world" title="world icons">World icons created by Freepik - Flaticon</a>
+                    <a href="https://www.flaticon.com/free-icons/student" title="student icons">Student icons created by Mayor Icons - Flaticon</a>
                     <a href="https://www.flaticon.com/free-icons/correct" title="correct icons">Correct icons created by Kiranshastry - Flaticon</a>
+                    <a href="https://www.flaticon.com/free-icons/thunder" title="thunder icons">Thunder icons created by Freepik - Flaticon</a>
+                    <a href="https://www.flaticon.com/free-icons/heat" title="heat icons">Heat icons created by meaicon - Flaticon</a>
                 </details>
             </div>
         </footer>

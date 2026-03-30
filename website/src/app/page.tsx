@@ -117,7 +117,7 @@ function Home() {
                             <div className={`${s.dot} ${addClass(1)}`} onClick={() => setCurrentPoint(1)}>
                                 <Image
                                     src="/img/icons/task-list.png"
-                                    alt='Ikona'
+                                    alt='Ikona listy zadań'
                                     width={512}
                                     height={512}
                                     quality={100}
@@ -128,7 +128,7 @@ function Home() {
                             <div className={`${s.dot} ${addClass(2)}`} onClick={() => setCurrentPoint(2)}>
                                 <Image
                                     src="/img/icons/hand.png"
-                                    alt='Ikona'
+                                    alt='Wniosek o dofinansowanie'
                                     width={512}
                                     height={512}
                                     quality={100}
@@ -139,7 +139,7 @@ function Home() {
                             <div className={`${s.dot} ${addClass(3)}`} onClick={() => setCurrentPoint(3)}>
                                 <Image
                                     src="/img/icons/assessment.png"
-                                    alt='Ikona'
+                                    alt='Ocena wniosku'
                                     width={512}
                                     height={512}
                                     quality={100}
@@ -150,7 +150,7 @@ function Home() {
                             <div className={`${s.dot} ${addClass(4)}`} onClick={() => setCurrentPoint(4)}>
                                 <Image
                                     src="/img/icons/contract.png"
-                                    alt='Ikona'
+                                    alt='Podpisanie umowy'
                                     width={512}
                                     height={512}
                                     quality={100}
@@ -161,7 +161,7 @@ function Home() {
                             <div className={`${s.dot} ${addClass(5)}`} onClick={() => setCurrentPoint(5)}>
                                 <Image
                                     src="/img/icons/brick-wall.png"
-                                    alt='Ikona'
+                                    alt='Budowa'
                                     width={512}
                                     height={512}
                                     quality={100}
@@ -172,7 +172,7 @@ function Home() {
                             <div className={`${s.dot} ${addClass(6)}`} onClick={() => setCurrentPoint(6)}>
                                 <Image
                                     src="/img/icons/power-button.png"
-                                    alt='Ikona'
+                                    alt='Uruchomienie'
                                     width={512}
                                     height={512}
                                     quality={100}
