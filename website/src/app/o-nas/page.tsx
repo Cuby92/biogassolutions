@@ -58,7 +58,7 @@ function About() {
                             </div>
 
                             <div className={`card ${s.card}`}>
-                                <img className={s.icon} src="/img/icons/industry-tank.png" alt="Ikona zbiornika" />
+                                <img className={s.icon} src="/img/icons/badge.png" alt="Wysoka jakość" />
                                 <p className={s.p}>Stawiamy na materiały najwyższej jakości.</p>
                             </div>
                         </div>
