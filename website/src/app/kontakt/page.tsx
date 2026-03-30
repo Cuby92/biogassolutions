@@ -1,11 +1,16 @@
+'use client';
+
 import styles from './page.module.css';
 import Image from 'next/image';
 import bg from '@/../public/img/bg/bg2.jpg';
 import CopyBtn from '@/components/CopyBtn/CopyBtn';
+import { useState } from 'react';
 
 const s = styles;
 
 function Contact() {
+    const [inactiveCopyBtn, setInactiveCopyBtn] = useState<string | undefined>(undefined);
+
     return (
         <section className="content">
             <div className="bgContainer">
@@ -76,8 +81,8 @@ function Contact() {
                                 <div className={s.divider}></div>
                             </div>
                             <div className={s.content}>
-                                <p><span className={s.tag}>Email:</span> <a href="mailto:biuro@biogassolutions.pl">biuro@biogassolutions.pl</a><CopyBtn toCopy="biuro@biogassolutions.pl" /></p>
-                                <p><span className={s.tag}>Tel.:</span> <a href="tel:+48607152386">+48 607 152 386</a><CopyBtn toCopy="+48 607 152 386" /></p>
+                                <p><span className={s.tag}>Email:</span> <a href="mailto:biuro@biogassolutions.pl">biuro@biogassolutions.pl</a><CopyBtn toCopy="biuro@biogassolutions.pl" onClick={() => setInactiveCopyBtn('email')} inactive={inactiveCopyBtn} label="email" /></p>
+                                <p><span className={s.tag}>Tel.:</span> <a href="tel:+48607152386">+48 607 152 386</a><CopyBtn toCopy="+48 607 152 386" onClick={() => setInactiveCopyBtn('phone')} inactive={inactiveCopyBtn} label="phone" /></p>
                             </div>
                         </div>
 
@@ -89,8 +94,8 @@ function Contact() {
                             <div className={s.content}>
                                 <p>Biogas Solutions Sp. z o.o.</p>
                                 <p>ul. Topolowa 27B, 62-028 Koziegłowy</p>
-                                <p><span className={s.tag}>NIP:</span> 777 345 10 10 <CopyBtn toCopy="777 345 10 10" /></p>
-                                <p><span className={s.tag}>REGON:</span> 542309232 <CopyBtn toCopy="542309232" /></p>
+                                <p><span className={s.tag}>NIP:</span> 777 345 10 10 <CopyBtn toCopy="777 345 10 10" onClick={() => setInactiveCopyBtn('nip')} inactive={inactiveCopyBtn} label="nip" /></p>
+                                <p><span className={s.tag}>REGON:</span> 542309232 <CopyBtn toCopy="542309232" onClick={() => setInactiveCopyBtn('regon')} inactive={inactiveCopyBtn} label="regon" /></p>
                             </div>
                         </div>
 
