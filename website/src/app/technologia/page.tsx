@@ -120,7 +120,6 @@ function Technology() {
                         <li className={`${s.li} card ${s.card}`}>
                             <Image
                                 src="/img/icons/thunder.png"
-                                alt="Ikona błyskawicy"
                                 alt="Prąd"
                                 width={512}
                                 height={512}
@@ -131,8 +130,8 @@ function Technology() {
                         </li>
                         <li className={`${s.li} card ${s.card}`}>
                             <Image
-                                alt="Ikona ciepła"
                                 src="/img/icons/steam.png"
+                                alt="Ciepło"
                                 width={512}
                                 height={512}
                                 quality={90}
