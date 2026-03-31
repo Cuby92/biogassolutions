@@ -254,7 +254,7 @@ function Home() {
                     </div>
 
                     <div className={`cta ${s.cta}`}>
-                        <Link className={`cta-button ${styles['cta-button']}`} href="/kontakt">Dowiedz się więcej o nas</Link>
+                        <Link className={`cta-button ${styles['cta-button']}`} href="/o-nas">Dowiedz się więcej o nas</Link>
                     </div>
                 </section>
             </section>
