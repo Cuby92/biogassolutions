@@ -238,7 +238,7 @@ function Offer() {
                             </li>
                         </ul>
                     </section>
-                    <div className="cta"><Link className="cta-button" href="/kontakt">Uzyskaj bezpłatną wstępną wycenę</Link></div>
+                    <div className="cta"><Link className="cta-button" href="/technologia">Poznaj technologię</Link></div>
                 </section>
             </div>
         </>

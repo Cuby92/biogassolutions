@@ -79,9 +79,6 @@ function Home() {
                         <img className={s.icon} src="/img/icons/methane.png" alt="Ikona metanu" />
                         <p className={s.p}>Biometanownie</p>  
                     </div>
-                    <div className={`cta ${s.cta}`}>
-                        <Link href="/oferta" className={`cta-button ${styles['cta-button']}`}>Poznaj naszą ofertę</Link>
-                    </div>
                 </section>
 
                 <section className={s.Section3} id="HomeSection3">
@@ -103,9 +100,6 @@ function Home() {
                             <img className={s.icon} src="/img/icons/shield.png" alt="Ikona tarczy" />
                             <p className={s.p}>Bezpieczeństwo i niezawodność instalacji w zakresie całości obiektów oraz poszczególnych urządzeń i elementów.</p>
                         </div>
-                    </div>
-                    <div className={`cta ${s.cta}`}>
-                        <Link className={`cta-button ${styles['cta-button']}`} href="/o-nas">Dowiedz się więcej</Link>
                     </div>
                 </section>
 
@@ -260,7 +254,7 @@ function Home() {
                     </div>
 
                     <div className={`cta ${s.cta}`}>
-                        <Link className={`cta-button ${styles['cta-button']}`} href="/kontakt">Uzyskaj darmową wstępną wycenę</Link>
+                        <Link className={`cta-button ${styles['cta-button']}`} href="/o-nas">Dowiedz się więcej o nas</Link>
                     </div>
                 </section>
             </section>

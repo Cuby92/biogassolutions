@@ -24,7 +24,7 @@ function FAQ() {
                 <div className="content">
                     <h1 className="hero-header">Najczęściej zadawane pytania</h1>
                     <p className="lead">Zebraliśmy odpowiedzi, które porządkują zagadnienia techniczne, formalne i eksploatacyjne, aby przyspieszyć decyzję inwestycyjną. Sekcja obejmuje kwestie mocy, procesu, serwisu, wsadu i finansowania.</p>
-                    <Link href="/kontakt" className="cta-button">Umów się na bezpłatną konsultację</Link>
+                    <Link href="/kontakt" className="cta-button">Skontaktuj się z nami</Link>
                 </div>
             </div>
 
@@ -87,6 +87,8 @@ function FAQ() {
                             <p className={s.answer}>- Fermentacja beztlenowa, uzdatnianie biogazu, kogeneracja (CHP) lub upgrading do biometanu, automatyka i zbiorniki stalowe umożliwiające przyszłościową rozbudowę. (<a href="/technologia.html">Więcej informacji</a>)</p>
                         </details>
                     </div>
+                    <h4 style={{marginBottom: '-60px', marginTop: '32px'}}>Więcej pytań?</h4>
+                    <div className="cta"><Link href="/kontakt" className="cta-button">Umów się na bezpłatną konsultację</Link></div>
                 </div>
             </div>
         </div>

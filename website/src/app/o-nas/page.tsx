@@ -40,7 +40,6 @@ function About() {
                             <img className={s.icon} src="/img/icons/workflow.png" alt="Przepływ pracy" />
                             <p className={s.p}>Kompleksowo prowadzimy inwestycję: studium wykonalności, projekt, decyzje, budowa, rozruch i wsparcie eksploatacyjne.</p>
                         </div>
-                        <div className={`cta ${s.cta}`}><Link className={`cta-button ${styles['cta-button']}`} href="/kontakt">Uzyskaj bezpłatną wstępną wycenę</Link></div>
                     </div>
 
                     <div id="AboutSection3" className={s.Section3}>
@@ -62,8 +61,6 @@ function About() {
                                 <p className={s.p}>Stawiamy na materiały najwyższej jakości.</p>
                             </div>
                         </div>
-
-                        <div className={`cta ${s.cta}`}><Link className="cta-button" href="/technologia">Poznaj technologię</Link></div>
                     </div>
 
                     <div id="AboutSection4" className={s.Section4}>
@@ -81,7 +78,7 @@ function About() {
                             </div>
                         </div>
 
-                        <div className={`cta ${s.cta}`}><Link className={`cta-button ${styles['cta-button']}`} href="/kontakt">Umów się na bezpłatną konsultację</Link></div>
+                        <div className={`cta ${s.cta}`}><Link className={`cta-button ${styles['cta-button']}`} href="/oferta">Poznaj naszą ofertę</Link></div>
                     </div>
                 </div>
             </div>

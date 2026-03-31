@@ -90,6 +90,8 @@ function Realizations() {
                                 </div>
                                 <p className={s.p}>mocy zainstalowanej</p>
                             </li>
+
+                            <div className="cta"><Link href="/technologia" className="cta-button">Poznaj technologię</Link></div>
                         </ul>
                     </div>
 
