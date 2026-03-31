@@ -155,6 +155,20 @@ h4 {
     text-align: left;
 }
 
+/* C O V E R   P A R A L L A X */
+@keyframes bg-parallax {
+    to {
+        transform: translateY(-1500px) scale(1.4);
+        filter: brightness(0);
+    }
+}
+
+.pageBg {
+    animation: bg-parallax linear both;
+    animation-timeline: scroll();
+    will-change: transform, filter;
+}
+
 /* F O O T E R */
 footer {
     color: white;
