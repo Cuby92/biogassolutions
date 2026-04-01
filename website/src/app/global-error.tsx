@@ -6,7 +6,7 @@ import { useEffect, useState } from 'react';
 
 const s = styles;
 
-function NotFound() {
+function GlobalError() {
     const [codeTransform, setCodeTransform] = useState('rotate(180deg) translateX(20%)');
     const [codeTransition, setCodeTransition] = useState('transform 0.75s ease-out');
     const [codeAnimated, setCodeAnimated] = useState(false);
@@ -39,12 +39,12 @@ function NotFound() {
                     className={s.ErrorCode}
                     style={{transform: codeTransform, transition: codeTransition}}
                     onMouseEnter={() => setCodeHover(true)}
-                    onMouseLeave={() => setCodeHover(false)}>404</h1>
-                <h1 className={s.ErrorTranslation}>Nie znaleziono strony</h1>
+                    onMouseLeave={() => setCodeHover(false)}>500</h1>
+                <h1 className={s.ErrorTranslation}>Wystąpił błąd serwera</h1>
             </div>
-            <div className="cta"><Link className="cta-button" href="/">Przejdź na Stronę główną</Link></div>
+            <div className="cta" style={{color: 'black'}}>Spróbuj ponownie później, lub daj nam znać: biuro@biogassolutions.pl</div>
         </div>
     )
 }
 
-export default NotFound;
+export default GlobalError;

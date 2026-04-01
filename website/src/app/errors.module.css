@@ -7,13 +7,14 @@
     background: var(--bg-white);
     flex-direction: column;
     gap: 32px;
+    font-family: var(--poppins), Arial;
 }
 
 .ErrorCode {
     color: black;
     writing-mode: vertical-lr;
     z-index: 1;
-    font-family: var(--space-grotesk);
+    font-family: var(--space-grotesk), Arial;
 }
 
 .ErrorTranslation {
@@ -22,6 +23,7 @@
     padding: 32px;
     background: var(--bg-white);
     z-index: 2;
+    font-family: var(--poppins), Arial;
 }
 
 .ErrorContainer {
