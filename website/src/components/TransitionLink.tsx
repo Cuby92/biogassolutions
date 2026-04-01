@@ -20,7 +20,9 @@ function TransitionLink({ href, children, className, ...props }: Props) {
             {...props}
             onClick={e => {
                 e.preventDefault();
-                router.push(href);
+                setTimeout(() => {
+                    router.push(href);
+                }, 300);
             }}
         >
             { children }
