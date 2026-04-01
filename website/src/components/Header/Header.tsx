@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useState, useEffect } from 'react';
 import { usePathname } from 'next/navigation';
 import { Bar, completeValue, s, getBarStyles } from './functions';
+import TransitionLink from '@/components/TransitionLink';
 
 function Header() {
     const pathname = usePathname();
@@ -166,12 +167,12 @@ function Header() {
 
                 <nav className={s.DesktopNavMenu}>
                     <ul className={s.ul}>
-                        <li><Link className={`${s.a} ${pathname === '/o-nas' ? s.active : ''}`} href="/o-nas">O Nas</Link></li>
-                        <li><Link className={`${s.a} ${pathname === '/oferta' ? s.active : ''}`} href="/oferta">Oferta</Link></li>
-                        <li><Link className={`${s.a} ${pathname === '/realizacje' ? s.active : ''}`} href="/realizacje">Realizacje</Link></li>
-                        <li><Link className={`${s.a} ${pathname === '/technologia' ? s.active : ''}`} href="/technologia">Technologia</Link></li>
-                        <li><Link className={`${s.a} ${pathname === '/faq' ? s.active : ''}`} href="/faq">FAQ</Link></li>
-                        <li><Link className={`${s.a} ${pathname === '/kontakt' ? s.active : ''}`} href="/kontakt">Kontakt</Link></li>
+                        <li><TransitionLink className={`${s.a} ${pathname === '/o-nas' ? s.active : ''}`} href="/o-nas">O Nas</TransitionLink></li>
+                        <li><TransitionLink className={`${s.a} ${pathname === '/oferta' ? s.active : ''}`} href="/oferta">Oferta</TransitionLink></li>
+                        <li><TransitionLink className={`${s.a} ${pathname === '/realizacje' ? s.active : ''}`} href="/realizacje">Realizacje</TransitionLink></li>
+                        <li><TransitionLink className={`${s.a} ${pathname === '/technologia' ? s.active : ''}`} href="/technologia">Technologia</TransitionLink></li>
+                        <li><TransitionLink className={`${s.a} ${pathname === '/faq' ? s.active : ''}`} href="/faq">FAQ</TransitionLink></li>
+                        <li><TransitionLink className={`${s.a} ${pathname === '/kontakt' ? s.active : ''}`} href="/kontakt">Kontakt</TransitionLink></li>
                     </ul>
                 </nav>
 
