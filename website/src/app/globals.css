@@ -11,6 +11,10 @@
     --bg-white: #f4f4f4;
 }
 
+body {
+    transition: opacity 0.3s ease-in-out;
+}
+
 body, html {
     margin: 0;
     padding: 0;
@@ -23,6 +27,13 @@ html {
     font-family: var(--dm-sans), Arial;
     color: var(--bg-white);
     font-size: clamp(14px, 13.018px + 0.273vw, 20px);
+    background: 
+        url('@/app/icon.png'),
+        var(--bg-white);
+    background-repeat: no-repeat;
+    background-size: 20svh auto;
+    background-position: 50% 40svh;
+    scrollbar-gutter: stable;
 }
 
 strong {
@@ -119,7 +130,7 @@ h4 {
 
 /* C O V E R */
 .cover {
-    height: 100vh;
+    height: 100svh;
     padding: clamp(24px, 6.982px + 4.727vw, 128px);
     display: flex;
     align-items: center;
@@ -406,4 +417,9 @@ a:hover {
     text-underline-offset: 0.3rem;
     text-decoration-color: var(--primary-color);
     color: var(--primary-color);
+}
+
+/* P A G E   T R A N S I T I O N */
+.pageTransition {
+    opacity: 0;
 }

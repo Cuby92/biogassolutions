@@ -4,6 +4,7 @@ import Header from "@/components/Header/Header";
 import Footer from "@/components/Footer";
 import { DM_Sans, Poppins, Space_Grotesk, Raleway } from 'next/font/google';
 import { SpeedInsights } from '@vercel/speed-insights/next';
+import EntryHandler from "@/utils/EntryHandler";
 
 export const metadata: Metadata = {
   title: "Realizacje biogazowni i CHP - projekty 499 kW-2 MW | Biogas Solutions",
@@ -38,7 +39,8 @@ function RootLayout({ children, }: Readonly<{ children: React.ReactNode; }>) {
       className={`${dmSans.variable} ${poppins.variable} ${spaceGrotesk.variable} ${raleway.variable}`}
       data-scroll-behavior="smooth"
     >
-      <body>
+      <body className="pageTransition">
+        <EntryHandler />
         <Header />
           { children }
         <Footer />

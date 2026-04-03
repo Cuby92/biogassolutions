@@ -1,0 +1,14 @@
+.bg {
+    background: var(--bg-white);
+    z-index: 10000;
+    position: fixed;
+    inset: 0;
+}
+
+.text {
+    color: black;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translateX(-50%);
+}

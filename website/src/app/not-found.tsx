@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import styles from './errors.module.css';
+import styles from '@/utils/errors.module.css';
 import { useEffect, useState } from 'react';
 
 const s = styles;
