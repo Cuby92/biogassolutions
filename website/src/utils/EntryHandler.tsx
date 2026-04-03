@@ -4,10 +4,13 @@ import { useEffect } from 'react';
 
 function EntryHandler() {
 
+    const delay = (ms: number) => new Promise(resolve => setTimeout(resolve, ms));
+
+
     useEffect(() => {
-        setTimeout(() => {
+        delay(300).then(() => {
             document.body.classList.remove('pageTransition');
-        }, 300);
+        });
     }, []);
 
     return null;

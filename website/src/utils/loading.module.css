@@ -3,53 +3,12 @@
     z-index: 10000;
     position: fixed;
     inset: 0;
-    display: grid;
-    place-items: center;
-    --angle: 0deg;
 }
 
-.icon {
-    width: 10vw;
-    height: 10vw;
-    z-index: 3;
-    transform: translateY(-0.8vw);
-}
-
-.spinnerBg {
-    background: var(--bg-white);
-    border-radius: 50%;
-    width: 13vw;
-    height: 13vw;
-    z-index: 2;
-}
-
-@property --angle {
-    syntax: '<angle>';
-    initial-value: 0deg;
-    inherits: false;
-}
-
-.spinner {
-    width: 15vw;
-    height: 15vw;
-    border-radius: 50%;
-    background: conic-gradient(
-        from var(--angle),
-        transparent 0%,
-        var(--primary-color) 49.9%,
-        transparent 50%,
-        var(--secondary-color) 100%
-    );
-    z-index: 1;
-    animation: spin 3s linear infinite;
-}
-
-.spinner, .icon, .spinnerBg {
-    grid-area: 1 / 1;
-}
-
-@keyframes spin {
-    to {
-        --angle: 360deg;
-    }
+.text {
+    color: black;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translateX(-50%);
 }
