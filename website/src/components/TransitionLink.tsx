@@ -20,8 +20,12 @@ function TransitionLink({ href, children, className, ...props }: Props) {
             {...props}
             onClick={e => {
                 e.preventDefault();
+                document.body.classList.add('pageTransition');
                 setTimeout(() => {
                     router.push(href);
+                    setTimeout(() => {
+                        document.body.classList.remove('pageTransition');
+                    }, 300);
                 }, 300);
             }}
         >

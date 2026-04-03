@@ -11,6 +11,10 @@
     --bg-white: #f4f4f4;
 }
 
+body {
+    transition: opacity 0.3s ease-in-out;
+}
+
 body, html {
     margin: 0;
     padding: 0;
@@ -406,4 +410,9 @@ a:hover {
     text-underline-offset: 0.3rem;
     text-decoration-color: var(--primary-color);
     color: var(--primary-color);
+}
+
+/* P A G E   T R A N S I T I O N */
+.pageTransition {
+    opacity: 0;
 }
