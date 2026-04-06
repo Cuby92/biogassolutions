@@ -6,6 +6,13 @@ import { DM_Sans, Poppins, Space_Grotesk, Raleway } from 'next/font/google';
 import { SpeedInsights } from '@vercel/speed-insights/next';
 import EntryHandler from "@/utils/EntryHandler";
 
+import { gsap } from 'gsap';
+import { useGSAP } from '@gsap/react';
+import { ScrollSmoother } from 'gsap/ScrollSmoother';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+
+gsap.registerPlugin(useGSAP, ScrollSmoother, ScrollTrigger);
+
 export const metadata: Metadata = {
   title: "Realizacje biogazowni i CHP - projekty 499 kW-2 MW | Biogas Solutions",
   description: "Poznaj nasze doświadczenie w projektowaniu, budowie i modernizacji biogazowni w całej Polsce - od koncepcji i dokumentacji, po rozruch, serwis i zarządzanie eksploatacją.",
