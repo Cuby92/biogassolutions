@@ -5,7 +5,6 @@ import Footer from "@/components/Footer";
 import { DM_Sans, Poppins, Space_Grotesk, Raleway } from 'next/font/google';
 import { SpeedInsights } from '@vercel/speed-insights/next';
 import EntryHandler from "@/utils/EntryHandler";
-import ScrollSmootherWrapper from "@/utils/gsap/ScrollSmoother";
 
 export const metadata: Metadata = {
   title: "Realizacje biogazowni i CHP - projekty 499 kW-2 MW | Biogas Solutions",
@@ -43,12 +42,7 @@ function RootLayout({ children, }: Readonly<{ children: React.ReactNode; }>) {
       <body className="pageTransition">
         <EntryHandler />
         <Header />
-
-        <ScrollSmootherWrapper>
-          { children }
-          <Footer />
-        </ScrollSmootherWrapper>
-
+        { children }
         <SpeedInsights />
       </body>
     </html>

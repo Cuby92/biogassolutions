@@ -1,4 +1,6 @@
 import { Metadata } from 'next';
+import Footer from '@/components/Footer';
+import ScrollSmootherWrapper from '@/utils/gsap/ScrollSmoother';
 
 export const metadata: Metadata = {
     title: 'FAQ - mikrobiogazownia i biogaz: najczęstsze pytania',
@@ -7,9 +9,12 @@ export const metadata: Metadata = {
 
 function Layout({ children }: Readonly<{ children: React.ReactNode }>) {
     return (
-        <main>
-            { children }
-        </main>
+        <ScrollSmootherWrapper>
+            <main>
+                { children }
+            </main>
+            <Footer />
+        </ScrollSmootherWrapper>
     );
 }
 
