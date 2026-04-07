@@ -21,6 +21,7 @@ function ScrollSmootherWrapper({ children }: { children: React.ReactNode }) {
             content: contentRef.current,
             smooth: 2,
             smoothTouch: 0.1,
+            effects: true
         });
     });
 

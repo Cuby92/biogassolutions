@@ -18,6 +18,7 @@ function Offer() {
                         loading="eager"
                         placeholder="blur"
                         className="pageBg"
+                        data-speed="0.5"
                     />
                 </div>
                 

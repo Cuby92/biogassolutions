@@ -53,6 +53,7 @@ function Home() {
                     quality={80}
                     loading="eager"
                     className="pageBg"
+                    data-speed="0.5"
                 />
             </div>
             
