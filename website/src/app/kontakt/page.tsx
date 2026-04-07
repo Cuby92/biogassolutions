@@ -12,12 +12,13 @@ function Contact() {
                 <Image 
                     src={bg}
                     alt=''
-                    fill={true}
                     quality={70}
                     loading="eager"
                     placeholder="blur"
                     className="pageBg"
                     data-speed="0.5"
+                    width={3888}
+                    height={2592}
                 />
             </div>
             

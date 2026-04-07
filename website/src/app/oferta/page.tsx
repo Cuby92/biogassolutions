@@ -13,12 +13,13 @@ function Offer() {
                     <Image
                         src={bg}
                         alt=''
-                        fill={true}
                         quality={70}
                         loading="eager"
                         placeholder="blur"
                         className="pageBg"
                         data-speed="0.5"
+                        width={5472}
+                        height={3842}
                     />
                 </div>
                 

@@ -49,11 +49,12 @@ function Home() {
                 <Image
                     src='/img/bg/bg1.jpg'
                     alt=''
-                    fill={true}
                     quality={80}
                     loading="eager"
                     className="pageBg"
                     data-speed="0.5"
+                    width={3550}
+                    height={1895}
                 />
             </div>
             

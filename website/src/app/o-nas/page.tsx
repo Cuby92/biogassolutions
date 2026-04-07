@@ -13,12 +13,13 @@ function About() {
                     <Image
                         src={bg}
                         alt=''
-                        fill={true}
                         quality={70}
                         loading="eager"
                         placeholder="blur"
                         className="pageBg"
                         data-speed="0.5"
+                        width={3550}
+                        height={1895}
                     />
                 </div>
                 
