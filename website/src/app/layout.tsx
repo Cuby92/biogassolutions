@@ -40,7 +40,7 @@ function RootLayout({ children, }: Readonly<{ children: React.ReactNode; }>) {
       className={`${dmSans.variable} ${poppins.variable} ${spaceGrotesk.variable} ${raleway.variable}`}
       data-scroll-behavior="smooth"
     >
-      <body className="pageTransition" suppressHydrationWarning>
+      <body className="pageTransition">
         <EntryHandler />
         <Header />
 
