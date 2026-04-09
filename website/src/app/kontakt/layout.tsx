@@ -1,6 +1,6 @@
 import { Metadata } from 'next';
 import Footer from '@/components/Footer';
-import GSAPWrapper from '@/utils/gsap/GSAPWrapper';
+import ScrollSmootherWrapper from '@/utils/gsap/ScrollSmoother';
 
 export const metadata: Metadata = {
     title: 'Kontakt i wycena - Biogas Solutions',
@@ -9,12 +9,12 @@ export const metadata: Metadata = {
 
 function Layout({ children }: Readonly<{ children: React.ReactNode }>) {
     return (
-        <GSAPWrapper>
+        <ScrollSmootherWrapper>
             <main>
                 { children }
             </main>
             <Footer />
-        </GSAPWrapper>
+        </ScrollSmootherWrapper>
     );
 }
 

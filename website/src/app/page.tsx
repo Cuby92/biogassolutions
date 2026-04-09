@@ -7,7 +7,7 @@ import { useState, useEffect } from 'react';
 import fengLogo from '@/../public/img/grants/feng-logo.png';
 import nfosigwLogo from '@/../public/img/grants/nfosigw-logo.png';
 import edwLogo from '@/../public/img/grants/energia-dla-wsi-logo.png';
-import GSAPWrapper from '@/utils/gsap/GSAPWrapper';
+import ScrollSmootherWrapper from "@/utils/gsap/ScrollSmoother";
 import Footer from "@/components/Footer";
 
 const s = styles;
@@ -46,7 +46,7 @@ function Home() {
     }
 
     return (
-        <GSAPWrapper>
+        <ScrollSmootherWrapper>
             <section className="content">
                 <div className="bgContainer">
                     <Image
@@ -265,7 +265,7 @@ function Home() {
                 </section>
             </section>
             <Footer />
-        </GSAPWrapper>
+        </ScrollSmootherWrapper>
     );
 }
 
