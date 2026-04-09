@@ -19,7 +19,7 @@ function ScrollSmootherWrapper({ children }: { children: React.ReactNode }) {
         ScrollSmoother.create({
             wrapper: wrapperRef.current,
             content: contentRef.current,
-            smooth: 2,
+            smooth: 1.5,
             smoothTouch: 0.1,
             effects: true
         });
