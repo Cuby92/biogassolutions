@@ -3,12 +3,13 @@
 import Image from "next/image";
 import styles from './page.module.css';
 import Link from "next/link";
-import { useState, useEffect } from 'react';
+import { useState, useRef } from 'react';
 import fengLogo from '@/../public/img/grants/feng-logo.png';
 import nfosigwLogo from '@/../public/img/grants/nfosigw-logo.png';
 import edwLogo from '@/../public/img/grants/energia-dla-wsi-logo.png';
 import ScrollSmootherWrapper from "@/utils/gsap/ScrollSmoother";
 import Footer from "@/components/Footer";
+import { useCardScrollAnimation } from "@/utils/gsap/ScrollAnimations";
 
 const s = styles;
 type Point = 1 | 2 | 3 | 4 | 5 | 6;
@@ -45,9 +46,12 @@ function Home() {
         }
     }
 
+    const rootRef = useRef<HTMLElement>(null);
+    useCardScrollAnimation(rootRef);
+
     return (
         <ScrollSmootherWrapper>
-            <section className="content">
+            <section className="content" ref={rootRef}>
                 <div className="bgContainer">
                     <Image
                         src='/img/bg/bg1.jpg'
@@ -70,7 +74,7 @@ function Home() {
                 </section>
 
                 <section className="mainContent">
-                    <section className={s.Section2} id="HomeSection2">
+                    <section className={`${s.Section2} animationSection`} id="HomeSection2">
                         <h2>Co robimy?</h2>
                         <div className={`card ${s.column} ${s.card}`}>
                             <img className={s.icon} src="/img/icons/biogas.png" alt="Ikona biogazowni" />
@@ -86,7 +90,7 @@ function Home() {
                         </div>
                     </section>
 
-                    <section className={s.Section3} id="HomeSection3">
+                    <section className={`${s.Section3} animationSection`} id="HomeSection3">
                         <h2>Dlaczego my?</h2>
                         <div className={`gridWrapper ${styles['gridWrapper']}`}>
                             <div className={`card ${s.card}`}>
@@ -108,7 +112,7 @@ function Home() {
                         </div>
                     </section>
 
-                    <section className={s.Section4} id="HomeSection4">
+                    <section className={`${s.Section4} timelineAnimationSection`} id="HomeSection4">
                         <h2>Proces inwestycyjny</h2>
                         <div className={s.timeline}>
                             <div className={s.line}></div>
@@ -224,7 +228,7 @@ function Home() {
                         </div>
                     </section>
 
-                    <section className={s.Section5} id="HomeSection5">
+                    <section className={`${s.Section5} animationSection`} id="HomeSection5">
                         <h2>Finansowanie</h2>
                         <p className={s.p}>Przygotowujemy dokumentację i wnioski oraz wspieramy rozliczenia w programach krajowych i unijnych.</p>
 
