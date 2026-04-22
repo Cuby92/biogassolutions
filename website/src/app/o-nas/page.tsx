@@ -1,14 +1,21 @@
+'use client'
+
 import Link from 'next/link';
 import styles from './page.module.css';
 import Image from 'next/image';
 import bg from '@/../public/img/bg/bg1.jpg';
+import { useRef } from 'react';
+import { useScrollAnimations } from '@/utils/gsap/ScrollAnimations';
 
 const s = styles;
 
 function About() {
+    const rootRef = useRef<HTMLDivElement>(null);
+    useScrollAnimations(rootRef);
+
     return (
         <>
-            <div className="content">
+            <div className="content" ref={rootRef}>
                 <div className="bgContainer">
                     <Image
                         src={bg}
@@ -23,7 +30,7 @@ function About() {
                     />
                 </div>
                 
-                <div id="AboutSection1" className={`cover ${s.Section1}`}>
+                <div id="AboutSection1" className={`cover ${s.Section1} animationSection`}>
                     <div className="content">
                         <h1 className="hero-header">Kim jesteśmy?</h1>
                         <p className="lead">Specjalizujemy się w projektowaniu, budowie i uruchamianiu instalacji biogazu i biometanu dla sektora rolnictwa i przemysłu - od małych biogazowni rolniczych o mocy kilkudziesięciu kW po duże instalacje przemysłowe o mocy kilku MW. Celem jest efektywne wykorzystanie odpadów organicznych do produkcji energii i paliw odnawialnych w bezpiecznych i automatycznych instalacjach przetwarzania odpadów.</p>
@@ -32,7 +39,7 @@ function About() {
                 </div>
 
                 <div className="mainContent">
-                    <div id="AboutSection2" className={s.Section2}>
+                    <div id="AboutSection2" className={`${s.Section2} animationSection`}>
                         <h2>Jak pracujemy?</h2>
                         <div className={`card ${s.card}`}>
                             <img className={s.icon} src="/img/icons/hand.png" alt="Finansowanie" />
@@ -44,7 +51,7 @@ function About() {
                         </div>
                     </div>
 
-                    <div id="AboutSection3" className={s.Section3}>
+                    <div id="AboutSection3" className={`${s.Section3} animationSection`}>
                         <h2>Technologia i dobór</h2>
 
                         <div className={s.cards}>
@@ -65,7 +72,7 @@ function About() {
                         </div>
                     </div>
 
-                    <div id="AboutSection4" className={s.Section4}>
+                    <div id="AboutSection4" className={`${s.Section4} animationSection`}>
                         <h2>Gdzie działamy?</h2>
 
                         <div className={s.cards}>
