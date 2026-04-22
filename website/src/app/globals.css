@@ -334,6 +334,10 @@ footer details {
     border-radius: clamp(20px, 18.036px + 0.545vw, 32px);
 }
 
+.animationSection .Descriptions {
+    transition: all 0.4s ease-in-out;
+}
+
 /* H O V E R   E F F E C T S */
 @media (hover: hover) and (pointer: fine) {
     footer a:hover {

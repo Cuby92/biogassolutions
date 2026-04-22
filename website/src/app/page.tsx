@@ -9,7 +9,7 @@ import nfosigwLogo from '@/../public/img/grants/nfosigw-logo.png';
 import edwLogo from '@/../public/img/grants/energia-dla-wsi-logo.png';
 import ScrollSmootherWrapper from "@/utils/gsap/ScrollSmoother";
 import Footer from "@/components/Footer";
-import { useCardScrollAnimation } from "@/utils/gsap/ScrollAnimations";
+import { useScrollAnimations, useImgAnimations } from "@/utils/gsap/ScrollAnimations";
 
 const s = styles;
 type Point = 1 | 2 | 3 | 4 | 5 | 6;
@@ -47,7 +47,9 @@ function Home() {
     }
 
     const rootRef = useRef<HTMLElement>(null);
-    useCardScrollAnimation(rootRef);
+    useScrollAnimations(rootRef);
+    const imgAnimationsRef = useRef<HTMLElement>(null);
+    useImgAnimations(imgAnimationsRef);
 
     return (
         <ScrollSmootherWrapper>
@@ -65,7 +67,7 @@ function Home() {
                     />
                 </div>
                 
-                <section className={`cover ${s.Section1}`} id="HomeSection1">
+                <section className={`cover ${s.Section1} animationSection`} id="HomeSection1">
                     <div className="content">
                         <h1 className="hero-header">Tańsza energia i ciepło z własnych odpadów - instalacje biogazu</h1>
                         <p className="lead">Wykorzystujemy lokalne odpady organiczne, aby bezpiecznie wytwarzać prąd i ciepło w kogeneracji - od koncepcji i pozwoleń po rozruch i serwis. Zapewniamy wsparcie w dofinansowaniu oraz zdalny monitoring 24/7 i szybką reakcję serwisu zgodnie z umową.</p>
@@ -112,7 +114,7 @@ function Home() {
                         </div>
                     </section>
 
-                    <section className={`${s.Section4} timelineAnimationSection`} id="HomeSection4">
+                    <section className={`${s.Section4} tlAnimationSection`} id="HomeSection4">
                         <h2>Proces inwestycyjny</h2>
                         <div className={s.timeline}>
                             <div className={s.line}></div>
@@ -228,9 +230,9 @@ function Home() {
                         </div>
                     </section>
 
-                    <section className={`${s.Section5} animationSection`} id="HomeSection5">
+                    <section className={`${s.Section5} animationSection`} id="HomeSection5" ref={imgAnimationsRef}>
                         <h2>Finansowanie</h2>
-                        <p className={s.p}>Przygotowujemy dokumentację i wnioski oraz wspieramy rozliczenia w programach krajowych i unijnych.</p>
+                        <p className={`${s.p} animatedParagraph`}>Przygotowujemy dokumentację i wnioski oraz wspieramy rozliczenia w programach krajowych i unijnych.</p>
 
                         <div className={s.grants}>
                             <Image
@@ -240,7 +242,7 @@ function Home() {
                                 height={64}
                                 placeholder="blur"
                                 quality={50}
-                                className={s.grantLogo}
+                                className={`${s.grantLogo} animatedImg`}
                             />
                             <Image
                                 src={nfosigwLogo}
@@ -249,7 +251,7 @@ function Home() {
                                 height={425}
                                 placeholder="blur"
                                 quality={50}
-                                className={s.grantLogo}
+                                className={`${s.grantLogo} animatedImg`}
                             />
                             <Image
                                 src={edwLogo}
@@ -258,7 +260,7 @@ function Home() {
                                 height={201}
                                 quality={50}
                                 placeholder="blur"
-                                className={s.grantLogo}
+                                className={`${s.grantLogo} animatedImg`}
                             />
                         </div>
 
