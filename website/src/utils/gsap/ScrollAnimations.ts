@@ -17,6 +17,7 @@ export function useScrollAnimations(rootRef: React.RefObject<HTMLElement | null>
         sections.forEach(section => {
             const cards = section.querySelectorAll<HTMLElement>('.card');
             const h2 = section.querySelectorAll<HTMLElement>('h2');
+            const h3 = section.querySelectorAll<HTMLElement>('h3');
             const paragraphs = section.querySelectorAll<HTMLElement>('.animatedParagraph');
             const buttons = Array.from(section.querySelectorAll<HTMLElement>('.cta-button')).filter(btn => !btn.closest('.cover'));
 
@@ -39,17 +40,18 @@ export function useScrollAnimations(rootRef: React.RefObject<HTMLElement | null>
                 });
             }
 
-            if (h2.length > 0) {
-                gsap.from(h2, {
+            if (h2.length > 0 || h3.length > 0 || paragraphs.length > 0) {
+                gsap.from([...h2, ...h3, ...paragraphs], {
                     opacity: 0,
                     filter: 'blur(2px)',
                     webkitFilter: 'blur(2px)',
-                    duration: 1,
+                    duration: 0.7,
                     scrollTrigger: {
                         trigger: section,
                         start: 'top 80%',
                     },
-                    ease: 'power1.in'
+                    ease: 'power1.in',
+                    stagger: 0.2
                 });
             }
 
@@ -61,22 +63,6 @@ export function useScrollAnimations(rootRef: React.RefObject<HTMLElement | null>
                     delay: 0.5,
                     stagger: 0.3 ,
                 });
-            }
-
-            if (paragraphs.length > 0) {
-                paragraphs.forEach(p => {
-                    gsap.from(p, {
-                        duration: 1,
-                        stagger: 0.2,
-                        scrollTrigger: {
-                            trigger: p,
-                            start: 'bottom bottom'
-                        },
-                        opacity: 0,
-                        y: 10,
-                        delay: 0.5
-                    })
-                })
             }
 
             if (buttons.length > 0) {
