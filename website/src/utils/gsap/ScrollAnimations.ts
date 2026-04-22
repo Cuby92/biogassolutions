@@ -18,7 +18,7 @@ export function useScrollAnimations(rootRef: React.RefObject<HTMLElement | null>
             const cards = section.querySelectorAll<HTMLElement>('.card');
             const h2 = section.querySelectorAll<HTMLElement>('h2');
             const h3 = section.querySelectorAll<HTMLElement>('h3');
-            const paragraphs = section.querySelectorAll<HTMLElement>('.animatedParagraph');
+            const paragraphs = [...section.querySelectorAll<HTMLElement>('.animatedParagraph'), ...section.querySelectorAll<HTMLElement>('li')];
             const buttons = Array.from(section.querySelectorAll<HTMLElement>('.cta-button')).filter(btn => !btn.closest('.cover'));
 
             const heroHeading = section.querySelectorAll<HTMLElement>('h1');
@@ -40,8 +40,8 @@ export function useScrollAnimations(rootRef: React.RefObject<HTMLElement | null>
                 });
             }
 
-            if (h2.length > 0 || h3.length > 0 || paragraphs.length > 0) {
-                gsap.from([...h2, ...h3, ...paragraphs], {
+            if (h2.length > 0 || h3.length > 0) {
+                gsap.from([...h2, ...h3], {
                     opacity: 0,
                     filter: 'blur(2px)',
                     webkitFilter: 'blur(2px)',
@@ -53,6 +53,22 @@ export function useScrollAnimations(rootRef: React.RefObject<HTMLElement | null>
                     ease: 'power1.in',
                     stagger: 0.2
                 });
+            }
+
+            if (paragraphs.length > 0) {
+                paragraphs.forEach(p => {
+                    gsap.from(p, {
+                        scrollTrigger: {
+                            trigger: p,
+                            start: 'bottom 95%',
+                            end: 'top 50%',
+                            scrub: true
+                        },
+                        opacity: 0,
+                        x: 40,
+                        y: 10
+                    })
+                })
             }
 
             if (heroHeading.length > 0 && lead.length > 0 && heroCTA.length > 0) {

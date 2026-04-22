@@ -1,13 +1,20 @@
+'use client'
+
 import styles from './page.module.css';
 import Image from 'next/image';
 import bg from '@/../public/img/bg/bg2.jpg';
 import CopyBtn from '@/components/CopyBtn/CopyBtn';
+import { useRef } from 'react';
+import { useScrollAnimations } from '@/utils/gsap/ScrollAnimations';
 
 const s = styles;
 
 function Contact() {
+    const rootRef = useRef<HTMLElement>(null);
+    useScrollAnimations(rootRef);
+
     return (
-        <section className="content">
+        <section className="content" ref={rootRef}>
             <div className="bgContainer">
                 <Image 
                     src={bg}
@@ -22,7 +29,7 @@ function Contact() {
                 />
             </div>
             
-            <section id="ContactSection1" className={`cover ${s.cover}`}>
+            <section id="ContactSection1" className={`cover ${s.cover} animationSection`}>
                 <div className="content">
                     <h1 className="hero-header">Skontaktujmy się</h1>
                     <p className="lead">Zaczynamy od krótkiej rozmowy i podstawowych danych o dostępnych materiałach organicznych oraz zapotrzebowaniu na energię - na tej podstawie przygotujemy wstępną koncepcję. Po akceptacji przechodzimy do szczegółowych założeń projektu i harmonogramu.</p>
@@ -32,7 +39,7 @@ function Contact() {
 
             <section className="mainContent">
 
-                <section id="ContactSection2" className={s.Section2}>
+                <section id="ContactSection2" className={`${s.Section2} animationSection`}>
                     <h2>W czym możemy pomóc?</h2>
                     <ul className={s.ul}>
                         <li className={s.li}>
@@ -68,7 +75,7 @@ function Contact() {
                     </ul>
                 </section>
 
-                <section id="ContentSection3" className={s.Section3}>
+                <section id="ContentSection3" className={`${s.Section3} animationSection`}>
                     <h2>Skontaktuj się z nami</h2>
 
                     <div className={s.container}>
