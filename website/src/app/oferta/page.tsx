@@ -1,14 +1,21 @@
+'use client'
+
 import Link from 'next/link';
 import styles from './page.module.css';
 import Image from 'next/image';
 import bg from '@/../public/img/bg/bg3.jpg';
+import { useRef } from 'react';
+import { useScrollAnimations } from '@/utils/gsap/ScrollAnimations';
 
 const s = styles;
 
 function Offer() {
+    const rootRef = useRef<HTMLDivElement>(null);
+    useScrollAnimations(rootRef);
+
     return (
         <>
-            <div className="content">
+            <div className="content" ref={rootRef}>
                 <div className="bgContainer">
                     <Image
                         src={bg}
@@ -23,7 +30,7 @@ function Offer() {
                     />
                 </div>
                 
-                <section id="OfferSection1" className={`cover ${s.cover}`}>
+                <section id="OfferSection1" className={`cover ${s.cover} animationSection`}>
                     <div className="content">
                         <h1 className="hero-header">Oferta Biogas Solutions</h1>
                         <p className="lead">Realizujemy inwestycje w modelu "od A do Z": od koncepcji i doboru technologii po rozruch i serwis, z dopasowaniem do dostępnych substratów. Zapewniamy wsparcie dofinansowania i przygotowania dokumentacji.</p>
@@ -34,7 +41,7 @@ function Offer() {
                 <section className={`mainContent ${s.mainContent}`}>
                     <section id="OfferSection2" className={s.Section2}>
                         <ul id="offer" className={s.Offer}>
-                            <li id="mikrobiogazownie" className={s.offerItem}>
+                            <li id="mikrobiogazownie" className={`${s.offerItem} animationSection`}>
                                 <h2 className={s.h2}>Mikrobiogazownie</h2>
                                 <h3 className={s.h3}>Małej mocy</h3>
 
@@ -71,7 +78,7 @@ function Offer() {
                                 </div>
                             </li>
 
-                            <li id="biogazownie" className={s.offerItem}>
+                            <li id="biogazownie" className={`${s.offerItem} animationSection`}>
                                 <h2 className={s.h2}>Biogazownie</h2>
                                 <h3 className={s.h3}>Średniej i dużej mocy</h3>
 
@@ -113,7 +120,7 @@ function Offer() {
                                 </div>
                             </li>
 
-                            <li id="biometanownie" className={s.offerItem}>
+                            <li id="biometanownie" className={`${s.offerItem} animationSection`}>
                                 <h2 className={s.h2}>Biometanownie</h2>
                                 <h3 className={s.h3}>Upgrading do biometanu</h3>
 
@@ -150,7 +157,7 @@ function Offer() {
                                 </div>
                             </li>
 
-                            <li id="doradztwo-i-analizy" className={s.offerItem}>
+                            <li id="doradztwo-i-analizy" className={`${s.offerItem} animationSection`}>
                                 <h2 className={s.h2}>Doradztwo i analizy</h2>
 
                                 <div className={`gridWrapper ${s.gridWrapper}`}>
@@ -182,7 +189,7 @@ function Offer() {
                                 </div>
                             </li>
 
-                            <li id="serwis-i-eksploatacja" className={s.offerItem}>
+                            <li id="serwis-i-eksploatacja" className={`${s.offerItem} animationSection`}>
                                 <h2 className={s.h2}>Serwis, eksploatacja i monitoring instalacji</h2>
 
                                 <div className={`gridWrapper ${s.gridWrapper}`}>
@@ -211,7 +218,7 @@ function Offer() {
                                 </div>
                             </li>
                             
-                            <li id="analyzes-audites" className={s.offerItem}>
+                            <li id="analyzes-audites" className={`${s.offerItem} animationSection`}>
                                 <h2 className={s.h2}>Analizy i audyty</h2>
                                 <h3 className={s.h3}>techniczno-technologiczne</h3>
 
