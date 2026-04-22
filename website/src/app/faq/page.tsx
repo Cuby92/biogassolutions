@@ -1,13 +1,20 @@
+'use client'
+
 import Link from 'next/link';
 import styles from './page.module.css';
 import Image from 'next/image';
 import bg from '@/../public/img/bg/bg3.jpg';
+import { useScrollAnimations } from '@/utils/gsap/ScrollAnimations';
+import { useRef } from 'react'
 
 const s = styles;
 
 function FAQ() {
+    const rootRef = useRef<HTMLDivElement>(null);
+    useScrollAnimations(rootRef);
+
     return (
-        <div className="content">
+        <div className="content" ref={rootRef}>
             <div className="bgContainer">
                 <Image 
                     src={bg}
@@ -22,7 +29,7 @@ function FAQ() {
                 />
             </div>
             
-            <div id="FaqSection1" className={`cover ${s.cover}`}>
+            <div id="FaqSection1" className={`cover ${s.cover} animationSection`}>
                 <div className="content">
                     <h1 className="hero-header">Najczęściej zadawane pytania</h1>
                     <p className="lead">Zebraliśmy odpowiedzi, które porządkują zagadnienia techniczne, formalne i eksploatacyjne, aby przyspieszyć decyzję inwestycyjną. Sekcja obejmuje kwestie mocy, procesu, serwisu, wsadu i finansowania.</p>
@@ -30,7 +37,7 @@ function FAQ() {
                 </div>
             </div>
 
-            <div className={`mainContent ${s.mainContent}`}>
+            <div className={`mainContent ${s.mainContent} animationSection`}>
                 <h2 className={s.h2}>FAQ</h2>
                 <h3 className={s.h3}>Najczęściej Zadawane Pytania</h3>
                 <div id="FaqSection2" className={s.Section2}>
