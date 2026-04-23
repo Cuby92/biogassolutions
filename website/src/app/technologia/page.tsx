@@ -1,14 +1,21 @@
+'use client'
+
 import Link from 'next/link';
 import styles from './page.module.css';
 import Image from 'next/image';
 import bg from '@/../public/img/bg/bg3.jpg';
 import scheme from '@/../public/img/scheme.png';
+import { useScrollAnimations } from '@/utils/gsap/ScrollAnimations';
+import { useRef } from 'react';
 
 const s = styles;
 
 function Technology() {
+    const rootRef = useRef<HTMLDivElement>(null);
+    useScrollAnimations(rootRef);
+
     return (
-        <div className="content">
+        <div className="content" ref={rootRef}>
             <div className="bgContainer">
                 <Image
                     src={bg}
@@ -22,7 +29,7 @@ function Technology() {
                 />
             </div>
             
-            <div id="TechnologySection1" className={`cover ${s.cover}`}>
+            <div id="TechnologySection1" className={`cover ${s.cover} animationSection`}>
                 <div className="content">
                     <h1 className="hero-header">Jak działa nasza technologia?</h1>
                     <p className="lead">Biogaz powstaje z materiałów organicznych w fermentacji beztlenowej, jest oczyszczany i kierowany do jednostki kogeneracyjnej lub układu upgradingu do biometanu. Kluczowe są odpowiednio dobrane zbiorniki stalowe (elastyczność substratowa)  i automatyka pracy.</p>
@@ -31,7 +38,7 @@ function Technology() {
             </div>
             
             <div className={`mainContent ${s.mainContent}`}>
-                <div id="TechnologySection2" className={s.Section2}>
+                <div id="TechnologySection2" className={`${s.Section2} animationSection`}>
                     <Image 
                         src={scheme}
                         alt="Schemat działania biogazowni" 
@@ -43,7 +50,7 @@ function Technology() {
                     />
                 </div>
 
-                <div id="TechnologySection3" className={s.Section3}>
+                <div id="TechnologySection3" className={`${s.Section3} animationSection`}>
                     <h2 className={s.h2}>Substraty i elastyczność</h2>
                     <ul className={s.ul}>
                         <li className={`${s.li} ${s.card} card`}>
@@ -79,7 +86,7 @@ function Technology() {
                     </ul>
                 </div>
 
-                <div id="TechnologySection4" className={s.Section4}>
+                <div id="TechnologySection4" className={`${s.Section4} animationSection`}>
                     <h2 className={s.h2}>Fermentacja</h2>
                     <ol className={s.ol}>
                         <li className={`${s.li} card ${s.card}`}>
@@ -97,7 +104,7 @@ function Technology() {
                     </ol>
                 </div>
 
-                <div id="TechnologySection5" className={s.Section5}>
+                <div id="TechnologySection5" className={`${s.Section5} animationSection`}>
                     <h2 className={s.h2}>Uzdatnianie biogazu</h2>
                     <ol className={s.ol}>
                         <li className={`card ${s.card} ${s.li}`}>
@@ -115,7 +122,7 @@ function Technology() {
                     </ol>
                 </div>
 
-                <div id="TechnologySection6" className={s.Section6}>
+                <div id="TechnologySection6" className={`${s.Section6} animationSection`}>
                     <h2 className={s.h2}>Kogeneracja (CHP)</h2>
                     <ul className={s.ul}>
                         <li className={`${s.li} card ${s.card}`}>
@@ -143,7 +150,7 @@ function Technology() {
                     </ul>
                 </div>
 
-                <div id="TechnologySection7" className={s.Section7}>
+                <div id="TechnologySection7" className={`${s.Section7} animationSection`}>
                     <h2 className={s.h2}>Upgrading do biometanu</h2>
                     <ul className={s.ul}>
                         <li className={`${s.li} card ${s.card}`}>Zastosowanie systemu membranowego, PSA lub absorpcji pozwala uzyskać biometan i zintegrować go z siecią lub systemami bioCNG/bioLNG.</li>
@@ -151,7 +158,7 @@ function Technology() {
                     </ul>
                 </div>
 
-                <div id="TechnologySection8" className={s.Section8}>
+                <div id="TechnologySection8" className={`${s.Section8} animationSection`}>
                     <h2 className={s.h2}>Automatyka i monitoring</h2>
                     <ul className={s.ul}>
                         <li className={`${s.li} card ${s.card}`}>Zdalny nadzór 24/7, alarmy i szkolenia operatorów wspierają bezpieczeństwo i dyspozycyjność.</li>
