@@ -18,7 +18,7 @@ export function useScrollAnimations(rootRef: React.RefObject<HTMLElement | null>
             const cards = section.querySelectorAll<HTMLElement>('.card');
             const h2 = section.querySelectorAll<HTMLElement>('h2');
             const h3 = section.querySelectorAll<HTMLElement>('h3');
-            const paragraphs = [...section.querySelectorAll<HTMLElement>('.animatedParagraph'), ...section.querySelectorAll<HTMLElement>('li')];
+            const paragraphs = [...section.querySelectorAll<HTMLElement>('.animatedParagraph'), ...section.querySelectorAll<HTMLElement>('.animatedLi')];
             const buttons = Array.from(section.querySelectorAll<HTMLElement>('.cta-button')).filter(btn => !btn.closest('.cover'));
 
             const heroHeading = section.querySelectorAll<HTMLElement>('h1');

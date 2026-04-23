@@ -42,33 +42,33 @@ function Contact() {
                 <section id="ContactSection2" className={`${s.Section2} animationSection`}>
                     <h2>W czym możemy pomóc?</h2>
                     <ul className={s.ul}>
-                        <li className={s.li}>
+                        <li className={`${s.li} animatedParagraph`}>
                             <img className={s.icon} src="/img/icons/checked.png" />
                             <p>Wstępne określenie mocy, dobór technologii wraz z wstępną wyceną, harmonogramem i zakresem "pod klucz".</p>
                         </li>
-                        <li className={s.li}>
+                        <li className={`${s.li} animatedParagraph`}>
                             <img className={s.icon} src="/img/icons/checked.png" />
                             <p>Wsparcie w dofinansowaniu i dokumentach, w tym załączniki techniczne wymagane przez programy.</p>
                         </li>
-                        <li className={s.li}>
+                        <li className={`${s.li} animatedParagraph`}>
                             <img className={s.icon} src="/img/icons/checked.png" />
                             <p>Doborze i dostawie technologii, urządzeń oraz obiektów dla rozbudowy istniejącej instalacji</p>
                         </li>
-                        <li className={s.li}>
+                        <li className={`${s.li} animatedParagraph`}>
                             <img className={s.icon} src="/img/icons/checked.png" />
                             <p>Modernizacji istniejących instalacji.</p>
                         </li>
-                        <li className={s.li}>
+                        <li className={`${s.li} animatedParagraph`}>
                             <img className={s.icon} src="/img/icons/checked.png" />
                             <p>Serwis i utrzymanie ruchu.</p>
 
                         </li>
-                        <li className={s.li}>
+                        <li className={`${s.li} animatedParagraph`}>
                             <img className={s.icon} src="/img/icons/checked.png" />
                             <p>Monitoring i automatyzacja instalacji (projektowanych i istniejących).</p>
 
                         </li>
-                        <li className={s.li}>
+                        <li className={`${s.li} animatedParagraph`}>
                             <img className={s.icon} src="/img/icons/checked.png" />
                             <p>Nadzór techniczny i audyty dla instalacji biogazowych.</p>
                         </li>
