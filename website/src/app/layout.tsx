@@ -42,8 +42,7 @@ function RootLayout({ children, }: Readonly<{ children: React.ReactNode; }>) {
       <body className="pageTransition">
         <EntryHandler />
         <Header />
-          { children }
-        <Footer />
+        { children }
         <SpeedInsights />
       </body>
     </html>
