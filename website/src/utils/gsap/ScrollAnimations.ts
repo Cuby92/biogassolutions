@@ -117,3 +117,45 @@ export function useImgAnimations(containerRef: React.RefObject<HTMLElement | nul
         });
     }, { dependencies: [containerRef] });
 }
+
+export function useTextBlockAnimations(rootRef: React.RefObject<HTMLElement | null>) {
+    useGSAP(() => {
+        if (typeof window === 'undefined') return;
+        if (!rootRef.current) return;
+
+        const ps:  HTMLElement[] = gsap.utils.toArray('p',  rootRef.current);
+        const h1s: HTMLElement[] = gsap.utils.toArray('h1', rootRef.current);
+        const h2s: HTMLElement[] = gsap.utils.toArray('h2', rootRef.current);
+        const lis: HTMLElement[] = gsap.utils.toArray('li', rootRef.current);
+        const elements: HTMLElement[] = [...ps, ...h1s, ...h2s, ...lis];
+        const headings: HTMLElement[] = [...h1s, ...h2s];
+
+        elements.forEach(element => {
+            gsap.from(element, {
+                opacity: 0,
+                scrollTrigger: {
+                    trigger: element,
+                    scrub: true,
+                    start: 'bottom bottom',
+                    end: 'bottom 80%'
+                },
+                x: 50,
+                y: 10,
+                ease: 'power3.out'
+            });
+        });
+
+        headings.forEach(h => {
+            gsap.from(h, {
+                '--div-width': 0,
+                scrollTrigger: {
+                    trigger: h,
+                    start: 'center 80%',
+                    toggleActions: 'play reverse restart reverse'
+                },
+                duration: 1,
+                ease: 'power3.out'
+            })
+        })
+    }, { dependencies: [rootRef] });
+}

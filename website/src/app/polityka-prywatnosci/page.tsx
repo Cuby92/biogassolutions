@@ -1,10 +1,17 @@
+'use client'
+
 import styles from './page.module.css';
+import { useTextBlockAnimations } from '@/utils/gsap/ScrollAnimations';
+import { useRef } from 'react';
 
 const s = styles;
 
 function PrivacyPolicy() {
+    const rootRef = useRef<HTMLDivElement>(null);
+    useTextBlockAnimations(rootRef);
+
     return (
-        <div className={s.content}>
+        <div className={s.content} ref={rootRef}>
             <h1 className={s.h1}>Polityka Prywatności</h1>
             <p className={s.p}>Niniejsza polityka prywatności określa zasady przetwarzania i ochrony danych osobowych gromadzonych w związku z korzystaniem z serwisu internetowego biogassolutions.pl. Dbamy o Twoją prywatność i bezpieczeństwo, dlatego przedstawiamy kluczowe informacje na temat tego, jak chronimy Twoje dane.</p>
             <h2 className={s.h2}>1. Administrator Danych Osobowych</h2>
