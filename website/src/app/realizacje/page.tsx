@@ -102,13 +102,21 @@ function Realizations() {
                         </ul>
                     </div>
 
-                    <div id="RealizationsSection5" className={`${s.Section5} animationSection`} style={{display: 'none'}}>
-                        <h2 className={s.h2}>Etapy budowy biogazowni</h2>
-                        <div className="img landscape-only"><img src="/img/build-stages/stages.png" alt="Trzy etapy realizacji biogazowni: Etap I Planowanie (weryfikacja prawna, warunki zabudowy, analizy, projekt i pozwolenia); Etap II Budowanie (budowa, dostawy i montaż, instalacje pomocnicze); Etap III Uruchomienie (rozruch, odbiory i legalizacja, szkolenia, monitoring i serwis 24/7)." /></div>
-                        <div className="portrait-only">
-                            <div className="img"><img src="/img/build-stages/stage1.png" alt="Etap I Planowanie (weryfikacja prawna, warunki zabudowy, analizy, projekt i pozwolenia)"/></div>
-                            <div className="img"><img src="/img/build-stages/stage2.png" alt="Etap II Budowanie (budowa, dostawy i montaż, instalacje pomocnicze)"/></div>
-                            <div className="img"><img src="/img/build-stages/stage3.png" alt="Etap III Uruchomienie (rozruch, odbiory i legalizacja, szkolenia, monitoring i serwis 24/7)"/></div>
+                    <div id="RealizationsSection5" className={`${s.Section5} animationSection`}>
+                        <h2 className={s.h2}>Galeria Zdjęć</h2>
+                        <div className={s.container}>
+                            <div className={s.imgContainer}><Image data-speed="0.7" alt="" src="/img/photos/1.jpg"  className={s.img} width={4080} height={3060} /></div>
+                            <div className={s.imgContainer}><Image data-speed="0.85" alt="" src="/img/photos/2.jpg"  className={s.img} width={1536} height={2048} /></div>
+                            <div className={s.imgContainer}><Image data-speed="0.8" alt="" src="/img/photos/3.jpg"  className={s.img} width={2048} height={1536} /></div>
+                            <div className={s.imgContainer}><Image data-speed="0.95" alt="" src="/img/photos/4.png"  className={s.img} width={640} height={480} /></div>
+                            <div className={s.imgContainer}><Image data-speed="0.9" alt="" src="/img/photos/5.jpg"  className={s.img} width={595} height={595} /></div>
+                            <div className={s.imgContainer}><Image data-speed="0.75" alt="" src="/img/photos/6.jpg"  className={s.img} width={5312} height={2988} /></div>
+                            <div className={s.imgContainer}><Image data-speed="0.9" alt="" src="/img/photos/7.jpg"  className={s.img} width={2448} height={3264} /></div>
+                            <div className={s.imgContainer}><Image data-speed="0.8" alt="" src="/img/photos/8.jpg"  className={s.img} width={4000} height={3000} /></div>
+                            <div className={s.imgContainer}><Image data-speed="0.85" alt="" src="/img/photos/9.jpg"  className={s.img} width={4080} height={3060} /></div>
+                            <div className={s.imgContainer}><Image data-speed="0.85" alt="" src="/img/photos/10.jpg" className={s.img} width={1600} height={1200} /></div>
+                            <div className={s.imgContainer}><Image data-speed="0.9" alt="" src="/img/photos/11.jpg" className={s.img} width={1200} height={1600} /></div>
+                            <div className={s.imgContainer}><Image data-speed="0.8" alt="" src="/img/photos/12.jpg" className={s.img} width={4080} height={3060} /></div>
                         </div>
                     </div>
                 </div>
