@@ -105,18 +105,18 @@ function Realizations() {
                     <div id="RealizationsSection5" className={`${s.Section5} animationSection`}>
                         <h2 className={s.h2}>Galeria Zdjęć<a href="#partner" style={{ color: 'var(--primary-color)' }}>*</a></h2>
                         <div className={s.container}>
-                            <div className={s.imgContainer}><Image data-speed="0.7" alt="" src="/img/photos/1.jpg"  className={s.img} width={4080} height={3060} /></div>
-                            <div className={s.imgContainer}><Image data-speed="0.85" alt="" src="/img/photos/2.jpg"  className={s.img} width={1536} height={2048} /></div>
-                            <div className={s.imgContainer}><Image data-speed="0.8" alt="" src="/img/photos/3.jpg"  className={s.img} width={2048} height={1536} /></div>
+                            <div className={s.imgContainer}><Image data-speed="0.9" alt="" src="/img/photos/1.jpg"  className={s.img} width={4080} height={3060} /></div>
+                            <div className={s.imgContainer}><Image data-speed="0.95" alt="" src="/img/photos/2.jpg"  className={s.img} width={1536} height={2048} /></div>
+                            <div className={s.imgContainer}><Image data-speed="0.9" alt="" src="/img/photos/3.jpg"  className={s.img} width={2048} height={1536} /></div>
                             <div className={s.imgContainer}><Image data-speed="0.95" alt="" src="/img/photos/4.png"  className={s.img} width={640} height={480} /></div>
                             <div className={s.imgContainer}><Image data-speed="0.9" alt="" src="/img/photos/5.jpg"  className={s.img} width={595} height={595} /></div>
-                            <div className={s.imgContainer}><Image data-speed="0.75" alt="" src="/img/photos/6.jpg"  className={s.img} width={5312} height={2988} /></div>
+                            <div className={s.imgContainer}><Image data-speed="0.95" alt="" src="/img/photos/6.jpg"  className={s.img} width={5312} height={2988} /></div>
                             <div className={s.imgContainer}><Image data-speed="0.9" alt="" src="/img/photos/7.jpg"  className={s.img} width={2448} height={3264} /></div>
-                            <div className={s.imgContainer}><Image data-speed="0.8" alt="" src="/img/photos/8.jpg"  className={s.img} width={4000} height={3000} /></div>
-                            <div className={s.imgContainer}><Image data-speed="0.85" alt="" src="/img/photos/9.jpg"  className={s.img} width={4080} height={3060} /></div>
-                            <div className={s.imgContainer}><Image data-speed="0.85" alt="" src="/img/photos/10.jpg" className={s.img} width={1600} height={1200} /></div>
+                            <div className={s.imgContainer}><Image data-speed="0.95" alt="" src="/img/photos/8.jpg"  className={s.img} width={4000} height={3000} /></div>
+                            <div className={s.imgContainer}><Image data-speed="0.9" alt="" src="/img/photos/9.jpg"  className={s.img} width={4080} height={3060} /></div>
+                            <div className={s.imgContainer}><Image data-speed="0.95" alt="" src="/img/photos/10.jpg" className={s.img} width={1600} height={1200} /></div>
                             <div className={s.imgContainer}><Image data-speed="0.9" alt="" src="/img/photos/11.jpg" className={s.img} width={1200} height={1600} /></div>
-                            <div className={s.imgContainer}><Image data-speed="0.8" alt="" src="/img/photos/12.jpg" className={s.img} width={4080} height={3060} /></div>
+                            <div className={s.imgContainer}><Image data-speed="0.95" alt="" src="/img/photos/12.jpg" className={s.img} width={4080} height={3060} /></div>
                         </div>
                         <div id="partner" className={s.Partner}>
                             <p><span style={{ color: 'var(--primary-color)' }}>*</span>Zdjęcia partnera</p>
