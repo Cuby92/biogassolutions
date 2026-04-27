@@ -114,22 +114,104 @@
 
 .Section5 {
     width: 100%;
+    height: 550svh;
     padding-bottom: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+
+    & .container {
+        & .img {
+            width: 50vw;
+            height: auto;
+            transition: transform 1s ease-out;
+        }
+
+        & .imgContainer {
+            overflow: hidden;
+            width: 30vw;
+            margin-block: 32px;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        & div:nth-of-type(1) {
+            left: -20vw;
+        }
+
+        & div:nth-of-type(2) {
+            left: 8vw;
+            top: -10vw
+        }
+
+        & div:nth-of-type(3) {
+            left: -30vw;
+            top: -60vw;
+        }
+
+        & div:nth-of-type(4) {
+            left: 30vw;
+            top: -65vw;
+        }
+
+        & div:nth-of-type(5) {
+            left: -20vw;
+            top: -85vw;
+        }
+
+        & div:nth-of-type(6) {
+            left: 7vw;
+            top: -95vw;
+        }
+
+        & div:nth-of-type(7) {
+            left: 15vw;
+            top: -100vw;
+        }
+
+        & div:nth-of-type(8) {
+            left: -25vw;
+            top: -165vw;
+        }
+
+        & div:nth-of-type(9) {
+            left: -20vw;
+            top: -175vw;
+        }
+
+        & div:nth-of-type(10) {
+            left: 5vw;
+            top: -185vw;
+        }
+
+        & div:nth-of-type(11) {
+            left: -17vw;
+            top: -195vw;
+        }
+
+        & div:nth-of-type(12) {
+            left: 20vw;
+            top: -250vw;
+        }
+    }
+
+    & .Partner {
+        font-size: 1.2rem;
+        position: absolute;
+        bottom: 10vw;
+        left: 60%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
 }
 
-.Section5 .image {
-    width: 100%;
-    text-align: center;
-}
-
-.Section5 .img {
-    width: 90%;
-    height: auto;
-    margin-inline: auto;
-}
-
-.Section5 .portrait-only .img {
-    width: 60%;
-    height: auto;
-    margin-inline: auto;
+@media (hover: hover) and (pointer: fine) {
+    .Section5 .img:hover {
+        transform: scale(1.07);
+    }
 }
