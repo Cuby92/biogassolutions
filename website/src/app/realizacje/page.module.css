@@ -115,6 +115,7 @@
 .Section5 {
     width: 100%;
     height: 550svh;
+    max-height: 500vw;
     padding-bottom: 200px;
     display: flex;
     flex-wrap: wrap;
@@ -202,11 +203,13 @@
     & .Partner {
         font-size: 1.2rem;
         position: absolute;
-        bottom: 10vw;
-        left: 60%;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
         display: flex;
         flex-direction: column;
         gap: 10px;
+        align-items: center;
     }
 }
 
