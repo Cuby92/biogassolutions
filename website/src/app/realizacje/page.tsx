@@ -103,7 +103,7 @@ function Realizations() {
                     </div>
 
                     <div id="RealizationsSection5" className={`${s.Section5} animationSection`}>
-                        <h2 className={s.h2}>Galeria Zdjęć</h2>
+                        <h2 className={s.h2}>Galeria Zdjęć<a href="#partner" style={{ color: 'var(--primary-color)' }}>*</a></h2>
                         <div className={s.container}>
                             <div className={s.imgContainer}><Image data-speed="0.7" alt="" src="/img/photos/1.jpg"  className={s.img} width={4080} height={3060} /></div>
                             <div className={s.imgContainer}><Image data-speed="0.85" alt="" src="/img/photos/2.jpg"  className={s.img} width={1536} height={2048} /></div>
@@ -117,6 +117,10 @@ function Realizations() {
                             <div className={s.imgContainer}><Image data-speed="0.85" alt="" src="/img/photos/10.jpg" className={s.img} width={1600} height={1200} /></div>
                             <div className={s.imgContainer}><Image data-speed="0.9" alt="" src="/img/photos/11.jpg" className={s.img} width={1200} height={1600} /></div>
                             <div className={s.imgContainer}><Image data-speed="0.8" alt="" src="/img/photos/12.jpg" className={s.img} width={4080} height={3060} /></div>
+                        </div>
+                        <div id="partner" className={s.Partner}>
+                            <p><span style={{ color: 'var(--primary-color)' }}>*</span>Zdjęcia partnera</p>
+                            <a href="https://www.stallkamp.de"><Image src="/img/stallkamp-logo.svg" alt="Stallkamp" width={188.510} height={46.490} /></a>
                         </div>
                     </div>
                 </div>
