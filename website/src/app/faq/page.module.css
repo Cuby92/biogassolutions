@@ -29,6 +29,7 @@
 .mainContent .h2 {
     font-size: clamp(128px, 65.164px + 17.455vw, 512px);
     font-weight: 100;
+    margin-top: 10vh;
 }
 
 .mainContent .h3 {
