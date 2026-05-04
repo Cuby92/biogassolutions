@@ -10,6 +10,25 @@
 
 .Section2 .dropdown .question {
     font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+}
+
+.Section2 .dropdown .question::before {
+    content: '';
+    display: inline-block;
+    width: 0.75rem;
+    height: 0.75rem;
+    margin-right: 1.5rem;
+    border-top: 2px solid var(--primary-color);
+    border-right: 2px solid var(--primary-color);
+    transform: rotate(45deg);
+    margin-block: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.Section2 .dropdown .question.active::before {
+    transform: rotate(135deg);
 }
 
 .Section2 .dropdown .answer {
