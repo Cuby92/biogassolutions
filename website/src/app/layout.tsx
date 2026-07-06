@@ -5,6 +5,7 @@ import Footer from "@/components/Footer";
 import { DM_Sans, Poppins, Space_Grotesk, Raleway } from 'next/font/google';
 import { SpeedInsights } from '@vercel/speed-insights/next';
 import EntryHandler from "@/utils/EntryHandler";
+import { Analytics } from "@vercel/analytics/next"
 
 export const metadata: Metadata = {
   title: "Realizacje biogazowni i CHP - projekty 499 kW-2 MW | Biogas Solutions",
@@ -44,6 +45,7 @@ function RootLayout({ children, }: Readonly<{ children: React.ReactNode; }>) {
         <Header />
         { children }
         <SpeedInsights />
+        <Analytics />
       </body>
     </html>
   );
