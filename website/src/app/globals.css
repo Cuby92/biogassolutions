@@ -279,6 +279,26 @@ footer details {
     font-size: 0.7rem;
 }
 
+footer .nevereAttribution {
+    width: 100%;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+
+    .nevereLogo {
+        height: 1.3em;
+        aspect-ratio: 100 / 10.5;
+        mask-image: url('../../public/img/nevere_logo.svg');
+        mask-size: contain;
+        mask-position: center;
+        mask-repeat: no-repeat;
+        background: #fff;
+        margin-left: 0.3em;
+    }
+}
+
 @media screen and (max-width: 480px) {
     footer {
         flex-direction: column;

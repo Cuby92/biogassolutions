@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from 'next/image';
 
 function Footer() {
     return (
@@ -70,6 +71,7 @@ function Footer() {
                     <a href="https://www.flaticon.com/free-icons/heat" title="heat icons">Heat icons created by meaicon - Flaticon</a>
                 </details>
             </div>
+            <p className='nevereAttribution'>Designed & Developed by <a href='https://nevere.studio' target='_blank' aria-label='Nevere Studio' className='nevereLogo'></a></p>
         </footer>
     )
 }
